@@ -1,5 +1,5 @@
 import { Montserrat } from "next/font/google";
-import { unitSizeGenerated } from "@/theme/unit-size.config";
+import { spacingGenerated } from "@/utils";
 
 export const fontConfig = Montserrat({
   subsets: ["latin"],
@@ -12,32 +12,39 @@ export const fontConfig = Montserrat({
 export const typographyConfig = {
   variant: {
     h1: {
-      fontSize: unitSizeGenerated(8),
+      fontSize: "64px",
       fontWeight: 700,
+      lineHeight: 1,
     },
     h2: {
-      fontSize: unitSizeGenerated(7),
+      fontSize: "48px",
       fontWeight: 700,
+      lineHeight: 1,
     },
     h3: {
-      fontSize: unitSizeGenerated(6),
+      fontSize: "36px",
       fontWeight: 600,
+      lineHeight: 1,
     },
     h4: {
-      fontSize: unitSizeGenerated(5),
+      fontSize: "28px",
       fontWeight: 500,
+      lineHeight: 1,
     },
     h5: {
-      fontSize: unitSizeGenerated(4),
+      fontSize: "24px",
       fontWeight: 500,
+      lineHeight: 1,
     },
     h6: {
-      fontSize: unitSizeGenerated(3),
+      fontSize: "18px",
       fontWeight: 400,
+      lineHeight: 1,
     },
     p: {
-      fontSize: unitSizeGenerated(2),
+      fontSize: "16px",
       fontWeight: 400,
+      lineHeight: 1,
     },
   },
 };

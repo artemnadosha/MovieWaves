@@ -1,12 +1,12 @@
 import { HTMLAttributes, PropsWithChildren } from "react";
-import { PaletteName } from "@/theme";
-
-export type HeadingVariant = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+import { DefaultProps, StylesColorProps } from "@/types/defaultProps";
+import { JSXHeadingTagName, JSXParagraphTagName } from "@/types/JSXTagName";
 
 export interface TypographyProps
-  extends HTMLAttributes<HTMLParagraphElement | HTMLHeadingElement>,
+  extends DefaultProps,
+    StylesColorProps,
+    Omit<HTMLAttributes<HTMLParagraphElement | HTMLHeadingElement>, "color">,
     PropsWithChildren {
-  variant: "p" | HeadingVariant;
-  component: "p" | HeadingVariant;
-  color?: PaletteName;
+  variant: JSXParagraphTagName | JSXHeadingTagName;
+  component?: JSXParagraphTagName | JSXHeadingTagName;
 }

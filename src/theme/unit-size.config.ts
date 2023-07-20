@@ -1,5 +1,4 @@
-const unitSizeConfig = 8;
-
-export const unitSizeGenerated = (size: number) => {
-  return `${unitSizeConfig * size}px`;
+export const unitSizeConfig = {
+  spacing: 16,
+  borderRadius: "8px",
 };

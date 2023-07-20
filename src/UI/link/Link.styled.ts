@@ -1,37 +1,48 @@
 import styled from "styled-components";
-import Link, { LinkProps } from "next/link";
+import Link from "next/link";
 import { paletteConfig, PaletteName } from "@/theme";
-import { AnchorHTMLAttributes } from "react";
 import { MyLinkProps } from "@/types";
-
-interface LinkWrapperProps {
-  color?: PaletteName;
-  active?: boolean;
-}
-
-const isActiveFunc = ({ active, color }: LinkWrapperProps) => {
-  if (active && !color) return paletteConfig.primary.dark;
-
-  if (!color) return paletteConfig.primary.main;
-
-  if (active) return paletteConfig[color].dark || paletteConfig.primary.dark;
-
-  return paletteConfig[color].main;
-};
+import { getColor, spacingPaddingMarginFunc } from "@/utils";
 
 export const LinkWrapper = styled(Link).withConfig({
-  shouldForwardProp: (prop) => !["color", "active"].includes(prop),
-})<MyLinkProps>(({ color, active }) => ({
-  color: isActiveFunc({ active, color }),
-  textDecoration: "none",
-  transition: "0.25s",
+  shouldForwardProp: (prop) =>
+    !["color", "active", "sx", "margin", "padding"].includes(prop),
+})<MyLinkProps>(({ color, active, sx, padding, margin }) => {
+  let styled = {};
 
-  "&:hover": {
-    color: color ? paletteConfig[color].dark : paletteConfig.primary.dark,
-  },
+  if (sx) {
+    styled = sx;
+  }
+  const separationColor = getColor({ color });
+  return {
+    color:
+      typeof separationColor === "object"
+        ? active
+          ? separationColor.dark
+          : separationColor.main
+        : separationColor,
 
-  "&:focus": {
-    color: color ? paletteConfig[color].dark : paletteConfig.primary.dark,
-    outline: "none",
-  },
-}));
+    textDecoration: "none",
+    transition: "0.25s",
+
+    ...styled,
+
+    padding: padding && spacingPaddingMarginFunc(padding),
+    margin: margin && spacingPaddingMarginFunc(margin),
+
+    "&:hover": {
+      color:
+        typeof separationColor === "object"
+          ? separationColor.dark
+          : paletteConfig.primary.dark,
+    },
+
+    "&:focus": {
+      color:
+        typeof separationColor === "object"
+          ? separationColor.dark
+          : paletteConfig.primary.dark,
+      outline: "none",
+    },
+  };
+});

@@ -1,14 +1,19 @@
 import { LinkProps } from "next/link";
-import React, { AnchorHTMLAttributes, PropsWithChildren } from "react";
-import { PaletteName } from "@/theme";
+import React, {
+  AnchorHTMLAttributes,
+  CSSProperties,
+  PropsWithChildren,
+} from "react";
 import { TypographyProps } from "@/types/typography";
+import { DefaultProps, StylesColorProps } from "@/types/defaultProps";
 
 export interface MyLinkProps
-  extends AnchorHTMLAttributes<HTMLAnchorElement>,
+  extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "color">,
     LinkProps,
-    PropsWithChildren {
+    PropsWithChildren,
+    DefaultProps,
+    StylesColorProps {
   href: string;
-  color?: PaletteName;
   typography?: TypographyProps;
   active?: boolean;
 }

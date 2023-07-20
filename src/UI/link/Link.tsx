@@ -1,4 +1,4 @@
-import { FC, MouseEventHandler } from "react";
+import { FC } from "react";
 import { LinkWrapper } from "./Link.styled";
 import { Typography } from "@/UI";
 import { MyLinkProps } from "@/types";
@@ -8,13 +8,24 @@ const Link: FC<MyLinkProps> = ({
   typography,
   href,
   color,
+  sx,
+  padding,
+  margin,
   children,
   ...rest
 }) => {
   const pathname = usePathname();
 
   return (
-    <LinkWrapper href={href} {...rest} color={color} active={pathname === href}>
+    <LinkWrapper
+      href={href}
+      {...rest}
+      color={color || "primary"}
+      active={pathname === href}
+      sx={sx}
+      padding={padding}
+      margin={margin}
+    >
       <Typography
         component={typography?.component || "p"}
         variant={typography?.component || "p"}

@@ -2,5 +2,5 @@ export type {
   PaletteType,
   PaletteConfigTypes,
   PaletteName,
-} from "./palette.types";
+} from "./palette.config.types";
 export { paletteConfig } from "./palette.config";

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Header } from "@/components";
 import "./globals.css";
 import { fontConfig } from "@/theme";
+import StyledComponentsRegistry from "@/app/registry";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,10 +13,12 @@ export const metadata = {
 const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={fontConfig.className}>
-        <Header />
-        <main>{children}</main>
-      </body>
+      <StyledComponentsRegistry>
+        <body className={fontConfig.className}>
+          <Header />
+          <main>{children}</main>
+        </body>
+      </StyledComponentsRegistry>
     </html>
   );
 };

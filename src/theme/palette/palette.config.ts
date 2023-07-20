@@ -1,4 +1,4 @@
-import { PaletteConfigTypes } from "@/theme/palette/palette.types";
+import { PaletteConfigTypes } from "@/theme/palette/palette.config.types";
 
 export const paletteConfig: PaletteConfigTypes = {
   primary: {

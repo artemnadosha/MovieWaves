@@ -1,4 +1,8 @@
+"use client";
+
 import { Navigation } from "../nav-link";
+import { Box } from "@/UI";
+import Button from "../../UI/button/Button";
 
 const navItem = [
   { label: "Home", href: "/" },
@@ -8,18 +12,18 @@ const navItem = [
 
 const Header = () => {
   return (
-    <header
-      style={{
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
-        gap: "20px",
-        background: "gray",
-        padding: "20px",
-      }}
-    >
+    <Box component="header" direction="row" justifyContent="center" spacing={2}>
       <Navigation navLinks={navItem} />
-    </header>
+      <Button size="small" variant="outlined">
+        test
+      </Button>
+      <Button size="medium" color="secondary">
+        test
+      </Button>
+      <Button size="large" variant="text">
+        test
+      </Button>
+    </Box>
   );
 };
 

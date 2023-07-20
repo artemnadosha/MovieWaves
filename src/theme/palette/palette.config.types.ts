@@ -16,4 +16,6 @@ export type PaletteConfigTypes = {
   error: PaletteType;
 };
 
-export type PaletteName = keyof PaletteConfigTypes;
+export type PaletteName =
+  | keyof PaletteConfigTypes
+  | `${keyof PaletteConfigTypes}.${keyof PaletteType}`;
