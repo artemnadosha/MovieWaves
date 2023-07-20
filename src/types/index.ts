@@ -16,5 +16,3 @@ export type {
   JSXParagraphTagName,
   JSXHeadingTagName,
 } from "./JSXTagName";
-
-export { JSXBoxTagNameMap, JSXTypographyTagNameMap } from "./JSXTagName";

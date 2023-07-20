@@ -2,13 +2,35 @@ import { paletteConfig, PaletteConfigTypes, typographyConfig } from "@/theme";
 import { unitSizeConfig } from "@/theme/unit-size.config";
 import { hexToRGBA } from "@/utils";
 
-export const buttonConfig = (color?: keyof PaletteConfigTypes) => {
+interface ButtonConfigProps {
+  color?: keyof PaletteConfigTypes;
+  active?: boolean;
+}
+
+export const buttonConfig = ({ color, active }: ButtonConfigProps) => {
+  const activeColor = active
+    ? paletteConfig[color || "primary"].dark
+    : paletteConfig[color || "primary"].main;
+
   return {
+    defaultStyles: {
+      fontFamily: "inherit",
+      border: "none",
+      outline: "none",
+      margin: 0,
+      userSelect: "none",
+      cursor: "pointer",
+      transition: ".25s",
+      textDecoration: "none",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    },
     variant: {
       contained: {
-        transition: ".25s",
         color: paletteConfig[color || "primary"].contrastText,
-        background: paletteConfig[color || "primary"].main,
+        background: activeColor,
+
         "&:hover": {
           background: paletteConfig[color || "primary"].dark,
         },
@@ -17,10 +39,11 @@ export const buttonConfig = (color?: keyof PaletteConfigTypes) => {
         },
       },
       outlined: {
-        transition: ".25s",
-        color: paletteConfig[color || "primary"].main,
+        color: activeColor,
         background: "transparent",
-        border: `1px solid ${paletteConfig[color || "primary"].main}`,
+        border: `1px solid`,
+        borderColor: activeColor,
+
         "&:hover": {
           color: paletteConfig[color || "primary"].dark,
           borderColor: paletteConfig[color || "primary"].dark,
@@ -30,16 +53,20 @@ export const buttonConfig = (color?: keyof PaletteConfigTypes) => {
         },
       },
       text: {
-        transition: ".25s",
-        color: paletteConfig[color || "primary"].main,
+        color: activeColor,
         background: "transparent",
+
         "&:hover": {
-          background: hexToRGBA(paletteConfig[color || "primary"].light, 0.3),
-          color: paletteConfig[color || "primary"].dark,
+          background: !active
+            ? hexToRGBA(paletteConfig[color || "primary"].light, 0.3)
+            : "",
+          color: !active ? paletteConfig[color || "primary"].main : "",
         },
         "&:active": {
-          background: hexToRGBA(paletteConfig[color || "primary"].light, 0.3),
-          color: paletteConfig[color || "primary"].dark,
+          background: !active
+            ? hexToRGBA(paletteConfig[color || "primary"].light, 0.3)
+            : "",
+          color: !active ? paletteConfig[color || "primary"].main : "",
         },
       },
     },

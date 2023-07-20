@@ -1,8 +1,9 @@
 "use client";
 
 import { Navigation } from "../nav-link";
-import { Box } from "@/UI";
+import { Box, Typography } from "@/UI";
 import Button from "../../UI/button/Button";
+import { IconArrow } from "@/assets/icon";
 
 const navItem = [
   { label: "Home", href: "/" },
@@ -14,10 +15,11 @@ const Header = () => {
   return (
     <Box component="header" direction="row" justifyContent="center" spacing={2}>
       <Navigation navLinks={navItem} />
-      <Button size="small" variant="outlined">
+      <Typography variant="h1">test</Typography>
+      <Button size="small" variant="outlined" iconStart={<IconArrow />}>
         test
       </Button>
-      <Button size="medium" color="secondary">
+      <Button size="medium" color="secondary" iconEnd={<IconArrow />}>
         test
       </Button>
       <Button size="large" variant="text">

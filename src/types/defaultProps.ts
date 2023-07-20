@@ -17,7 +17,4 @@ export interface StylesSizeProps {
   size?: "small" | "medium" | "large";
 }
 
-export interface DefaultProps extends StylesProps {
-  padding?: number | number[];
-  margin?: number | number[];
-}
+export interface DefaultProps extends StylesProps {}

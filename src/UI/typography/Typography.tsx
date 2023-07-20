@@ -4,20 +4,12 @@ import { getColor, spacingPaddingMarginFunc } from "@/utils";
 import { fontConfig, typographyConfig } from "@/theme";
 
 const Typography = styled(
-  ({
-    component,
-    color,
-    sx,
-    padding,
-    margin,
-    children,
-    ...rest
-  }: TypographyProps) => {
+  ({ component, variant, color, sx, children, ...rest }: TypographyProps) => {
     const Component = component || "p";
 
     return <Component {...rest}>{children}</Component>;
   }
-)(({ variant, color, sx, padding, margin, component }) => {
+)(({ variant, color, sx, component }) => {
   let stylesComponent = {};
 
   if (sx) {
@@ -29,8 +21,6 @@ const Typography = styled(
     ...fontConfig.style,
     ...typographyConfig.variant[variant],
     ...stylesComponent,
-    padding: padding && spacingPaddingMarginFunc(padding),
-    margin: margin && spacingPaddingMarginFunc(margin),
     color:
       typeof separationColor === "object"
         ? separationColor.main

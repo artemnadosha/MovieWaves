@@ -14,7 +14,7 @@ const NavLink: FC<NavigationProps> = ({ navLinks }) => {
   return (
     <>
       {navLinks.map((link) => (
-        <Link key={link.label} href={link.href}>
+        <Link key={link.label} href={link.href} color="secondary">
           {link.label}
         </Link>
       ))}

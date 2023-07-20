@@ -1,19 +1,29 @@
 import { LinkProps } from "next/link";
-import React, {
+import {
   AnchorHTMLAttributes,
   CSSProperties,
   PropsWithChildren,
+  ReactNode,
 } from "react";
-import { TypographyProps } from "@/types/typography";
-import { DefaultProps, StylesColorProps } from "@/types/defaultProps";
+import {
+  DefaultProps,
+  StylesColorProps,
+  StylesSizeProps,
+  StylesVariantProps,
+} from "@/types/defaultProps";
+import { PaletteConfigTypes } from "@/theme";
 
 export interface MyLinkProps
   extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "color">,
     LinkProps,
+    StylesVariantProps,
+    StylesSizeProps,
     PropsWithChildren,
     DefaultProps,
     StylesColorProps {
   href: string;
-  typography?: TypographyProps;
-  active?: boolean;
+  radius?: CSSProperties["borderRadius"];
+  color?: keyof PaletteConfigTypes;
+  iconStart?: ReactNode;
+  iconEnd?: ReactNode;
 }

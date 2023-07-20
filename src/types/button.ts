@@ -1,4 +1,9 @@
-import { ButtonHTMLAttributes, CSSProperties, PropsWithChildren } from "react";
+import {
+  ButtonHTMLAttributes,
+  CSSProperties,
+  PropsWithChildren,
+  ReactNode,
+} from "react";
 import { StylesSizeProps, StylesVariantProps } from "@/types";
 import { PaletteConfigTypes } from "@/theme";
 
@@ -10,4 +15,6 @@ export interface ButtonProps
   radius?: CSSProperties["borderRadius"];
   color?: keyof PaletteConfigTypes;
   sx?: CSSProperties;
+  iconStart?: ReactNode;
+  iconEnd?: ReactNode;
 }
