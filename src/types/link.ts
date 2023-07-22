@@ -9,14 +9,14 @@ import {
   DefaultProps,
   StylesColorProps,
   StylesSizeProps,
-  StylesVariantProps,
+  StylesVariantButtonLinkProps,
 } from "@/types/defaultProps";
 import { PaletteConfigTypes } from "@/theme";
 
 export interface MyLinkProps
   extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "color">,
     LinkProps,
-    StylesVariantProps,
+    StylesVariantButtonLinkProps,
     StylesSizeProps,
     PropsWithChildren,
     DefaultProps,

@@ -40,12 +40,12 @@ const Link = styled(
 
     gap: iconEnd || iconStart ? "8px" : "",
 
-    ...separation.variant({
+    ...separation.variantButton({
       variant: variant || "text",
       color,
       active: pathname === href,
     }),
-    ...separation.size({ size }),
+    ...separation.sizeButton({ size }),
     borderRadius: radius?.toString() || buttonStyles.borderRadius,
     ...(sx as {}),
   };

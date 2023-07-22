@@ -26,10 +26,10 @@ export const paletteConfig: PaletteConfigTypes = {
     contrastText: "#fff",
   },
   border: {
-    main: "#ffffff",
-    dark: "#ffffff",
-    light: "#ffffff",
-    contrastText: "#ffffff",
+    main: "#686868",
+    dark: "#00578e",
+    light: "#8ed0ff",
+    contrastText: "#fff",
   },
   success: {
     main: "",

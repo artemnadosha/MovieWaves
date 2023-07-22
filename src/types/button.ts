@@ -4,11 +4,11 @@ import {
   PropsWithChildren,
   ReactNode,
 } from "react";
-import { StylesSizeProps, StylesVariantProps } from "@/types";
+import { StylesSizeProps, StylesVariantButtonLinkProps } from "@/types";
 import { PaletteConfigTypes } from "@/theme";
 
 export interface ButtonProps
-  extends StylesVariantProps,
+  extends StylesVariantButtonLinkProps,
     StylesSizeProps,
     PropsWithChildren,
     Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color"> {

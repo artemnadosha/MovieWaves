@@ -20,11 +20,11 @@ const Typography = styled(
   return {
     ...fontConfig.style,
     ...typographyConfig.variant[variant],
-    ...stylesComponent,
     color:
       typeof separationColor === "object"
         ? separationColor.main
         : separationColor,
+    ...stylesComponent,
   };
 });
 

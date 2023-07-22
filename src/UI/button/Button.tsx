@@ -35,8 +35,8 @@ const Button = styled(
     ...(buttonStyles.defaultStyles as {}),
     gap: iconEnd || iconStart ? "8px" : "",
 
-    ...separation.variant({ variant: variant || "contained", color }),
-    ...separation.size({ size }),
+    ...separation.variantButton({ variant: variant || "contained", color }),
+    ...separation.sizeButton({ size }),
     borderRadius: radius?.toString() || buttonStyles.borderRadius,
     ...(sx as {}),
   };

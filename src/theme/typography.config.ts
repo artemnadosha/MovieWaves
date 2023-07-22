@@ -1,5 +1,4 @@
 import { Montserrat } from "next/font/google";
-import { spacingGenerated } from "@/utils";
 
 export const fontConfig = Montserrat({
   subsets: ["latin"],

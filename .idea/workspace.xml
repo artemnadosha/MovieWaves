@@ -5,26 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/button/Button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/link/Link.styled.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/link/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/link/Link.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/typography/Typography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/typography/Typography.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icon/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icon/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav-link/NavLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav-link/NavLink.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/button/button.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/button/button.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/JSXTagName.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/JSXTagName.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/palette/palette.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/palette/palette.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/button.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/button.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/defaultProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/defaultProps.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/link.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/link.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/separation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/separation.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +36,12 @@
         <option value="TSX and SCSS" />
         <option value="TypeScript JSX File" />
         <option value="Route NextJS.ts.child.0" />
-        <option value="Styled Components" />
         <option value="Route NextJS" />
         <option value="TSX and Styled Component.tsx.child.0" />
         <option value="TSX and Styled Component.tsx.child.1" />
         <option value="TSX and Styled Component" />
+        <option value="Styled Components.ts.child.0" />
+        <option value="Styled Components" />
       </list>
     </option>
   </component>
@@ -59,23 +56,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/skyfull/Рабочий стол/next-js-project-app/public",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/usr/lib/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "/home/skyfull/Рабочий стол/next-js-project-app/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/skyfull/Рабочий стол/next-js-project-app/public&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/lib/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/skyfull/Рабочий стол/next-js-project-app/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -102,7 +99,9 @@
       <workItem from="1689672844573" duration="26919000" />
       <workItem from="1689759308121" duration="17838000" />
       <workItem from="1689787934101" duration="4479000" />
-      <workItem from="1689849496583" duration="19419000" />
+      <workItem from="1689849496583" duration="19895000" />
+      <workItem from="1689934044727" duration="2248000" />
+      <workItem from="1689939235373" duration="10581000" />
     </task>
     <servers />
   </component>

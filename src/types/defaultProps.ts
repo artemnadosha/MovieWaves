@@ -9,8 +9,12 @@ export interface StylesColorProps {
   color?: PaletteName;
 }
 
-export interface StylesVariantProps {
+export interface StylesVariantButtonLinkProps {
   variant?: "contained" | "outlined" | "text";
+}
+
+export interface StylesVariantCheckboxProps {
+  variant?: "contained" | "outlined";
 }
 
 export interface StylesSizeProps {
