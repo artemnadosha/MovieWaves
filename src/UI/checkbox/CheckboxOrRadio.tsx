@@ -1,12 +1,17 @@
-import { CheckboxProps } from "@/types";
+import { CheckboxOrRadioProps } from "@/types";
 import {
   CheckboxWrapper,
   IconCheckboxWrapper,
   InputCheckbox,
-} from "@/UI/checkbox/Checkbox.styled";
+} from "./Checkbox.styled";
 import { FC, useState } from "react";
 
-const Checkbox: FC<CheckboxProps> = ({ name, checked, ...rest }) => {
+const CheckboxOrRadio: FC<CheckboxOrRadioProps> = ({
+  name,
+  checked,
+  type,
+  ...rest
+}) => {
   const [isChecked, setIsChecked] = useState(checked || false);
 
   return (
@@ -14,11 +19,12 @@ const Checkbox: FC<CheckboxProps> = ({ name, checked, ...rest }) => {
       {...rest}
       checked={isChecked}
       name={name}
+      type={type}
       aria-checked={isChecked}
     >
       <IconCheckboxWrapper active={isChecked} />
       <InputCheckbox
-        type="checkbox"
+        type={type}
         name={name}
         checked={isChecked}
         onChange={() => setIsChecked((prev) => !prev)}
@@ -27,4 +33,4 @@ const Checkbox: FC<CheckboxProps> = ({ name, checked, ...rest }) => {
   );
 };
 
-export default Checkbox;
+export default CheckboxOrRadio;

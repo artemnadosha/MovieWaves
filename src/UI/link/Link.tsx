@@ -33,10 +33,8 @@ const Link = styled(
 )(({ variant, size, iconEnd, iconStart, sx, radius, color, href }) => {
   const pathname = usePathname();
 
-  const buttonStyles = buttonConfig({});
-
   return {
-    ...(buttonStyles.defaultStyles as {}),
+    ...(buttonConfig.defaultStyles as {}),
 
     gap: iconEnd || iconStart ? "8px" : "",
 
@@ -46,7 +44,7 @@ const Link = styled(
       active: pathname === href,
     }),
     ...separation.sizeButton({ size }),
-    borderRadius: radius?.toString() || buttonStyles.borderRadius,
+    borderRadius: radius?.toString() || buttonConfig.borderRadius,
     ...(sx as {}),
   };
 });

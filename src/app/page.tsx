@@ -1,5 +1,5 @@
 "use client";
-import { Box, Checkbox } from "@/UI";
+import { Box, CheckboxOrRadio, LabelledInputField } from "@/UI";
 
 export default function Home() {
   const fun = (e: any) => {
@@ -17,19 +17,27 @@ export default function Home() {
   return (
     <Box>
       <form onSubmit={fun}>
-        <Checkbox color="secondary" name="test1" />
-        <Checkbox
-          color="primary"
-          variant="outlined"
-          size="medium"
-          name="test2"
-        />
-        <Checkbox
-          color="primary"
-          variant="outlined"
-          size="large"
-          name="test3"
-        />
+        <label>
+          <LabelledInputField
+            name="test"
+            label="test1"
+            color="secondary"
+            variant="outlined"
+          />
+
+          <LabelledInputField
+            name="test"
+            label="test2"
+            color="primary"
+            size="medium"
+          />
+          <LabelledInputField
+            name="test"
+            label="test3"
+            color="primary"
+            size="large"
+          />
+        </label>
         <button type={"submit"}></button>
       </form>
     </Box>

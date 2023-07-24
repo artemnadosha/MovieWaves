@@ -1,1 +1,1 @@
-export { buttonConfig } from "./button.config";
+export { buttonColorConfig, buttonConfig } from "./buttonColorConfig";

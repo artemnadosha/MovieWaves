@@ -7,25 +7,43 @@ interface ButtonConfigProps {
   active?: boolean;
 }
 
-export const buttonConfig = ({ color, active }: ButtonConfigProps) => {
+export const buttonConfig = {
+  defaultStyles: {
+    fontFamily: "inherit",
+    border: "none",
+    outline: "none",
+    margin: 0,
+    userSelect: "none",
+    cursor: "pointer",
+    transition: ".25s",
+    textDecoration: "none",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  size: {
+    small: {
+      ...typographyConfig.variant.p,
+      padding: "4px 10px",
+    },
+    medium: {
+      ...typographyConfig.variant.h6,
+      padding: "6px 16px",
+    },
+    large: {
+      ...typographyConfig.variant.h5,
+      padding: "8px 22px",
+    },
+  },
+  borderRadius: unitSizeConfig.borderRadius,
+};
+
+export const buttonColorConfig = ({ color, active }: ButtonConfigProps) => {
   const activeColor = active
     ? paletteConfig[color || "primary"].dark
     : paletteConfig[color || "primary"].main;
 
   return {
-    defaultStyles: {
-      fontFamily: "inherit",
-      border: "none",
-      outline: "none",
-      margin: 0,
-      userSelect: "none",
-      cursor: "pointer",
-      transition: ".25s",
-      textDecoration: "none",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-    },
     variant: {
       contained: {
         color: paletteConfig[color || "primary"].contrastText,
@@ -70,20 +88,5 @@ export const buttonConfig = ({ color, active }: ButtonConfigProps) => {
         },
       },
     },
-    size: {
-      small: {
-        ...typographyConfig.variant.p,
-        padding: "4px 10px",
-      },
-      medium: {
-        ...typographyConfig.variant.h6,
-        padding: "6px 16px",
-      },
-      large: {
-        ...typographyConfig.variant.h5,
-        padding: "8px 22px",
-      },
-    },
-    borderRadius: unitSizeConfig.borderRadius,
   };
 };

@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import { IconCheckbox } from "@/assets/icon";
-import { CheckboxProps } from "@/types";
-import { checkboxConfig } from "@/theme";
+import { CheckboxOrRadioProps } from "@/types";
+import { checkboxColorConfig, checkboxOrRadioConfig } from "@/theme";
 import { separation } from "@/utils";
 
 export const CheckboxWrapper = styled.span.withConfig({
-  shouldForwardProp: (props) => !["color", "variant", "size"].includes(props),
-})<CheckboxProps>(({ color, variant, size, checked }) => {
-  const checkboxStyles = checkboxConfig({});
-
+  shouldForwardProp: (props) =>
+    !["color", "variant", "size", "type"].includes(props),
+})<CheckboxOrRadioProps>(({ color, variant, type, size, checked }) => {
   return {
-    ...(checkboxStyles.defaultStyles as {}),
+    ...(checkboxOrRadioConfig.defaultStyles as {}),
     ...separation.variantCheckbox({ variant, color, active: checked }),
-    ...separation.sizeCheckbox({ size }),
+    ...separation.sizeCheckboxOrRadio({ size }),
+    borderRadius: checkboxColorConfig({ type }).borderRadius,
   };
 });
 

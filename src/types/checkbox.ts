@@ -5,10 +5,11 @@ import {
   StylesVariantCheckboxProps,
 } from "@/types/defaultProps";
 
-export interface CheckboxProps
-  extends Omit<InputHTMLAttributes<HTMLInputElement>, "size">,
+export interface CheckboxOrRadioProps
+  extends Omit<InputHTMLAttributes<HTMLInputElement>, "size" | "type">,
     StylesVariantCheckboxProps,
     StylesSizeProps {
   color?: keyof PaletteConfigTypes;
+  type: "checkbox" | "radio";
   name: string;
 }

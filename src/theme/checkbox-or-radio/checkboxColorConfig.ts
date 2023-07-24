@@ -1,33 +1,51 @@
 import { paletteConfig, PaletteConfigTypes, typographyConfig } from "@/theme";
-import { hexToRGBA } from "@/utils";
 import { unitSizeConfig } from "@/theme/unit-size.config";
 
 interface CheckboxConfigProps {
   color?: keyof PaletteConfigTypes;
   active?: boolean;
+  type?: "checkbox" | "radio";
 }
 
-export const checkboxConfig = ({ color, active }: CheckboxConfigProps) => {
-  return {
-    defaultStyles: {
-      display: "inline-flex",
-      alignItems: "center",
-      justifyContent: "center",
-      position: "relative",
-      boxSizing: "border-box",
-      WebkitTapHighlightColor: "transparent",
-      backgroundColor: "transparent",
-      outline: "none",
-      margin: "0",
-      cursor: "pointer",
-      userSelect: "none",
-      verticalAlign: "middle",
-      appearance: "none",
-      textDecoration: "none",
-      transition: "0.25s",
-      borderRadius: "2px",
-      border: "1px solid",
+export const checkboxOrRadioConfig = {
+  defaultStyles: {
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "relative",
+    boxSizing: "border-box",
+    WebkitTapHighlightColor: "transparent",
+    backgroundColor: "transparent",
+    outline: "none",
+    margin: "0",
+    cursor: "pointer",
+    userSelect: "none",
+    verticalAlign: "middle",
+    appearance: "none",
+    textDecoration: "none",
+    transition: "0.25s",
+    border: "1px solid",
+  },
+  size: {
+    small: {
+      ...typographyConfig.variant.p,
     },
+    medium: {
+      ...typographyConfig.variant.h6,
+    },
+    large: {
+      ...typographyConfig.variant.h5,
+    },
+  },
+};
+
+export const checkboxColorConfig = ({
+  color,
+  active,
+  type,
+}: CheckboxConfigProps) => {
+  console.log(type);
+  return {
     variant: {
       contained: {
         color: paletteConfig[color || "primary"].contrastText,
@@ -78,35 +96,10 @@ export const checkboxConfig = ({ color, active }: CheckboxConfigProps) => {
             : paletteConfig[color || "primary"].main,
         },
       },
-      text: {
-        color: "",
-        background: "transparent",
-
-        "&:hover": {
-          background: !active
-            ? hexToRGBA(paletteConfig[color || "primary"].light, 0.3)
-            : "",
-          color: !active ? paletteConfig[color || "primary"].main : "",
-        },
-        "&:active": {
-          background: !active
-            ? hexToRGBA(paletteConfig[color || "primary"].light, 0.3)
-            : "",
-          color: !active ? paletteConfig[color || "primary"].main : "",
-        },
-      },
     },
-    size: {
-      small: {
-        ...typographyConfig.variant.p,
-      },
-      medium: {
-        ...typographyConfig.variant.h6,
-      },
-      large: {
-        ...typographyConfig.variant.h5,
-      },
-    },
-    borderRadius: unitSizeConfig.borderRadius,
+    borderRadius:
+      type === "checkbox"
+        ? unitSizeConfig.borderRadiusCheckbox
+        : unitSizeConfig.borderRadiusRadio,
   };
 };

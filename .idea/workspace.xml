@@ -5,21 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme/checkbox-or-radio/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/checkbox/Checkbox.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/checkbox/Checkbox.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/checkbox/Checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/checkbox/CheckboxOrRadio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/checkbox/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/checkbox/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI/link/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/link/Link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/typography/Typography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/typography/Typography.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icon/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icon/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav-link/NavLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav-link/NavLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/button/button.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/button/buttonColorConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/button/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/button/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/checkbox/checkbox.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/checkbox-or-radio/checkboxColorConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/checkbox/index.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/theme/palette/palette.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/palette/palette.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/button.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/button.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/defaultProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/defaultProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/theme/unit-size.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/unit-size.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/checkbox.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/checkbox.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/link.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/link.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/separation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/separation.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +42,11 @@
         <option value="TypeScript JSX File" />
         <option value="Route NextJS.ts.child.0" />
         <option value="Route NextJS" />
+        <option value="Styled Components.ts.child.0" />
+        <option value="Styled Components" />
         <option value="TSX and Styled Component.tsx.child.0" />
         <option value="TSX and Styled Component.tsx.child.1" />
         <option value="TSX and Styled Component" />
-        <option value="Styled Components.ts.child.0" />
-        <option value="Styled Components" />
       </list>
     </option>
   </component>
@@ -102,6 +107,8 @@
       <workItem from="1689849496583" duration="19895000" />
       <workItem from="1689934044727" duration="2248000" />
       <workItem from="1689939235373" duration="10581000" />
+      <workItem from="1690054658751" duration="478000" />
+      <workItem from="1690216389574" duration="4088000" />
     </task>
     <servers />
   </component>
