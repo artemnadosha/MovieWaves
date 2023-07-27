@@ -1,6 +1,0 @@
-export { Typography } from "./typography";
-export { Link } from "./link";
-export { Box } from "./box";
-export { IconBox } from "./icon-box";
-export { CheckboxOrRadio } from "./checkbox";
-export { LabelledInputField } from "./labelled-input-field";
