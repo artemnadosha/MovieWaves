@@ -1,7 +1,7 @@
 import { usePathname } from "next/navigation";
 import styled from "styled-components";
 import NextLink from "next/link";
-import { MyLinkProps } from "./Link.type";
+import { MyLinkProps } from "../Link.type";
 import { IconBox } from "@/UI-kit";
 import { buttonConfig } from "@/UI-kit/theme";
 import { separation } from "@/UI-kit/utils";
@@ -38,7 +38,7 @@ const Link = styled(
 
     gap: iconEnd || iconStart ? "8px" : "",
 
-    ...separation.variantButton({
+    ...separation.variantLink({
       variant: variant || "text",
       color,
       active: pathname === href,

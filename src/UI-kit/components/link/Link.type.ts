@@ -3,21 +3,39 @@ import { AnchorHTMLAttributes, CSSProperties, PropsWithChildren } from "react";
 import {
   ColorKeysProps,
   DefaultProps,
+  DirectionHorizontalVerticalProps,
   IconProps,
+  OrientingProps,
   RadiusProps,
   SizeProps,
-  VariantButtonLink,
+  SpacingPaddingOrMargin,
+  SpacingProps,
+  VariantLink,
 } from "@/UI-kit/types";
 
 export interface MyLinkProps
   extends DefaultProps,
     Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "color">,
     LinkProps,
-    VariantButtonLink,
+    VariantLink,
     SizeProps,
     IconProps,
     RadiusProps,
     ColorKeysProps,
+    SpacingPaddingOrMargin,
     PropsWithChildren {
   href: string;
+}
+
+export type LinkSingleType = IconProps & {
+  label: string | number;
+  href: string;
+};
+
+export interface LinkGroupProps
+  extends Omit<MyLinkProps, "href">,
+    DirectionHorizontalVerticalProps,
+    OrientingProps,
+    SpacingProps {
+  dataLink?: LinkSingleType[];
 }

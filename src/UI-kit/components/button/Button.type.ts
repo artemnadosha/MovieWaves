@@ -5,16 +5,15 @@ import {
   IconProps,
   RadiusProps,
   SizeProps,
-  VariantButtonLink,
+  VariantButton,
 } from "@/UI-kit/types";
 
 export interface ButtonProps
   extends DefaultProps,
-    VariantButtonLink,
+    VariantButton,
     SizeProps,
     PropsWithChildren,
     ColorKeysProps,
     IconProps,
-    ColorKeysProps,
     RadiusProps,
     Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color"> {}

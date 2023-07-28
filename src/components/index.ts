@@ -1,2 +1,2 @@
-export { Sidebar, Navigation } from "./feature";
+export { Sidebar } from "./feature";
 export { Logo } from "./UI";

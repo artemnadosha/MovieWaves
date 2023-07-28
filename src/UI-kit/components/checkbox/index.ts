@@ -1,1 +1,1 @@
-export { default as CheckboxOrRadio } from "./CheckboxOrRadio.type";
+export { default as CheckboxOrRadio } from "./CheckboxOrRadio";

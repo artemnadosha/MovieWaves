@@ -11,37 +11,37 @@ export const fontConfig = Montserrat({
 export const typographyConfig = {
   variant: {
     h1: {
-      fontSize: "64px",
-      fontWeight: 700,
-      lineHeight: 1,
-    },
-    h2: {
       fontSize: "48px",
       fontWeight: 700,
       lineHeight: 1,
     },
-    h3: {
+    h2: {
       fontSize: "36px",
+      fontWeight: 700,
+      lineHeight: 1,
+    },
+    h3: {
+      fontSize: "30px",
       fontWeight: 600,
       lineHeight: 1,
     },
     h4: {
-      fontSize: "30px",
-      fontWeight: 500,
-      lineHeight: 1,
-    },
-    h5: {
       fontSize: "28px",
       fontWeight: 500,
       lineHeight: 1,
     },
+    h5: {
+      fontSize: "24px",
+      fontWeight: 500,
+      lineHeight: 1,
+    },
     h6: {
-      fontSize: "26px",
+      fontSize: "20px",
       fontWeight: 400,
       lineHeight: 1,
     },
     p: {
-      fontSize: "24px",
+      fontSize: "18px",
       fontWeight: 400,
       lineHeight: 1,
     },

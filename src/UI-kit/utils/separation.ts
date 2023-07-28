@@ -3,20 +3,27 @@ import {
   buttonConfig,
   checkboxColorConfig,
   checkboxOrRadioConfig,
+  linkColorConfig,
   PaletteConfigTypes,
 } from "../theme";
 import {
-  StylesSizeProps,
-  StylesVariantButtonLinkProps,
-  StylesVariantCheckboxProps,
+  SizeProps,
+  VariantButton,
+  VariantCheckbox,
+  VariantLink,
 } from "../types";
 
-type SeparationVariantButtonType = StylesVariantButtonLinkProps & {
+type SeparationVariantButtonType = VariantButton & {
   color?: keyof PaletteConfigTypes;
   active?: boolean;
 };
 
-type SeparationVariantCheckboxType = StylesVariantCheckboxProps & {
+type SeparationVariantLinkType = VariantLink & {
+  color?: keyof PaletteConfigTypes;
+  active?: boolean;
+};
+
+type SeparationVariantCheckboxType = VariantCheckbox & {
   color?: keyof PaletteConfigTypes;
   active?: boolean;
 };
@@ -26,22 +33,29 @@ const variantButton = ({
   color,
   active,
 }: SeparationVariantButtonType) => {
-  if (variant === "outlined")
-    return buttonColorConfig({ color, active }).variant.outlined;
-  if (variant === "text")
-    return buttonColorConfig({ color, active }).variant.text;
+  const separation = buttonColorConfig({ color, active });
 
-  return buttonColorConfig({ color, active }).variant.contained;
+  if (variant === "outlined") return separation.variant.outlined;
+  if (variant === "text") return separation.variant.text;
+
+  return separation.variant.contained;
 };
 
-const sizeButton = ({ size }: StylesSizeProps) => {
+const sizeButton = ({ size }: SizeProps) => {
   if (size === "small") return buttonConfig.size.small;
   if (size === "large") return buttonConfig.size.large;
 
   return buttonConfig.size.medium;
 };
 
-const sizeCheckboxOrRadio = ({ size }: StylesSizeProps) => {
+const variantLink = ({ variant, color, active }: SeparationVariantLinkType) => {
+  if (variant !== "tab") {
+    return variantButton({ color, active, variant });
+  }
+  return linkColorConfig({ active, color }).variant.tab;
+};
+
+const sizeCheckboxOrRadio = ({ size }: SizeProps) => {
   if (size === "large") return checkboxOrRadioConfig.size.large;
   if (size === "medium") return checkboxOrRadioConfig.size.medium;
 
@@ -53,14 +67,16 @@ const variantCheckbox = ({
   color,
   active,
 }: SeparationVariantCheckboxType) => {
-  if (variant === "outlined")
-    return checkboxColorConfig({ color, active }).variant.outlined;
+  const separation = checkboxColorConfig({ color, active });
 
-  return checkboxColorConfig({ color, active }).variant.contained;
+  if (variant === "outlined") return separation.variant.outlined;
+
+  return separation.variant.contained;
 };
 
 export const separation = {
   variantButton,
+  variantLink,
   sizeButton,
   variantCheckbox,
   sizeCheckboxOrRadio,

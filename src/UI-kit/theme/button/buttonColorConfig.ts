@@ -4,7 +4,7 @@ import {
   typographyConfig,
 } from "@/UI-kit/theme";
 import { unitSizeConfig } from "@/UI-kit/theme/unit-size.config";
-import { hexToRGBA } from "../../utils";
+import { hexToRGBA } from "@/UI-kit/utils";
 
 interface ButtonConfigProps {
   color?: keyof PaletteConfigTypes;
@@ -28,15 +28,15 @@ export const buttonConfig = {
   size: {
     small: {
       ...typographyConfig.variant.p,
-      padding: "4px 10px",
+      padding: "10px",
     },
     medium: {
       ...typographyConfig.variant.h6,
-      padding: "6px 16px",
+      padding: "16px",
     },
     large: {
       ...typographyConfig.variant.h5,
-      padding: "8px 22px",
+      padding: "22px",
     },
   },
   borderRadius: unitSizeConfig.borderRadius,

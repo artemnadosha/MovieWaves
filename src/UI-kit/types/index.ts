@@ -12,7 +12,8 @@ export type {
 } from "./ComponetProps";
 
 export type {
-  VariantButtonLink,
+  VariantButton,
+  VariantLink,
   VariantCheckbox,
   VariantTypography,
 } from "./VariantProps";
@@ -30,3 +31,5 @@ export type {
   OrientingProps,
 } from "./CSSPropertiesProps";
 export type { TypeCheckboxOrRadioProps } from "./TypeProps";
+
+export type { DirectionHorizontalVerticalProps } from "./DirectionProps";

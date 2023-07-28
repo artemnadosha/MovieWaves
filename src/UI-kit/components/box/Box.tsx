@@ -39,9 +39,8 @@ const Box = styled(
     return {
       width: "100%",
       height: "100%",
-      padding:
-        (spacingPadding && spacingPaddingMarginFunc(spacingPadding)) ||
-        spacingPaddingMarginFunc(1),
+
+      padding: spacingPadding && spacingPaddingMarginFunc(spacingPadding),
       margin: spacingMargin && spacingPaddingMarginFunc(spacingMargin),
 
       color:
@@ -56,8 +55,8 @@ const Box = styled(
 
       display: "flex",
       flexDirection: direction || "column",
-      justifyContent: justifyContent || sx?.justifyContent || "center",
-      alignItems: alignItems || sx?.alignItems || "center",
+      justifyContent: justifyContent || sx?.justifyContent,
+      alignItems: alignItems || sx?.alignItems,
       gap:
         spacing && typeof spacing === "string"
           ? spacing
