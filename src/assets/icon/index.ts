@@ -4,3 +4,7 @@ export { default as IconHome } from "./IconHome.svg";
 export { default as IconPlay } from "./IconPlay.svg";
 export { default as IconForward } from "./IconForward.svg";
 export { default as IconHeart } from "./IconHeart.svg";
+export { default as IconLogout } from "./IconLogout.svg";
+export { default as IconHelp } from "./IconHelp.svg";
+export { default as IconSun } from "./IconSun.svg";
+export { default as IconMoon } from "./IconMoon.svg";

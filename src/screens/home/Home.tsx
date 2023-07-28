@@ -6,7 +6,7 @@ import { Sidebar } from "@/components";
 interface HomeProps {}
 
 const Home: FC<HomeProps> = () => {
-  return <Sidebar />;
+  return <></>;
 };
 
 export default Home;

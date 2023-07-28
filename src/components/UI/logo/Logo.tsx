@@ -5,7 +5,7 @@ interface LogoProps {}
 
 const Logo: FC<LogoProps> = () => {
   return (
-    <Typography component="h1" variant="h1" color="text.contrastText">
+    <Typography component="h1" variant="h3">
       MovieWaves
     </Typography>
   );

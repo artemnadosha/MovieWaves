@@ -1,14 +1,11 @@
 "use client";
 import { ChangeEvent, FC, useState } from "react";
-import {
-  CheckboxWrapper,
-  IconCheckboxWrapper,
-  InputCheckbox,
-} from "./Checkbox.styled";
+import { CheckboxWrapper, IconCheckboxWrapper } from "./Checkbox.styled";
 import { CheckboxOrRadioProps } from "./CheckboxOrRadio.type";
+import { HiddenInput } from "@/UI-kit";
 
 const CheckboxOrRadio: FC<CheckboxOrRadioProps> = (props) => {
-  const { onControlled, onChange, checked, ...rest } = props;
+  const { onControlled, onChange, checked, type, ...rest } = props;
 
   const [isChecked, setIsChecked] = useState(false);
 
@@ -19,9 +16,9 @@ const CheckboxOrRadio: FC<CheckboxOrRadioProps> = (props) => {
   };
 
   return (
-    <CheckboxWrapper {...rest} checked={isChecked}>
+    <CheckboxWrapper {...rest} type={type} checked={isChecked}>
       <IconCheckboxWrapper active={isChecked} />
-      <InputCheckbox {...props} onChange={handleChange} />
+      <HiddenInput type={type} onChange={handleChange} />
     </CheckboxWrapper>
   );
 };

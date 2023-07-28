@@ -6,26 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/box/Box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/box/Box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/button/Button.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/button/Button.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/checkbox/Checkbox.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/checkbox/Checkbox.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/checkbox/CheckboxOrRadio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/checkbox/CheckboxOrRadio.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/checkbox/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/checkbox/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/link/link-item/Link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/Link.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/link/Link.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/link/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/link-group/LinkGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/link/link-group/LinkGroup.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/button/buttonColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/button/buttonColorConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/typography.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/typography.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/types/VariantProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/VariantProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/utils/separation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/utils/separation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/palette.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/palette.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/icon/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icon/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/nav-link/NavLink.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/nav-link/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/logo/Logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/logo/Logo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/feature/sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/sidebar/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/layaout-main/LayoutMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/layaout-main/LayoutMain.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +35,10 @@
         <option value="Route NextJS.ts.child.0" />
         <option value="Styled Components.ts.child.0" />
         <option value="Styled Components" />
+        <option value="Route NextJS" />
         <option value="TSX and Styled Component.tsx.child.0" />
         <option value="TSX and Styled Component.tsx.child.1" />
         <option value="TSX and Styled Component" />
-        <option value="Route NextJS" />
       </list>
     </option>
   </component>
@@ -83,11 +75,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/UI-kit/components" />
+      <recent name="$PROJECT_DIR$/src/UI-kit/components/checkbox" />
       <recent name="$PROJECT_DIR$/src/UI-kit/components/link/link-item" />
       <recent name="$PROJECT_DIR$/src/UI-kit/components/link" />
-      <recent name="$PROJECT_DIR$/src/UI-kit/components/checkbox" />
       <recent name="$PROJECT_DIR$/src/UI-kit/components/button" />
-      <recent name="$PROJECT_DIR$/src/UI-kit/components/typography" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -113,7 +105,7 @@
       <workItem from="1690292537315" duration="5418000" />
       <workItem from="1690366025292" duration="5429000" />
       <workItem from="1690453634678" duration="5725000" />
-      <workItem from="1690537789354" duration="7538000" />
+      <workItem from="1690537789354" duration="15574000" />
     </task>
     <servers />
   </component>
