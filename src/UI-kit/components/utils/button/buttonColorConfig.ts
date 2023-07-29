@@ -1,12 +1,5 @@
-import {
-  paletteLightConfig,
-  PaletteConfigType,
-  typographyConfig,
-  ThemeType,
-} from "@/UI-kit/theme";
-import { unitSizeConfig } from "@/UI-kit/theme/unit-size/unitSize.config";
+import { PaletteConfigType, ThemeType } from "@/UI-kit/theme";
 import { hexToRGBA } from "@/UI-kit/utils";
-import { CSSProperties } from "react";
 
 interface ButtonConfigProps {
   color?: keyof PaletteConfigType;

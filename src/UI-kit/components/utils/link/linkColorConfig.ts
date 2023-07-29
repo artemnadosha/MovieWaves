@@ -1,8 +1,4 @@
-import {
-  paletteLightConfig,
-  PaletteConfigType,
-  ThemeType,
-} from "@/UI-kit/theme";
+import { PaletteConfigType, ThemeType } from "@/UI-kit/theme";
 
 interface LinkColorConfigProps {
   color?: keyof PaletteConfigType;

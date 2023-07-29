@@ -1,5 +1,5 @@
 import { PaletteName } from "@/UI-kit/theme";
-import { CheckboxOrRadioProps } from "@/UI-kit/components/checkbox/CheckboxOrRadio.type";
+import { CheckboxOrRadioProps } from "@/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.type";
 
 export interface LabelledInputFieldProps extends CheckboxOrRadioProps {
   label: string;

@@ -1,4 +1,3 @@
-import { typographyConfig } from "@/UI-kit/theme";
 import { TypographyVariantType } from "@/UI-kit/theme/typography";
 import { CSSProperties } from "react";
 

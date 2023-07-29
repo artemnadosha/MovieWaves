@@ -6,21 +6,19 @@ const LinkGroup: FC<LinkGroupProps> = ({
   spacing,
   direction,
   sx,
-  color,
   ...rest
 }) => {
   return (
     <Box direction={direction} spacing={spacing} sx={sx}>
       {dataLink?.map(({ label, href, iconStart, iconEnd }) => (
         <Link
-          color={color}
           key={label}
           href={href}
-          {...rest}
           variant="tab"
           size="small"
           iconEnd={iconEnd}
           iconStart={iconStart}
+          {...rest}
         >
           {label}
         </Link>

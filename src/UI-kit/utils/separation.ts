@@ -9,8 +9,7 @@ import {
   buttonColorConfig,
   checkboxColorConfig,
   linkColorConfig,
-} from "@/UI-kit/components/theme-styles-components";
-import { CSSProperties } from "react";
+} from "@/UI-kit/components/utils";
 
 type CommonVariant = {
   color?: keyof PaletteConfigType;
@@ -38,7 +37,7 @@ const variantButton = ({
   return separation.contained;
 };
 
-const sizeButton = ({ size, theme }: SizeProps) => {
+const sizeButton = ({ size, theme }: SizeProps & { theme: ThemeType }) => {
   const sizePath = theme.size;
 
   if (size === "small") return sizePath.small;
@@ -59,7 +58,10 @@ const variantLink = ({
   return linkColorConfig({ active, color, theme }).tab;
 };
 
-const sizeCheckboxOrRadio = ({ size, theme }: SizeProps) => {
+const sizeCheckboxOrRadio = ({
+  size,
+  theme,
+}: SizeProps & { theme: ThemeType }) => {
   const pathSize = theme.size;
 
   if (size === "large") return pathSize.large;

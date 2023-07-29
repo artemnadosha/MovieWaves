@@ -5,39 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/UI-kit/theme/unit-size/unitSize.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/box/Box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/box/Box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/checkbox/Checkbox.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/checkbox/Checkbox.styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/Link.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/link/Link.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/link-group/LinkGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/link/link-group/LinkGroup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/link-item/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/link/link-item/Link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/switch/Switch.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/switch/Switch.styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/switch/Switch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/switch/Switch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/typography/Typography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/typography/Typography.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/button/button.config.types.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/button/buttonColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/button/buttonColorConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/button/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/button/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/checkbox-or-radio/checkboxColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/checkbox-or-radio/checkboxColorConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/checkbox-or-radio/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/checkbox-or-radio/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/link/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/link/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/link/linkColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/link/linkColorConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/palette.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteLight.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/palette.config.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteConfigType.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/typography.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/typography/typography.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/unit-size.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/types/ColorProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/ColorProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/utils/getColorPath.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/utils/getColorPath.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/box/Box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/box/Box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/box/Box.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/box/Box.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/box/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/box/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/button/Button.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/button/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/button/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/checkbox/Checkbox.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/checkbox/CheckboxOrRadio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/checkbox/CheckboxOrRadio.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/checkbox/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/hidden-input/HiddenInput.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/hidden-input/HiddenInput.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/hidden-input/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/hidden-input/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/icon-box/IconBox.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/icon-box/IconBox.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/icon-box/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/icon-box/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/labelled-input-field/LabelledInputField.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/labelled-input-field/LabelledInputField.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/labelled-input-field/LabelledInputField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/labelled-input-field/LabelledInputField.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/labelled-input-field/LablledInputField.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/labelled-input-field/LablledInputField.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/labelled-input-field/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/labelled-input-field/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/Link.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/link/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/link-group/LinkGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/link-group/LinkGroup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/link-group/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/link-group/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/link-item/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/link/link-item/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/switch/Switch.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/switch/Switch.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/switch/Switch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/switch/Switch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/switch/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/switch/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/switch/switch.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/switch/switch.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/button/buttonColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/button/buttonColorConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/button/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/button/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/checkbox-or-radio/checkboxColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/checkbox-or-radio/checkboxColorConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/checkbox-or-radio/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/checkbox-or-radio/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/link/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/link/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components/link/linkColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/link/linkColorConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/typography/Typography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/typography/Typography.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/typography/Typography.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/typography/Typography.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/typography/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/typography/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/size/size.config.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/size/size.config.type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/utils/separation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/utils/separation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/utils/spacingGenerated.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/utils/spacingGenerated.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/utils/spacingPaddingMarginFunc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/utils/spacingPaddingMarginFunc.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/registry.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/sidebar/Sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,11 +109,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/UI-kit" />
-      <recent name="$PROJECT_DIR$/src/UI-kit/components/theme-styles-components" />
-      <recent name="$PROJECT_DIR$/src/UI-kit/theme/typography" />
-      <recent name="$PROJECT_DIR$/src/UI-kit/theme/unit-size" />
+      <recent name="$PROJECT_DIR$/src/UI-kit/components/UI/link" />
+      <recent name="$PROJECT_DIR$/src/UI-kit/components/feature" />
+      <recent name="$PROJECT_DIR$/src/UI-kit/components/utils" />
+      <recent name="$PROJECT_DIR$/src/UI-kit/components/UI" />
+      <recent name="$PROJECT_DIR$/src/UI-kit/components" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -136,11 +145,22 @@
       <workItem from="1690630291608" duration="395000" />
       <workItem from="1690630696983" duration="365000" />
       <workItem from="1690631068523" duration="92000" />
-      <workItem from="1690631167327" duration="11254000" />
+      <workItem from="1690631167327" duration="16019000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

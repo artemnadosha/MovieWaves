@@ -2,10 +2,7 @@ import styled from "styled-components";
 import { ButtonProps } from "./Button.type";
 import { IconBox } from "@/UI-kit";
 import { separation } from "@/UI-kit/utils";
-import {
-  buttonColorConfig,
-  buttonConfig,
-} from "@/UI-kit/components/theme-styles-components";
+import { buttonColorConfig, buttonConfig } from "@/UI-kit/components/utils";
 
 const Button = styled(
   ({

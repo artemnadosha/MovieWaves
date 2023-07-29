@@ -26,16 +26,3 @@ export interface MyLinkProps
     PropsWithChildren {
   href: string;
 }
-
-export type LinkSingleType = IconProps & {
-  label: string | number;
-  href: string;
-};
-
-export interface LinkGroupProps
-  extends Omit<MyLinkProps, "href">,
-    DirectionHorizontalVerticalProps,
-    OrientingProps,
-    SpacingProps {
-  dataLink?: LinkSingleType[];
-}
