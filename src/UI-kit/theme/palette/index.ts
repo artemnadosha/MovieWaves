@@ -1,6 +1,7 @@
 export type {
   PaletteType,
-  PaletteConfigTypes,
+  PaletteConfigType,
   PaletteName,
-} from "./palette.config.types";
-export { paletteConfig } from "./palette.config";
+} from "./paletteConfigType";
+export { paletteLightConfig } from "./paletteLight.config";
+export { paletteDarkConfig } from "./paletteDark.config";

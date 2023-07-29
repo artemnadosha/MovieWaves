@@ -5,7 +5,7 @@ export type PaletteType = {
   contrastText: string;
 };
 
-export type PaletteConfigTypes = {
+export type PaletteConfigType = {
   primary: PaletteType;
   secondary: PaletteType;
   text: PaletteType;
@@ -17,5 +17,5 @@ export type PaletteConfigTypes = {
 };
 
 export type PaletteName =
-  | keyof PaletteConfigTypes
-  | `${keyof PaletteConfigTypes}.${keyof PaletteType}`;
+  | keyof PaletteConfigType
+  | `${keyof PaletteConfigType}.${keyof PaletteType}`;

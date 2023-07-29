@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { TypographyProps } from "./Typography.type";
 import { getColor } from "@/UI-kit/utils";
-import { fontConfig, typographyConfig } from "@/UI-kit/theme";
 
 const Typography = styled(
   ({ component, variant, color, sx, children, ...rest }: TypographyProps) => {
@@ -9,22 +8,17 @@ const Typography = styled(
 
     return <Component {...rest}>{children}</Component>;
   }
-)(({ variant, color, sx, component }) => {
-  let stylesComponent = {};
-
-  if (sx) {
-    stylesComponent = sx;
-  }
-  const separationColor = getColor({ color });
+)(({ variant, color, sx, theme }) => {
+  const separationColor = getColor({ color, theme });
 
   return {
-    ...fontConfig.style,
-    ...typographyConfig.variant[variant],
+    ...theme.font.style,
+    ...(theme.typography[variant] as {}),
     color:
       typeof separationColor === "object"
         ? separationColor.main
         : separationColor,
-    ...stylesComponent,
+    ...(sx as {}),
   };
 });
 

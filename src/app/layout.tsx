@@ -1,8 +1,8 @@
 import { FC, PropsWithChildren } from "react";
 import "./globals.css";
 import { fontConfig } from "@/UI-kit/theme";
-import StyledComponentsRegistry from "@/app/registry";
 import { LayoutMain } from "../screens";
+import { StyledComponentsRegistry, StyledThemeProvider } from "@/providers";
 
 export const metadata = {
   title: "Films",
@@ -13,9 +13,11 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
       <StyledComponentsRegistry>
-        <body className={fontConfig.className}>
-          <LayoutMain>{children}</LayoutMain>
-        </body>
+        <StyledThemeProvider>
+          <body className={fontConfig.className}>
+            <LayoutMain>{children}</LayoutMain>
+          </body>
+        </StyledThemeProvider>
       </StyledComponentsRegistry>
     </html>
   );

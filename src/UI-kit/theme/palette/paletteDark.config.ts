@@ -1,16 +1,16 @@
-import { PaletteConfigTypes } from "@/UI-kit/theme/palette/palette.config.types";
+import { PaletteConfigType } from "@/UI-kit/theme";
 
-export const paletteConfig: PaletteConfigTypes = {
+export const paletteDarkConfig: PaletteConfigType = {
   primary: {
-    main: "#3949AB",
-    dark: "#27367f",
-    light: "#E8EAF6",
-    contrastText: "#fff",
-  },
-  secondary: {
     main: "#ff9a00",
     dark: "#925600",
     light: "#ffc569",
+    contrastText: "#fff",
+  },
+  secondary: {
+    main: "#3949AB",
+    dark: "#27367f",
+    light: "#E8EAF6",
     contrastText: "#fff",
   },
   text: {
@@ -20,10 +20,10 @@ export const paletteConfig: PaletteConfigTypes = {
     contrastText: "#fff",
   },
   background: {
-    main: "#ffffff",
+    main: "#000",
     dark: "#ffffff",
     light: "#ffffff",
-    contrastText: "#3949AB",
+    contrastText: "#ff9a00",
   },
   border: {
     main: "#7e7e7e",

@@ -1,5 +1,5 @@
 import { LinkProps } from "next/link";
-import { AnchorHTMLAttributes, CSSProperties, PropsWithChildren } from "react";
+import { AnchorHTMLAttributes, PropsWithChildren } from "react";
 import {
   ColorKeysProps,
   DefaultProps,

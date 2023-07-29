@@ -1,77 +1,84 @@
-import {
-  buttonColorConfig,
-  buttonConfig,
-  checkboxColorConfig,
-  checkboxOrRadioConfig,
-  linkColorConfig,
-  PaletteConfigTypes,
-} from "../theme";
+import { PaletteConfigType, ThemeType } from "../theme";
 import {
   SizeProps,
   VariantButton,
   VariantCheckbox,
   VariantLink,
 } from "../types";
+import {
+  buttonColorConfig,
+  checkboxColorConfig,
+  linkColorConfig,
+} from "@/UI-kit/components/theme-styles-components";
+import { CSSProperties } from "react";
 
-type SeparationVariantButtonType = VariantButton & {
-  color?: keyof PaletteConfigTypes;
+type CommonVariant = {
+  color?: keyof PaletteConfigType;
   active?: boolean;
+  theme: ThemeType;
 };
 
-type SeparationVariantLinkType = VariantLink & {
-  color?: keyof PaletteConfigTypes;
-  active?: boolean;
-};
+type SeparationVariantButtonType = VariantButton & CommonVariant;
 
-type SeparationVariantCheckboxType = VariantCheckbox & {
-  color?: keyof PaletteConfigTypes;
-  active?: boolean;
-};
+type SeparationVariantLinkType = VariantLink & CommonVariant;
+
+type SeparationVariantCheckboxType = VariantCheckbox & CommonVariant;
 
 const variantButton = ({
   variant,
   color,
   active,
+  theme,
 }: SeparationVariantButtonType) => {
-  const separation = buttonColorConfig({ color, active });
+  const separation = buttonColorConfig({ color, active, theme });
 
-  if (variant === "outlined") return separation.variant.outlined;
-  if (variant === "text") return separation.variant.text;
+  if (variant === "outlined") return separation.outlined;
+  if (variant === "text") return separation.text;
 
-  return separation.variant.contained;
+  return separation.contained;
 };
 
-const sizeButton = ({ size }: SizeProps) => {
-  if (size === "small") return buttonConfig.size.small;
-  if (size === "large") return buttonConfig.size.large;
+const sizeButton = ({ size, theme }: SizeProps) => {
+  const sizePath = theme.size;
 
-  return buttonConfig.size.medium;
+  if (size === "small") return sizePath.small;
+  if (size === "large") return sizePath.large;
+
+  return sizePath.medium;
 };
 
-const variantLink = ({ variant, color, active }: SeparationVariantLinkType) => {
+const variantLink = ({
+  variant,
+  color,
+  active,
+  theme,
+}: SeparationVariantLinkType) => {
   if (variant !== "tab") {
-    return variantButton({ color, active, variant });
+    return variantButton({ color, active, variant, theme });
   }
-  return linkColorConfig({ active, color }).variant.tab;
+  return linkColorConfig({ active, color, theme }).tab;
 };
 
-const sizeCheckboxOrRadio = ({ size }: SizeProps) => {
-  if (size === "large") return checkboxOrRadioConfig.size.large;
-  if (size === "medium") return checkboxOrRadioConfig.size.medium;
+const sizeCheckboxOrRadio = ({ size, theme }: SizeProps) => {
+  const pathSize = theme.size;
 
-  return checkboxOrRadioConfig.size.small;
+  if (size === "large") return pathSize.large;
+  if (size === "medium") return pathSize.medium;
+
+  return pathSize.small;
 };
 
 const variantCheckbox = ({
   variant,
   color,
   active,
+  theme,
 }: SeparationVariantCheckboxType) => {
-  const separation = checkboxColorConfig({ color, active });
+  const separation = checkboxColorConfig({ color, active, theme });
 
-  if (variant === "outlined") return separation.variant.outlined;
+  if (variant === "outlined") return separation.outlined;
 
-  return separation.variant.contained;
+  return separation.contained;
 };
 
 export const separation = {

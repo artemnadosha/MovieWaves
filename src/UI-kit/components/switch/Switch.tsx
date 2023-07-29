@@ -6,6 +6,11 @@ import { SwitchProps } from "./switch.type";
 const Switch: FC<SwitchProps> = ({ iconOn, iconOff, color, onChange }) => {
   const [isChecked, setIsChecked] = useState(false);
 
+  const handleChange = () => {
+    setIsChecked((prevState) => !prevState);
+    if (onChange) onChange(isChecked);
+  };
+
   return (
     <SwitchWrapper>
       <SwitchContainer color={color} isChecked={isChecked}>
@@ -16,7 +21,7 @@ const Switch: FC<SwitchProps> = ({ iconOn, iconOff, color, onChange }) => {
       <HiddenInput
         type="checkbox"
         checked={isChecked}
-        onChange={() => setIsChecked((prevState) => !prevState)}
+        onChange={handleChange}
       />
     </SwitchWrapper>
   );

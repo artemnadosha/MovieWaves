@@ -1,8 +1,11 @@
 import styled from "styled-components";
 import { ButtonProps } from "./Button.type";
 import { IconBox } from "@/UI-kit";
-import { buttonConfig } from "@/UI-kit/theme";
 import { separation } from "@/UI-kit/utils";
+import {
+  buttonColorConfig,
+  buttonConfig,
+} from "@/UI-kit/components/theme-styles-components";
 
 const Button = styled(
   ({
@@ -27,14 +30,18 @@ const Button = styled(
       </button>
     );
   }
-)(({ variant, iconStart, iconEnd, size, radius, sx, color }) => {
+)(({ variant, iconStart, iconEnd, size, radius, sx, color, theme }) => {
   return {
-    ...(buttonConfig.defaultStyles as {}),
+    ...(buttonConfig as {}),
     gap: iconEnd || iconStart ? "8px" : "",
 
-    ...separation.variantButton({ variant: variant || "contained", color }),
-    ...separation.sizeButton({ size }),
-    borderRadius: radius?.toString() || buttonConfig.borderRadius,
+    ...(separation.variantButton({
+      variant,
+      color,
+      theme,
+    }) as {}),
+    ...(theme.size[size || "medium"] as {}),
+    borderRadius: radius?.toString(), // || buttonConfig.borderRadius,
     ...(sx as {}),
   };
 });

@@ -1,10 +1,9 @@
 import { usePathname } from "next/navigation";
 import styled from "styled-components";
 import NextLink from "next/link";
-import { MyLinkProps } from "../Link.type";
-import { IconBox } from "@/UI-kit";
-import { buttonConfig } from "@/UI-kit/theme";
+import { IconBox, MyLinkProps } from "@/UI-kit";
 import { separation } from "@/UI-kit/utils";
+import { buttonConfig } from "@/UI-kit/components/theme-styles-components";
 
 const Link = styled(
   ({
@@ -30,11 +29,11 @@ const Link = styled(
       </NextLink>
     );
   }
-)(({ variant, size, iconEnd, iconStart, sx, radius, color, href }) => {
+)(({ variant, size, iconEnd, iconStart, sx, radius, color, href, theme }) => {
   const pathname = usePathname();
 
   return {
-    ...(buttonConfig.defaultStyles as {}),
+    ...(buttonConfig as {}),
 
     gap: iconEnd || iconStart ? "8px" : "",
 
@@ -42,9 +41,11 @@ const Link = styled(
       variant: variant || "text",
       color,
       active: pathname === href,
+      theme,
     }),
-    ...separation.sizeButton({ size }),
-    borderRadius: radius?.toString() || buttonConfig.borderRadius,
+    ...(separation.sizeButton({ size, theme }) as {}),
+    borderRadius:
+      radius?.toString() || theme?.unitSize?.borderRadius?.toString(),
     ...(sx as {}),
   };
 });

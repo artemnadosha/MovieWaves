@@ -1,8 +1,11 @@
 import styled from "styled-components";
 import { IconCheckbox } from "@/assets/icon";
-import { checkboxColorConfig, checkboxOrRadioConfig } from "@/UI-kit/theme";
 import { CheckboxOrRadioProps } from "./CheckboxOrRadio.type";
 import { separation } from "@/UI-kit/utils";
+import {
+  checkboxColorConfig,
+  checkboxOrRadioConfig,
+} from "../theme-styles-components";
 
 export const CheckboxWrapper = styled.span.withConfig({
   shouldForwardProp: (props) =>

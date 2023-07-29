@@ -34,14 +34,19 @@ const Box = styled(
     spacing,
     spacingPadding,
     spacingMargin,
+    theme,
   }) => {
-    const separationColor = getColor({ color });
+    const separationColor = getColor({ color, theme });
     return {
       width: "100%",
       height: "100%",
 
-      padding: spacingPadding && spacingPaddingMarginFunc(spacingPadding),
-      margin: spacingMargin && spacingPaddingMarginFunc(spacingMargin),
+      padding:
+        spacingPadding &&
+        spacingPaddingMarginFunc({ arg: spacingPadding, theme }),
+      margin:
+        spacingMargin &&
+        spacingPaddingMarginFunc({ arg: spacingMargin, theme }),
 
       color:
         typeof separationColor === "object"
@@ -60,7 +65,7 @@ const Box = styled(
       gap:
         spacing && typeof spacing === "string"
           ? spacing
-          : spacingGenerated(spacing as number),
+          : spacingGenerated({ size: spacing as number, theme }),
 
       ...(sx as {}),
     };
