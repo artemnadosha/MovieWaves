@@ -8,4 +8,6 @@ export { Box } from "./box";
 export { Switch } from "./switch";
 export { HiddenInput } from "./hidden-input";
 export { IconBox } from "./icon-box";
+
 export { CheckboxOrRadio } from "./checkbox-or-radio";
+export type { CheckboxOrRadioProps } from "./checkbox-or-radio";

@@ -1,11 +1,5 @@
 "use client";
-import {
-  createContext,
-  PropsWithChildren,
-  useContext,
-  useEffect,
-  useState,
-} from "react";
+import { createContext, PropsWithChildren, useContext, useState } from "react";
 import { darkTheme, lightTheme, ThemeType } from "@/UI-kit";
 import { ThemeProvider } from "styled-components";
 interface ThemeContextType {

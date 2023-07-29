@@ -1,18 +1,44 @@
 import styled from "styled-components";
 import { IconCheckbox } from "@/assets/icon";
-import { CheckboxOrRadioProps } from "./CheckboxOrRadio.type";
 import { separation } from "@/UI-kit/utils";
-import { checkboxColorConfig, checkboxOrRadioConfig } from "../../utils";
+import { CheckboxOrRadioProps } from "@/UI-kit/components";
+
+export const defaultCheckboxOrRadioConfig = {
+  display: "inline-flex",
+  alignItems: "center",
+  justifyContent: "center",
+  position: "relative",
+  boxSizing: "border-box",
+  backgroundColor: "transparent",
+  outline: "none",
+  margin: "0",
+  cursor: "pointer",
+  userSelect: "none",
+  textDecoration: "none",
+  transition: "0.25s",
+  border: "1px solid",
+};
 
 export const CheckboxWrapper = styled.span.withConfig({
   shouldForwardProp: (props) =>
     !["color", "variant", "size", "type", "name"].includes(props),
-})<CheckboxOrRadioProps>(({ color, variant, type, size, checked }) => {
+})<CheckboxOrRadioProps>(({ color, variant, type, size, checked, theme }) => {
+  const separationBorderRadius = (
+    type === "checkbox"
+      ? theme.unitSize.borderRadiusCheckbox
+      : theme.unitSize.borderRadiusRadio
+  ) as string;
+
   return {
-    ...(checkboxOrRadioConfig.defaultStyles as {}),
-    ...separation.variantCheckbox({ variant, color, active: checked }),
-    ...separation.sizeCheckboxOrRadio({ size }),
-    borderRadius: checkboxColorConfig({ type }).borderRadius,
+    ...(defaultCheckboxOrRadioConfig as {}),
+    ...(separation.variantCheckbox({
+      variant,
+      color,
+      active: checked,
+      theme,
+    }) as {}),
+    ...(theme.size[size || "medium"] as {}),
+    borderRadius: separationBorderRadius,
   };
 });
 

@@ -13,7 +13,7 @@ const Typography = styled(
 
   return {
     ...theme.font.style,
-    ...(theme.typography[variant] as {}),
+    ...(theme.typography[variant || "p"] as {}),
     color:
       typeof separationColor === "object"
         ? separationColor.main

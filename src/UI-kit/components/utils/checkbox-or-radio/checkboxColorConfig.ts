@@ -6,25 +6,6 @@ interface CheckboxConfigProps {
   theme: ThemeType;
 }
 
-export const checkboxOrRadioConfig = {
-  display: "inline-flex",
-  alignItems: "center",
-  justifyContent: "center",
-  position: "relative",
-  boxSizing: "border-box",
-  WebkitTapHighlightColor: "transparent",
-  backgroundColor: "transparent",
-  outline: "none",
-  margin: "0",
-  cursor: "pointer",
-  userSelect: "none",
-  verticalAlign: "middle",
-  appearance: "none",
-  textDecoration: "none",
-  transition: "0.25s",
-  border: "1px solid",
-};
-
 export const checkboxColorConfig = ({
   color,
   active,

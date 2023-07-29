@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { LabelledInputFieldWrapper } from "./LabelledInputField.styled";
 import { CheckboxOrRadio, Typography } from "@/UI-kit";
+import { LabelledInputFieldWrapper } from "./LabelledInputField.styled";
 import { LabelledInputFieldProps } from "./LablledInputField.type";
 
 const LabelledInputField: FC<LabelledInputFieldProps> = ({

@@ -1,9 +1,9 @@
+import styled from "styled-components";
 import {
   getColor,
   spacingGenerated,
   spacingPaddingMarginFunc,
 } from "@/UI-kit/utils";
-import styled from "styled-components";
 import { BoxProps } from "./Box.type";
 
 const Box = styled(

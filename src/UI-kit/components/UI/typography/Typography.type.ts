@@ -9,7 +9,7 @@ import {
 export interface TypographyProps
   extends DefaultProps,
     ColorNamesProps,
-    Required<VariantTypography>,
+    VariantTypography,
     ComponentTypographyProps,
     Omit<HTMLAttributes<HTMLParagraphElement | HTMLHeadingElement>, "color">,
     PropsWithChildren {}

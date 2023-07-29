@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { ButtonProps } from "./Button.type";
 import { IconBox } from "@/UI-kit";
 import { separation } from "@/UI-kit/utils";
-import { buttonColorConfig, buttonConfig } from "@/UI-kit/components/utils";
+import { ButtonProps } from "./Button.type";
+import { defaultButtonConfig } from "./Button.utils";
 
 const Button = styled(
   ({
@@ -29,7 +29,7 @@ const Button = styled(
   }
 )(({ variant, iconStart, iconEnd, size, radius, sx, color, theme }) => {
   return {
-    ...(buttonConfig as {}),
+    ...(defaultButtonConfig as {}),
     gap: iconEnd || iconStart ? "8px" : "",
 
     ...(separation.variantButton({
