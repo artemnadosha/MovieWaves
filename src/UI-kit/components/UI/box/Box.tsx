@@ -17,6 +17,12 @@ const Box = styled(
     sx,
     spacingMargin,
     spacingPadding,
+    borderLeft,
+    borderBottom,
+    borderRight,
+    borderTop,
+    border,
+    borderColor,
     children,
     ...rest
   }: BoxProps) => {
@@ -34,9 +40,17 @@ const Box = styled(
     spacing,
     spacingPadding,
     spacingMargin,
+    borderLeft,
+    borderBottom,
+    borderRight,
+    borderTop,
+    border,
+    borderColor,
     theme,
   }) => {
     const separationColor = getColor({ color, theme });
+    const separationBorderColor = getColor({ color: borderColor, theme });
+
     return {
       width: "100%",
       height: "100%",
@@ -63,10 +77,19 @@ const Box = styled(
       justifyContent: justifyContent || sx?.justifyContent,
       alignItems: alignItems || sx?.alignItems,
       gap:
-        spacing && typeof spacing === "string"
+        spacing &&
+        (typeof spacing === "string"
           ? spacing
-          : spacingGenerated({ size: spacing as number, theme }),
-
+          : spacingGenerated({ size: spacing as number, theme })),
+      borderLeft: borderLeft as string,
+      borderBottom: borderBottom as string,
+      borderRight: borderRight as string,
+      borderTop: borderTop as string,
+      border: border as string,
+      borderColor:
+        typeof separationBorderColor === "object"
+          ? separationBorderColor.main
+          : separationBorderColor,
       ...(sx as {}),
     };
   }

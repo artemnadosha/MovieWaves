@@ -18,7 +18,11 @@ export type {
   VariantTypography,
 } from "./VariantProps";
 
-export type { ColorNamesProps, ColorKeysProps } from "./ColorProps";
+export type {
+  ColorNamesProps,
+  ColorKeysProps,
+  ColorBorderProps,
+} from "./ColorProps";
 
 export type { SizeProps } from "./SizeProps";
 
@@ -29,6 +33,7 @@ export type {
   RadiusProps,
   DirectionProps,
   OrientingProps,
+  BorderProps,
 } from "./CSSPropertiesProps";
 export type { TypeCheckboxOrRadioProps } from "./TypeProps";
 

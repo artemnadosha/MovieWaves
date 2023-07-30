@@ -1,6 +1,8 @@
 import { HTMLAttributes, PropsWithChildren } from "react";
 
 import {
+  BorderProps,
+  ColorBorderProps,
   ColorNamesProps,
   ComponentBoxProps,
   DefaultProps,
@@ -15,6 +17,8 @@ export interface BoxProps
     PropsWithChildren,
     DefaultProps,
     ColorNamesProps,
+    ColorBorderProps,
+    BorderProps,
     ComponentBoxProps,
     SpacingProps,
     SpacingPaddingOrMargin,

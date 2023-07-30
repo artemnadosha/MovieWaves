@@ -14,7 +14,7 @@ export const linkColorConfig = ({
   const colorPath = theme.palette[color || "primary"];
   const activeBackgroundColor = active ? colorPath.main : "transparent";
 
-  const activeColor = active ? colorPath.contrastText : colorPath.main;
+  const activeColor = active ? colorPath.contrastText : "inherit";
 
   return {
     tab: {

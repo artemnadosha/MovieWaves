@@ -3,13 +3,10 @@ import { AnchorHTMLAttributes, PropsWithChildren } from "react";
 import {
   ColorKeysProps,
   DefaultProps,
-  DirectionHorizontalVerticalProps,
   IconProps,
-  OrientingProps,
   RadiusProps,
   SizeProps,
   SpacingPaddingOrMargin,
-  SpacingProps,
   VariantLink,
 } from "@/UI-kit/types";
 

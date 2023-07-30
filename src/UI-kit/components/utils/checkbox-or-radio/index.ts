@@ -1,4 +1,1 @@
-export {
-  checkboxColorConfig,
-  checkboxOrRadioConfig,
-} from "./checkboxColorConfig";
+export { checkboxColorConfig } from "./checkboxColorConfig";

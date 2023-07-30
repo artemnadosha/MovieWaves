@@ -13,5 +13,5 @@ export interface VariantCheckbox {
 }
 
 export interface VariantTypography {
-  variant?: JSXParagraphTagName | JSXHeadingTagName;
+  variant?: JSXParagraphTagName | JSXHeadingTagName | "label";
 }

@@ -8,7 +8,12 @@ export {
   Typography,
   Switch,
 } from "./UI";
-export type { MyLinkProps, CheckboxOrRadioProps } from "./UI";
+export type {
+  MyLinkProps,
+  CheckboxOrRadioProps,
+  TypographyProps,
+  SwitchProps,
+} from "./UI";
 
-export { LabelledInputField, LinkGroup } from "./feature";
+export { LabelledInputField, LinkGroup, LabelField } from "./feature";
 export type { LinkSingleType, LinkGroupProps } from "./feature";

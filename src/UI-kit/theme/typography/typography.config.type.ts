@@ -14,4 +14,5 @@ export type TypographyConfigType = {
   h5: TypographyVariantType;
   h6: TypographyVariantType;
   p: TypographyVariantType;
+  label?: TypographyVariantType;
 };

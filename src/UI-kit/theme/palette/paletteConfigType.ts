@@ -3,6 +3,7 @@ export type PaletteType = {
   dark: string;
   light: string;
   contrastText: string;
+  additional: string;
 };
 
 export type PaletteConfigType = {

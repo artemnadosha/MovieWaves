@@ -17,4 +17,5 @@ export interface LinkGroupProps
     OrientingProps,
     SpacingProps {
   dataLink?: LinkSingleType[];
+  label?: string | number;
 }

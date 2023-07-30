@@ -45,4 +45,9 @@ export const typographyConfig: TypographyConfigType = {
     fontWeight: 400,
     lineHeight: 1,
   },
+  label: {
+    fontSize: "14px",
+    fontWeight: 400,
+    lineHeight: 1,
+  },
 };

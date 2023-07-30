@@ -38,7 +38,7 @@ const Button = styled(
       theme,
     }) as {}),
     ...(theme.size[size || "medium"] as {}),
-    borderRadius: radius?.toString(), // || buttonConfig.borderRadius,
+    borderRadius: radius?.toString() || (theme.unitSize.borderRadius as string),
     ...(sx as {}),
   };
 });

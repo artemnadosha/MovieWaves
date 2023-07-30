@@ -3,8 +3,7 @@ import styled from "styled-components";
 import NextLink from "next/link";
 import { IconBox, MyLinkProps } from "@/UI-kit";
 import { separation } from "@/UI-kit/utils";
-import { buttonConfig } from "@/UI-kit/components/utils";
-import { defaultLinkConfig } from "@/UI-kit/components/UI/link/Link.utils";
+import { defaultLinkConfig } from "./Link.utils";
 
 const Link = styled(
   ({

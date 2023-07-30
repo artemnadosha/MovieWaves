@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Box, LinkGroup, LinkSingleType, Switch } from "@/UI-kit";
+import { Box, LabelField, LinkGroup, LinkSingleType, Switch } from "@/UI-kit";
 import {
   IconForward,
   IconHeart,
@@ -65,15 +65,27 @@ const Sidebar: FC<SidebarProps> = () => {
       spacingPadding={1}
       spacing={1}
       component="aside"
+      borderRight="1px solid"
+      borderColor="border"
     >
       <Logo />
-      <LinkGroup dataLink={linkGroupMok} sx={{ flex: 1 }} />
-      <LinkGroup dataLink={link} sx={{ flex: 0 }} />
+      <LinkGroup
+        dataLink={linkGroupMok}
+        sx={{ flex: 1 }}
+        spacing={1}
+        label="Menu"
+      />
+      <LinkGroup dataLink={link} sx={{ flex: 0 }} spacing={1} />
       <hr />
-      <Switch
-        iconOff={<IconSun />}
-        iconOn={<IconMoon />}
-        onChange={handleChangeTheme}
+      <LabelField
+        label={theme?.isDarkTheme ? "Dark mode" : "Light mode"}
+        control={
+          <Switch
+            iconOff={<IconMoon />}
+            iconOn={<IconSun />}
+            onChange={handleChangeTheme}
+          />
+        }
       />
     </Box>
   );

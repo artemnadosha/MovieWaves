@@ -9,7 +9,7 @@ const LayoutMain = ({ children }: { children: ReactNode }) => {
       component="main"
       direction="row"
       justifyContent="flex-start"
-      sx={{ padding: 0 }}
+      color="background.dark"
     >
       <Sidebar />
       {children}

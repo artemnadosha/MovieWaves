@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { SwitchContainer, SwitchIcon, SwitchWrapper } from "./Switch.styled";
 import { HiddenInput } from "@/UI-kit";
-import { SwitchProps } from "./switch.type";
+import { SwitchProps } from "./Switch.type";
 
 const Switch: FC<SwitchProps> = ({ iconOn, iconOff, color, onChange }) => {
   const [isChecked, setIsChecked] = useState(false);

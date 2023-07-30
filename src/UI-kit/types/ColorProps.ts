@@ -7,3 +7,7 @@ export interface ColorNamesProps {
 export interface ColorKeysProps {
   color?: keyof PaletteConfigType;
 }
+
+export interface ColorBorderProps {
+  borderColor?: PaletteName;
+}

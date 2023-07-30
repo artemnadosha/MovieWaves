@@ -5,9 +5,9 @@ import {
 } from "./JSXTagName";
 
 export interface ComponentTypographyProps {
-  component?: JSXParagraphTagName | JSXHeadingTagName;
+  component?: JSXParagraphTagName | JSXHeadingTagName | "span";
 }
 
 export interface ComponentBoxProps {
-  component?: JSXBoxTagName;
+  component?: JSXBoxTagName | "label";
 }
