@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Box, Link, LinkGroupProps, Typography } from "@/UI-kit";
-import { PaletteConfigType, PaletteName } from "@/UI-kit/theme";
+import { PaletteName } from "@/UI-kit/theme";
 
 const LinkGroup: FC<LinkGroupProps> = ({
   dataLink,

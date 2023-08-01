@@ -8,6 +8,16 @@ const nextConfig = {
     });
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "uaserials.pro",
+        port: "",
+        pathname: "/posters/**",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

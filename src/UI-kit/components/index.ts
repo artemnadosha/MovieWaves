@@ -1,3 +1,6 @@
+export { LabelledInputField, LinkGroup, LabelField, Slider } from "./feature";
+export type { LinkSingleType, LinkGroupProps } from "./feature";
+
 export {
   Box,
   Link,
@@ -14,6 +17,3 @@ export type {
   TypographyProps,
   SwitchProps,
 } from "./UI";
-
-export { LabelledInputField, LinkGroup, LabelField } from "./feature";
-export type { LinkSingleType, LinkGroupProps } from "./feature";

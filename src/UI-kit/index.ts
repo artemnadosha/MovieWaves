@@ -1,15 +1,16 @@
 export {
   Typography,
   Link,
-  LinkGroup,
+  Button,
+  Switch,
+  HiddenInput,
   Box,
   IconBox,
   CheckboxOrRadio,
   LabelledInputField,
-  Button,
-  Switch,
-  HiddenInput,
+  LinkGroup,
   LabelField,
+  Slider,
 } from "./components";
 
 export type {
