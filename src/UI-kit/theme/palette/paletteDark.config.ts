@@ -5,8 +5,9 @@ export const paletteDarkConfig: PaletteConfigType = {
     main: "#AC1B1B",
     dark: "#660e0e",
     light: "#ff7171",
-    contrastText: "#fff",
     additional: "#606165",
+    contrastText: "#fff",
+    additionalText: "#2F2F32",
   },
   secondary: {
     main: "#3949AB",
@@ -14,6 +15,7 @@ export const paletteDarkConfig: PaletteConfigType = {
     light: "#E8EAF6",
     contrastText: "#fff",
     additional: "#606165",
+    additionalText: "#000",
   },
   text: {
     main: "#21252a",
@@ -21,6 +23,7 @@ export const paletteDarkConfig: PaletteConfigType = {
     light: "#6b6b6b",
     contrastText: "#fff",
     additional: "#606165",
+    additionalText: "#000",
   },
   background: {
     main: "#100F12",
@@ -28,6 +31,7 @@ export const paletteDarkConfig: PaletteConfigType = {
     light: "#ffffff",
     contrastText: "#fff",
     additional: "#606165",
+    additionalText: "#000",
   },
   border: {
     main: "#1C1B1C",
@@ -35,6 +39,7 @@ export const paletteDarkConfig: PaletteConfigType = {
     light: "#8ed0ff",
     contrastText: "#fff",
     additional: "#606165",
+    additionalText: "#000",
   },
   success: {
     main: "",
@@ -42,6 +47,7 @@ export const paletteDarkConfig: PaletteConfigType = {
     light: "",
     contrastText: "",
     additional: "#606165",
+    additionalText: "#000",
   },
   warning: {
     main: "",
@@ -49,6 +55,7 @@ export const paletteDarkConfig: PaletteConfigType = {
     light: "",
     contrastText: "",
     additional: "#606165",
+    additionalText: "#000",
   },
   error: {
     main: "",
@@ -56,5 +63,6 @@ export const paletteDarkConfig: PaletteConfigType = {
     light: "",
     contrastText: "",
     additional: "#606165",
+    additionalText: "#000",
   },
 };

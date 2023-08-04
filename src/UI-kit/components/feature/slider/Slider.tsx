@@ -1,23 +1,31 @@
 import { IconArrow } from "@/assets/icon";
-import { useState, FC, useEffect, CSSProperties, useCallback } from "react";
+import { useState, FC, useEffect, useCallback } from "react";
 import Image, { ImageProps } from "next/image";
 import {
   NextButton,
   PrevButton,
   SliderContainer,
   SliderList,
+  SliderNavigation,
+  SliderNavigationWrapper,
   SliderWrapper,
 } from "./Slider.styled";
-import { ButtonProps } from "@/UI-kit/components/UI/button/Button.type";
+import { PaletteConfigType } from "@/UI-kit/theme";
+import { DefaultProps } from "@/UI-kit/types";
+import { ButtonProps } from "../../UI";
 
-export interface ImageSettingProps
-  extends Omit<
-    CSSProperties,
-    "margin" | "padding" | "height" | "borderRadius"
-  > {
+export interface ImageSettingProps extends DefaultProps {
   spacing?: number;
   borderRadius?: string;
   height?: string;
+}
+
+export interface SliderNavigationSettingProps extends DefaultProps {
+  color?: keyof PaletteConfigType;
+}
+
+export interface AutoScrollingSettingProps {
+  duration?: number;
 }
 
 interface SliderProps {
@@ -25,7 +33,9 @@ interface SliderProps {
   visibleElements: number;
   imageSetting?: ImageSettingProps;
   autoScrolling?: boolean;
-  autoScrollingDuration?: number;
+  autoScrollingSetting?: AutoScrollingSettingProps;
+  sliderNavigation?: boolean;
+  sliderNavigationSetting?: SliderNavigationSettingProps;
   buttonSetting?: ButtonProps;
 }
 
@@ -34,8 +44,10 @@ const Slider: FC<SliderProps> = ({
   visibleElements,
   imageSetting,
   autoScrolling,
-  autoScrollingDuration,
+  autoScrollingSetting,
   buttonSetting,
+  sliderNavigation,
+  sliderNavigationSetting,
 }) => {
   const [isTransition, setIsTransition] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -44,15 +56,28 @@ const Slider: FC<SliderProps> = ({
 
   const duplicateImage = images.slice(0, visibleElements + 1);
 
-  const slideToNext = useCallback((direction: "left" | "right") => {
-    setIsTransition(true);
-    setCurrentIndex((prevIndex) => {
-      if (direction === "left") {
-        return (prevIndex - 1 + itemsCount) % itemsCount;
+  const slideToNext = useCallback(
+    ({
+      direction,
+      index,
+    }: {
+      direction?: "left" | "right";
+      index?: number;
+    }) => {
+      setIsTransition(true);
+      if (index || index === 0) {
+        setCurrentIndex(index);
+      } else {
+        setCurrentIndex((prevIndex) => {
+          if (direction === "left") {
+            return (prevIndex - 1 + itemsCount) % itemsCount;
+          }
+          return (prevIndex + 1) % itemsCount;
+        });
       }
-      return (prevIndex + 1) % itemsCount;
-    });
-  }, []);
+    },
+    [itemsCount]
+  );
 
   const handleTransitionEnd = () => {
     setIsTransition(false);
@@ -66,12 +91,12 @@ const Slider: FC<SliderProps> = ({
   useEffect(() => {
     if (autoScrolling) {
       const sliderInterval = setInterval(() => {
-        slideToNext("right");
-      }, autoScrollingDuration || 3000);
+        slideToNext({ direction: "right" });
+      }, autoScrollingSetting?.duration || 5000);
 
       return () => clearInterval(sliderInterval);
     }
-  }, [autoScrolling, autoScrollingDuration, slideToNext]);
+  }, [autoScrolling, autoScrollingSetting?.duration, slideToNext]);
 
   return (
     <SliderContainer>
@@ -105,20 +130,41 @@ const Slider: FC<SliderProps> = ({
           ))}
         </SliderList>
       </SliderWrapper>
-      <PrevButton
-        onClick={() => !isTransition && slideToNext("left")}
-        radius="50%"
-        {...buttonSetting}
-      >
-        <IconArrow style={{ transform: "rotateY(180deg)" }} />
-      </PrevButton>
-      <NextButton
-        onClick={() => !isTransition && slideToNext("right")}
-        radius="50%"
-        {...buttonSetting}
-      >
-        <IconArrow />
-      </NextButton>
+      {!sliderNavigation && (
+        <>
+          <PrevButton
+            onClick={() => !isTransition && slideToNext({ direction: "left" })}
+            radius="50%"
+            {...buttonSetting}
+          >
+            <IconArrow style={{ transform: "rotateY(180deg)" }} />
+          </PrevButton>
+          <NextButton
+            onClick={() => !isTransition && slideToNext({ direction: "right" })}
+            radius="50%"
+            {...buttonSetting}
+          >
+            <IconArrow />
+          </NextButton>
+        </>
+      )}
+      {sliderNavigation && (
+        <SliderNavigationWrapper>
+          {images.map((item, index) => (
+            <SliderNavigation
+              key={index}
+              setting={sliderNavigationSetting}
+              active={currentIndex - 1 === index}
+              onClick={() =>
+                !isTransition &&
+                slideToNext({
+                  index: index + 1,
+                })
+              }
+            />
+          ))}
+        </SliderNavigationWrapper>
+      )}
     </SliderContainer>
   );
 };

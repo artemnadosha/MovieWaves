@@ -1,7 +1,6 @@
 "use client";
 import { ChangeEvent, FC, useState } from "react";
-import { HiddenInput } from "@/UI-kit";
-import { CheckboxOrRadioProps } from "@/UI-kit/components";
+import { CheckboxOrRadioProps, HiddenInput } from "@/UI-kit/components";
 import { CheckboxWrapper, IconCheckboxWrapper } from "./CheckboxOrRadio.styled";
 
 const CheckboxOrRadio: FC<CheckboxOrRadioProps> = (props) => {

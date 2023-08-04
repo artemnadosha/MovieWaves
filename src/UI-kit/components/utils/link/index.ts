@@ -1,1 +1,0 @@
-export { linkColorConfig } from "./linkColorConfig";

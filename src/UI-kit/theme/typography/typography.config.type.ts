@@ -1,9 +1,7 @@
-import { CSSProperties } from "react";
-
 export type TypographyVariantType = {
-  fontSize: CSSProperties["fontSize"];
-  fontWeight: CSSProperties["fontWeight"];
-  lineHeight: CSSProperties["lineHeight"];
+  fontSize: string | number;
+  fontWeight: string | number;
+  lineHeight: string | number;
 };
 
 export type TypographyConfigType = {

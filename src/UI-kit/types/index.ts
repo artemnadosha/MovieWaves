@@ -16,6 +16,7 @@ export type {
   VariantLink,
   VariantCheckbox,
   VariantTypography,
+  VariantInput,
 } from "./VariantProps";
 
 export type {
@@ -24,7 +25,7 @@ export type {
   ColorBorderProps,
 } from "./ColorProps";
 
-export type { SizeProps } from "./SizeProps";
+export type { SizeProps, SizeBadgeProps } from "./SizeProps";
 
 export type { SpacingPaddingOrMargin, SpacingProps } from "./SpacingProps";
 

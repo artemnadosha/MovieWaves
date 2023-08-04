@@ -1,9 +1,8 @@
 "use client";
 import { FC } from "react";
-import { HomeWrapper } from "./Home.styled";
-import { Sidebar } from "@/components";
-import { Box, Slider } from "@/UI-kit";
 import { ImageProps } from "next/image";
+import { Box } from "@/UI-kit/components";
+import { Header } from "@/components";
 
 interface HomeProps {}
 
@@ -36,12 +35,8 @@ const mokImage: ImageProps[] = [
 
 const Home: FC<HomeProps> = () => {
   return (
-    <Box
-      justifyContent="center"
-      alignItems="center"
-      sx={{ width: "calc(100% - 300px)" }}
-    >
-      <Slider images={mokImage} visibleElements={4} />
+    <Box spacing={20} sx={{ width: "calc(100% - 300px)" }}>
+      <Header />
     </Box>
   );
 };

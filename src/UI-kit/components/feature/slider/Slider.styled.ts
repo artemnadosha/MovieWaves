@@ -1,12 +1,17 @@
 import styled from "styled-components";
 import { Button } from "../../UI";
-import { ImageSettingProps } from "./Slider";
+import { ImageSettingProps, SliderNavigationSettingProps } from "./Slider";
 
 interface SliderListProps {
   isTransition: boolean;
   translateXValue: number;
   sizeImage: number;
   imageSetting?: ImageSettingProps;
+}
+
+interface SettingProps {
+  setting?: SliderNavigationSettingProps;
+  active: boolean;
 }
 
 export const SliderContainer = styled.div`
@@ -34,7 +39,7 @@ export const SliderList = styled.div.withConfig({
     display: "flex",
     flexWrap: "nowrap",
     width: "100%",
-    height: imageSetting?.height ? imageSetting?.height : "100%",
+    height: imageSetting?.height ? imageSetting?.height : "200px",
     transition: isTransition ? "0.3s" : "none",
     transform: `translateX(${translateXValue}%)`,
 
@@ -71,3 +76,26 @@ export const NextButton = styled(Button)`
   transform: translateY(-50%);
   z-index: 1;
 `;
+
+export const SliderNavigationWrapper = styled.div`
+  display: flex;
+  width: fit-content;
+  gap: 5px;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 5px;
+  transform: translate(-50%, -50%);
+`;
+
+export const SliderNavigation = styled.div<SettingProps>(
+  ({ setting, active, theme }) => ({
+    width: "15px",
+    height: "15px",
+    background: active
+      ? theme.palette[setting?.color || "primary"].main
+      : theme.palette[setting?.color || "primary"].additional,
+    borderRadius: "50%",
+    cursor: "pointer",
+  })
+);

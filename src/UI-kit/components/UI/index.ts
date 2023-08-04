@@ -1,4 +1,5 @@
 export { Button } from "./button";
+export type { ButtonProps } from "./button";
 
 export { Link } from "./link";
 export type { MyLinkProps } from "./link";
@@ -16,3 +17,7 @@ export { IconBox } from "./icon-box";
 
 export { CheckboxOrRadio } from "./checkbox-or-radio";
 export type { CheckboxOrRadioProps } from "./checkbox-or-radio";
+
+export { Input } from "./input";
+
+export { Badge } from "./badge";

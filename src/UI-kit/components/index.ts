@@ -10,6 +10,8 @@ export {
   Button,
   Typography,
   Switch,
+  Input,
+  Badge,
 } from "./UI";
 export type {
   MyLinkProps,

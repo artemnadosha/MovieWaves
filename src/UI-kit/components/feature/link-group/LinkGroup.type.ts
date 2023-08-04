@@ -4,7 +4,7 @@ import {
   OrientingProps,
   SpacingProps,
 } from "@/UI-kit/types";
-import { MyLinkProps } from "@/UI-kit";
+import { MyLinkProps } from "@/UI-kit/components";
 
 export type LinkSingleType = IconProps & {
   label: string | number;

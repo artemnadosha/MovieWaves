@@ -15,3 +15,7 @@ export interface VariantCheckbox {
 export interface VariantTypography {
   variant?: JSXParagraphTagName | JSXHeadingTagName | "label";
 }
+
+export interface VariantInput {
+  variant?: "contained" | "outlined";
+}

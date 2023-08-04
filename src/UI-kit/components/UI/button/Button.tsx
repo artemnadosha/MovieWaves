@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import { IconBox } from "@/UI-kit";
 import { separation } from "@/UI-kit/utils";
 import { ButtonProps } from "./Button.type";
 import { defaultButtonConfig } from "./Button.utils";
+import { IconBox } from "@/UI-kit/components";
+import { buttonColorConfig } from "@/UI-kit/components/utils";
 
 const Button = styled(
   ({
@@ -31,12 +32,12 @@ const Button = styled(
   return {
     ...(defaultButtonConfig as {}),
     gap: iconEnd || iconStart ? "8px" : "",
-
-    ...(separation.variantButton({
-      variant,
-      color,
-      theme,
-    }) as {}),
+    ...buttonColorConfig({ theme, color })[variant || "contained"],
+    // ...(separation.variantButton({
+    //   variant,
+    //   color,
+    //   theme,
+    // }) as {}),
     ...(theme.size[size || "medium"] as {}),
     borderRadius: radius?.toString() || (theme.unitSize.borderRadius as string),
     ...(sx as {}),

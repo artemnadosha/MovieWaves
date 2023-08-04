@@ -1,5 +1,5 @@
 import { FC, ReactNode } from "react";
-import { Box, Typography, TypographyProps } from "@/UI-kit";
+import { Box, Typography, TypographyProps } from "@/UI-kit/components";
 
 interface LabelFieldProps extends TypographyProps {
   control: ReactNode;

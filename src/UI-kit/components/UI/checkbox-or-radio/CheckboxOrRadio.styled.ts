@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { IconCheckbox } from "@/assets/icon";
 import { separation } from "@/UI-kit/utils";
 import { CheckboxOrRadioProps } from "@/UI-kit/components";
+import { checkboxColorConfig } from "@/UI-kit/components/utils";
 
 export const defaultCheckboxOrRadioConfig = {
   display: "inline-flex",
@@ -31,12 +32,9 @@ export const CheckboxWrapper = styled.span.withConfig({
 
   return {
     ...(defaultCheckboxOrRadioConfig as {}),
-    ...(separation.variantCheckbox({
-      variant,
-      color,
-      active: checked,
-      theme,
-    }) as {}),
+    ...checkboxColorConfig({ active: checked, theme, color })[
+      variant || "contained"
+    ],
     ...(theme.size[size || "medium"] as {}),
     borderRadius: separationBorderRadius,
   };

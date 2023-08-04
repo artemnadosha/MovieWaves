@@ -1,7 +1,7 @@
 "use client";
 import { ReactNode } from "react";
-import { Box } from "@/UI-kit";
 import { Sidebar } from "@/components";
+import { Box } from "@/UI-kit/components";
 
 const LayoutMain = ({ children }: { children: ReactNode }) => {
   return (
@@ -9,7 +9,7 @@ const LayoutMain = ({ children }: { children: ReactNode }) => {
       component="main"
       direction="row"
       justifyContent="flex-start"
-      color="background.dark"
+      color="background.main"
     >
       <Sidebar />
       {children}

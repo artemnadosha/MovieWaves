@@ -8,3 +8,4 @@ export { default as IconLogout } from "./IconLogout.svg";
 export { default as IconHelp } from "./IconHelp.svg";
 export { default as IconSun } from "./IconSun.svg";
 export { default as IconMoon } from "./IconMoon.svg";
+export { default as IconSearch } from "./IconSearch.svg";

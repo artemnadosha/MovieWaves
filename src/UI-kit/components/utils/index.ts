@@ -1,3 +1,5 @@
-export { buttonColorConfig } from "./button";
-export { linkColorConfig } from "./link";
-export { checkboxColorConfig } from "./checkbox-or-radio";
+export { buttonColorConfig } from "./buttonColorConfig";
+export { linkColorConfig } from "./linkColorConfig";
+export { checkboxColorConfig } from "./checkboxColorConfig";
+export { inputColorConfig } from "./inputColorConfig";
+export { badgeSizePositionConfig } from "./badgeSizePositionConfig";

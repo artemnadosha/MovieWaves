@@ -1,1 +1,0 @@
-export { checkboxColorConfig } from "./checkboxColorConfig";

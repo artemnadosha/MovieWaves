@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { Box, LabelField, LinkGroup, LinkSingleType, Switch } from "@/UI-kit";
 import {
   IconForward,
   IconHeart,
@@ -12,6 +11,13 @@ import {
 } from "@/assets/icon";
 import { Logo } from "@/components/UI";
 import { useTheme } from "@/providers";
+import {
+  Box,
+  LabelField,
+  LinkGroup,
+  LinkSingleType,
+  Switch,
+} from "@/UI-kit/components";
 
 interface SidebarProps {}
 
@@ -54,7 +60,7 @@ const link: LinkSingleType[] = [
 const Sidebar: FC<SidebarProps> = () => {
   const theme = useTheme();
 
-  const handleChangeTheme = (value: boolean) => {
+  const handleChangeTheme = (_: boolean) => {
     if (theme) theme.toggleTheme();
   };
 

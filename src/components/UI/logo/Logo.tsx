@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Box, Typography } from "@/UI-kit";
+import { Typography } from "@/UI-kit/components";
 
 interface LogoProps {}
 
