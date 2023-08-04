@@ -1,7 +1,5 @@
-import styled from "styled-components";
-import { separation } from "@/UI-kit/utils";
+import styled, { css } from "styled-components";
 import { ButtonProps } from "./Button.type";
-import { defaultButtonConfig } from "./Button.utils";
 import { IconBox } from "@/UI-kit/components";
 import { buttonColorConfig } from "@/UI-kit/components/utils";
 
@@ -29,19 +27,40 @@ const Button = styled(
     );
   }
 )(({ variant, iconStart, iconEnd, size, radius, sx, color, theme }) => {
-  return {
-    ...(defaultButtonConfig as {}),
+  const defaultStyle = css`
+    font-family: inherit;
+    border: none;
+    outline: none;
+    margin: 0;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.25s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `;
+
+  const gapWithIcon = css({
     gap: iconEnd || iconStart ? "8px" : "",
-    ...buttonColorConfig({ theme, color })[variant || "contained"],
-    // ...(separation.variantButton({
-    //   variant,
-    //   color,
-    //   theme,
-    // }) as {}),
-    ...(theme.size[size || "medium"] as {}),
-    borderRadius: radius?.toString() || (theme.unitSize.borderRadius as string),
-    ...(sx as {}),
-  };
+  });
+
+  const variantStyle = buttonColorConfig({ theme, color })[
+    variant || "contained"
+  ];
+
+  const sizeStyle = css({ ...(theme.size[size || "medium"] as {}) });
+  const customStyle = css({ ...(sx as {}) });
+
+  return css`
+    ${defaultStyle}
+    ${gapWithIcon}
+    ${sizeStyle}
+    ${variantStyle}
+    border-radius: ${radius?.toString() ||
+    (theme.unitSize.borderRadius as string)}
+    ${customStyle}
+  `;
 });
 
 export default Button;

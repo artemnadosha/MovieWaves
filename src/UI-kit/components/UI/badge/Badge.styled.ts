@@ -10,8 +10,9 @@ export const BadgeWrapper = styled.div<BadgeProps>(({ sx, size }) => ({
 }));
 
 export const BadgeItem = styled.span.withConfig({
-  shouldForwardProp: (props) => !["color", "size", "position"].includes(props),
-})<BadgeProps>(({ theme, color, size, position }) => {
+  shouldForwardProp: (props) =>
+    !["color", "size", "position", "positionSx"].includes(props),
+})<BadgeProps>(({ theme, color, size, positionSx, position }) => {
   const badgeStyle = css`
     display: flex;
     flex-flow: row wrap;
@@ -35,10 +36,13 @@ export const BadgeItem = styled.span.withConfig({
 
   const positionStyle = badgeSizePositionConfig({ size })[
     position?.vertical || "top"
-  ]?.[position?.horizontal || "right"];
+  ][position?.horizontal || "right"];
+
+  const positionSxStyle = css({ ...positionSx });
 
   return css`
     ${badgeStyle};
     ${positionStyle};
+    ${positionSxStyle}
   `;
 });

@@ -1,5 +1,6 @@
 import { PaletteConfigType, ThemeType } from "@/UI-kit/theme";
 import { hexToRGBA } from "@/UI-kit/utils";
+import { css } from "styled-components";
 
 interface ButtonConfigProps {
   color?: keyof PaletteConfigType;
@@ -15,9 +16,10 @@ export const buttonColorConfig = ({
   const colorPath = theme.palette[color || "primary"];
 
   const activeColor = active ? colorPath.dark : colorPath.main;
+  const defaultActiveColor = active ? colorPath.main : colorPath.additional;
 
   return {
-    contained: {
+    contained: css({
       color: colorPath.contrastText,
       background: activeColor,
 
@@ -27,8 +29,8 @@ export const buttonColorConfig = ({
       "&:active": {
         background: colorPath.dark,
       },
-    },
-    outlined: {
+    }),
+    outlined: css({
       color: activeColor,
       background: "transparent",
       border: `1px solid`,
@@ -41,8 +43,8 @@ export const buttonColorConfig = ({
       "&:active": {
         borderColor: colorPath.dark,
       },
-    },
-    text: {
+    }),
+    text: css({
       color: activeColor,
       background: "transparent",
 
@@ -54,6 +56,14 @@ export const buttonColorConfig = ({
         background: !active ? hexToRGBA(colorPath.light, 0.3) : "",
         color: !active ? colorPath.main : "",
       },
-    },
+    }),
+    defaultText: css({
+      color: defaultActiveColor,
+      background: "transparent",
+      padding: 0,
+      "&:hover": {
+        color: !active ? colorPath.main : "",
+      },
+    }),
   };
 };

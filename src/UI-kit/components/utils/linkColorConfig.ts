@@ -1,4 +1,5 @@
 import { PaletteConfigType, ThemeType } from "@/UI-kit/theme";
+import { css } from "styled-components";
 
 interface LinkColorConfigProps {
   color?: keyof PaletteConfigType;
@@ -17,7 +18,7 @@ export const linkColorConfig = ({
   const activeColor = active ? colorPath.contrastText : "inherit";
 
   return {
-    tab: {
+    tab: css({
       color: activeColor,
       background: activeBackgroundColor,
       justifyContent: "flex-start",
@@ -30,6 +31,6 @@ export const linkColorConfig = ({
         color: colorPath.contrastText,
         background: colorPath.main,
       },
-    },
+    }),
   };
 };

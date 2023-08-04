@@ -1,6 +1,6 @@
 "use client";
 import { ReactNode } from "react";
-import { Sidebar } from "@/components";
+import { Header, Sidebar } from "@/components";
 import { Box } from "@/UI-kit/components";
 
 const LayoutMain = ({ children }: { children: ReactNode }) => {
@@ -12,7 +12,10 @@ const LayoutMain = ({ children }: { children: ReactNode }) => {
       color="background.main"
     >
       <Sidebar />
-      {children}
+      <Box sx={{ width: "calc(100% - 300px)" }}>
+        <Header />
+        {children}
+      </Box>
     </Box>
   );
 };

@@ -1,11 +1,13 @@
 import { JSXHeadingTagName, JSXParagraphTagName } from "./JSXTagName";
 
+type VariantButtonType = "contained" | "outlined" | "text" | "defaultText";
+
 export interface VariantButton {
-  variant?: "contained" | "outlined" | "text";
+  variant?: VariantButtonType;
 }
 
 export interface VariantLink {
-  variant?: "contained" | "outlined" | "text" | "tab";
+  variant?: VariantButtonType | "tab";
 }
 
 export interface VariantCheckbox {

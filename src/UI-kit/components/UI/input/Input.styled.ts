@@ -1,20 +1,33 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { inputColorConfig } from "@/UI-kit/components/utils";
 import { InputProps } from "./Input";
 
 export const InputWrapper = styled.div.withConfig({
   shouldForwardProp: (props) =>
-    !["color", "focus", "size", "variant"].includes(props),
-})<InputProps>(({ color, theme, focus, size, variant }) => ({
-  ...(inputColorConfig({ color, theme, focus })[variant || "outlined"] as {}),
-  display: "flex",
-  position: "relative",
-  alignItems: "center",
-  gap: "8px",
-  cursor: "text",
-  ...(theme.size[size || "small"] as {}),
-  borderRadius: theme.unitSize.borderRadius as string,
-}));
+    !["color", "focus", "size", "variant", "radius"].includes(props),
+})<InputProps>(({ color, theme, focus, size, variant, radius }) => {
+  const defaultStyle = css`
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 8px;
+    cursor: text;
+  `;
+
+  const colorStyle = inputColorConfig({ color, theme, focus })[
+    variant || "outlined"
+  ];
+
+  const sizeStyle = css({ ...(theme.size[size || "small"] as {}) });
+
+  return css`
+    ${defaultStyle}
+    ${colorStyle}
+    ${sizeStyle}
+    border-radius: ${radius?.toString() ||
+    (theme.unitSize.borderRadius as string)}
+  `;
+});
 
 export const BaseInput = styled.input`
   font: inherit;

@@ -9,6 +9,7 @@ import {
 import {
   ColorKeysProps,
   IconProps,
+  RadiusProps,
   SizeProps,
   VariantInput,
 } from "@/UI-kit/types";
@@ -19,6 +20,7 @@ export interface InputProps
     IconProps,
     ColorKeysProps,
     VariantInput,
+    RadiusProps,
     Omit<HTMLAttributes<HTMLInputElement>, "color"> {
   focus?: boolean;
   label?: string | number;
@@ -31,6 +33,7 @@ const Input: FC<InputProps> = ({
   iconStart,
   color,
   variant,
+  radius,
   onChange,
   label,
   ...rest
@@ -51,7 +54,7 @@ const Input: FC<InputProps> = ({
   };
 
   return (
-    <InputWrapper focus={isFocus} size={size}>
+    <InputWrapper focus={isFocus} size={size} radius={radius}>
       {iconStart && <IconBox>{iconStart}</IconBox>}
       <BaseInput
         {...rest}

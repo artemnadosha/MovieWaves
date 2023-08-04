@@ -1,4 +1,5 @@
 import { PaletteConfigType, ThemeType } from "@/UI-kit/theme";
+import { css } from "styled-components";
 
 interface CheckboxConfigProps {
   color?: keyof PaletteConfigType;
@@ -16,7 +17,7 @@ export const checkboxColorConfig = ({
   const activeColor = active ? colorPath.dark : colorPath.main;
 
   return {
-    contained: {
+    contained: css({
       color: colorPath.contrastText,
       background: active ? colorPath.main : "transparent",
       borderColor: active ? colorPath.main : theme.palette.border.main,
@@ -29,8 +30,8 @@ export const checkboxColorConfig = ({
         background: colorPath.dark,
         borderColor: activeColor,
       },
-    },
-    outlined: {
+    }),
+    outlined: css({
       color: active ? colorPath.main : theme.palette.border.main,
       background: "transparent",
       border: `1px solid`,
@@ -44,6 +45,6 @@ export const checkboxColorConfig = ({
         color: activeColor,
         borderColor: activeColor,
       },
-    },
+    }),
   };
 };

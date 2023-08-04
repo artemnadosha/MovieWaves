@@ -6,43 +6,24 @@
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/badge/Badge.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/badge/Badge.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/badge/Badge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/badge/Badge.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/button/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/button/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.utils.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/input/Input.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/input/Input.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/input/Input.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/switch/Switch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/switch/Switch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/label-field/LabelField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/label-field/LabelField.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/labelled-input-field/LabelledInputField.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/labelled-input-field/LabelledInputField.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/link-group/LinkGroup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/link-group/LinkGroup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/link-group/LinkGroup.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/link-group/LinkGroup.type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/slider/Slider.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/slider/Slider.styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/slider/Slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/slider/Slider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/button/buttonColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/buttonColorConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/button/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/checkbox-or-radio/checkboxColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/checkboxColorConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/checkbox-or-radio/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/link/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/link/linkColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/linkColorConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteConfigType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteConfigType.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteDark.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteDark.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteLight.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteLight.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/typography/typography.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/typography/typography.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/typography/typography.config.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/typography/typography.config.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/types/SizeProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/SizeProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/buttonColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/buttonColorConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/checkboxColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/checkboxColorConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/inputColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/inputColorConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/linkColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/linkColorConfig.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/types/VariantProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/VariantProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/utils/separation.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/assets/icon/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icon/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/logo/Logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/logo/Logo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/sidebar/Sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/sidebar/Sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feature/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/home/Home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/screens/layaout-main/LayoutMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/layaout-main/LayoutMain.tsx" afterDir="false" />
     </list>
@@ -158,7 +139,7 @@
       <workItem from="1690901910894" duration="17857000" />
       <workItem from="1690976462065" duration="9469000" />
       <workItem from="1691055470671" duration="19472000" />
-      <workItem from="1691163223874" duration="10826000" />
+      <workItem from="1691163223874" duration="16714000" />
     </task>
     <servers />
   </component>

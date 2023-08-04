@@ -12,9 +12,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "uaserials.pro",
-        port: "",
-        pathname: "/posters/**",
+        hostname: "itc.ua",
       },
     ],
   },

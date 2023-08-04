@@ -1,7 +1,6 @@
 import { usePathname } from "next/navigation";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import NextLink from "next/link";
-import { separation } from "@/UI-kit/utils";
 import { defaultLinkConfig } from "./Link.utils";
 import { IconBox, MyLinkProps } from "@/UI-kit/components";
 import { buttonColorConfig, linkColorConfig } from "@/UI-kit/components/utils";
@@ -33,24 +32,44 @@ const Link = styled(
 )(({ variant, size, iconEnd, iconStart, sx, radius, color, href, theme }) => {
   const pathname = usePathname();
 
-  return {
-    ...(defaultLinkConfig as {}),
+  const defaultStyle = css`
+    font-family: inherit;
+    border: none;
+    outline: none;
+    margin: 0;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.25s;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  `;
 
+  const gapWithIcon = css({
     gap: iconEnd || iconStart ? "8px" : "",
-    ...(variant === "tab"
+  });
+
+  const sizeStyle = css({ ...(theme.size[size || "medium"] as {}) });
+
+  const variantStyle =
+    variant === "tab"
       ? linkColorConfig({ theme, color, active: pathname === href })[variant]
-      : buttonColorConfig({ theme, color })[variant || "text"]),
-    // ...separation.variantLink({
-    //   variant: variant || "text",
-    //   color,
-    //   active: pathname === href,
-    //   theme,
-    // }),
-    ...(theme.size[size || "medium"] as {}),
-    borderRadius:
-      radius?.toString() || theme?.unitSize?.borderRadius?.toString(),
-    ...(sx as {}),
-  };
+      : buttonColorConfig({ theme, color, active: pathname === href })[
+          variant || "text"
+        ];
+
+  const customStyle = css({ ...(sx as {}) });
+
+  return css`
+    ${defaultStyle}
+    ${gapWithIcon}
+    ${sizeStyle}
+    ${variantStyle}
+    border-radius: ${radius?.toString() ||
+    (theme.unitSize.borderRadius as string)}
+    ${customStyle}
+  `;
 });
 
 export default Link;

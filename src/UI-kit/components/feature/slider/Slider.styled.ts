@@ -28,12 +28,9 @@ export const SliderWrapper = styled.div`
 
 export const SliderList = styled.div.withConfig({
   shouldForwardProp: (props) =>
-    ![
-      "isTransition",
-      "translateXValue",
-      "sizeImage",
-      "sliderItemSetting",
-    ].includes(props),
+    !["isTransition", "translateXValue", "sizeImage", "imageSetting"].includes(
+      props
+    ),
 })<SliderListProps>(
   ({ isTransition, sizeImage, translateXValue, imageSetting, theme }) => ({
     display: "flex",
@@ -48,9 +45,11 @@ export const SliderList = styled.div.withConfig({
       height: "100%",
       flexShrink: 0,
       boxSizing: "border-box",
-      padding: imageSetting?.spacing
-        ? `0 ${imageSetting.spacing / 2}px`
-        : "0 8px",
+      padding: !imageSetting?.disabledSpacing
+        ? imageSetting?.spacing
+          ? `0 ${imageSetting.spacing / 2}px`
+          : "0 8px"
+        : 0,
       borderRadius: imageSetting?.borderRadius
         ? imageSetting.borderRadius
         : (theme.unitSize.borderRadius as string),
@@ -88,14 +87,14 @@ export const SliderNavigationWrapper = styled.div`
   transform: translate(-50%, -50%);
 `;
 
-export const SliderNavigation = styled.div<SettingProps>(
-  ({ setting, active, theme }) => ({
-    width: "15px",
-    height: "15px",
-    background: active
-      ? theme.palette[setting?.color || "primary"].main
-      : theme.palette[setting?.color || "primary"].additional,
-    borderRadius: "50%",
-    cursor: "pointer",
-  })
-);
+export const SliderNavigation = styled.div.withConfig({
+  shouldForwardProp: (prop) => !["setting", "active"].includes(prop),
+})<SettingProps>(({ setting, active, theme }) => ({
+  width: "15px",
+  height: "15px",
+  background: active
+    ? theme.palette[setting?.color || "primary"].main
+    : theme.palette[setting?.color || "primary"].additional,
+  borderRadius: "50%",
+  cursor: "pointer",
+}));

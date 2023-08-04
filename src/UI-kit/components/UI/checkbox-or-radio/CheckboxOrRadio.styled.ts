@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { IconCheckbox } from "@/assets/icon";
-import { separation } from "@/UI-kit/utils";
 import { CheckboxOrRadioProps } from "@/UI-kit/components";
 import { checkboxColorConfig } from "@/UI-kit/components/utils";
 

@@ -15,6 +15,12 @@ export interface BadgeProps
   hidden?: boolean;
   label?: string | number;
   position?: BadgePositionProps;
+  positionSx?: {
+    top?: string;
+    bottom?: string;
+    left?: string;
+    right?: string;
+  };
 }
 
 const Badge: FC<BadgeProps> = ({
@@ -24,13 +30,19 @@ const Badge: FC<BadgeProps> = ({
   hidden,
   size,
   position,
+  positionSx,
   children,
 }) => {
   return (
     <BadgeWrapper sx={sx}>
       {children}
       {!hidden && (
-        <BadgeItem size={size} color={color} position={position}>
+        <BadgeItem
+          size={size}
+          color={color}
+          position={position}
+          positionSx={positionSx}
+        >
           {label}
         </BadgeItem>
       )}

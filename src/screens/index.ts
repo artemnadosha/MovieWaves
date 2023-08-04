@@ -1,2 +1,2 @@
 export { Home } from "./home";
-export { LayoutMain } from "./layaout-main";
+export { LayoutMain } from "./layout-main";

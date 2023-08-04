@@ -16,6 +16,7 @@ import { ButtonProps } from "../../UI";
 
 export interface ImageSettingProps extends DefaultProps {
   spacing?: number;
+  disabledSpacing?: boolean;
   borderRadius?: string;
   height?: string;
 }
@@ -111,8 +112,8 @@ const Slider: FC<SliderProps> = ({
           {images.map(({ src, alt, ...rest }, index) => (
             <Image
               key={index}
-              width={200}
-              height={100}
+              width={1920}
+              height={1080}
               src={src}
               alt={alt}
               {...rest}
@@ -121,8 +122,8 @@ const Slider: FC<SliderProps> = ({
           {duplicateImage.map(({ src, alt, ...rest }, index) => (
             <Image
               key={index}
-              width={200}
-              height={100}
+              width={1920}
+              height={1080}
               src={src}
               alt={alt}
               {...rest}
