@@ -14,4 +14,7 @@ export interface TypographyProps
     ComponentTypographyProps,
     SpacingPaddingOrMargin,
     Omit<HTMLAttributes<HTMLParagraphElement | HTMLHeadingElement>, "color">,
-    PropsWithChildren {}
+    PropsWithChildren {
+  isShadow?: boolean;
+  noWrap?: boolean;
+}

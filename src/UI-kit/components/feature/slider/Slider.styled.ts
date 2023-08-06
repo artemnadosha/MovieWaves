@@ -63,7 +63,7 @@ export const SliderList = styled.div.withConfig({
 export const PrevButton = styled(Button)`
   position: absolute;
   top: 50%;
-  left: 20px;
+  left: -20px;
   transform: translateY(-50%);
   z-index: 1;
 `;
@@ -71,7 +71,7 @@ export const PrevButton = styled(Button)`
 export const NextButton = styled(Button)`
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: -20px;
   transform: translateY(-50%);
   z-index: 1;
 `;

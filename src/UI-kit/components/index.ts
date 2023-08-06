@@ -1,5 +1,11 @@
-export { LabelledInputField, LinkGroup, LabelField, Slider } from "./feature";
-export type { LinkSingleType, LinkGroupProps } from "./feature";
+export {
+  LabelledInputField,
+  LinkGroup,
+  LabelField,
+  Slider,
+  Card,
+} from "./feature";
+export type { LinkSingleType, LinkGroupProps, CardProps } from "./feature";
 
 export {
   Box,

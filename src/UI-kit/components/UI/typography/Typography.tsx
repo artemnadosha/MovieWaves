@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { TypographyProps } from "./Typography.type";
 import { getColor, spacingPaddingMarginFunc } from "@/UI-kit/utils";
 
@@ -8,6 +8,8 @@ const Typography = styled(
     variant,
     color,
     sx,
+    isShadow,
+    noWrap,
     spacingPadding,
     spacingMargin,
     children,
@@ -17,23 +19,61 @@ const Typography = styled(
 
     return <Component {...rest}>{children}</Component>;
   }
-)(({ variant, color, sx, spacingPadding, spacingMargin, theme }) => {
-  const separationColor = getColor({ color, theme });
+)(
+  ({
+    variant,
+    color,
+    noWrap,
+    sx,
+    isShadow,
+    spacingPadding,
+    spacingMargin,
+    theme,
+  }) => {
+    const separationColor = getColor({ color, theme });
 
-  return {
-    ...theme.font.style,
-    ...(theme.typography[variant || "p"] as {}),
-    padding:
-      spacingPadding &&
-      spacingPaddingMarginFunc({ arg: spacingPadding, theme }),
-    margin:
-      spacingMargin && spacingPaddingMarginFunc({ arg: spacingMargin, theme }),
-    color:
-      typeof separationColor === "object"
+    const variantStyle = css({ ...(theme.typography[variant || "p"] as {}) });
+    const fontStyle = css`
+      ${theme.font.style}
+    `;
+    const colorStyle = css`
+      color: ${typeof separationColor === "object"
         ? separationColor.main
-        : separationColor,
-    ...(sx as {}),
-  };
-});
+        : separationColor};
+    `;
+
+    const textShadowStyle = css`
+      text-shadow: 3px 2px 5px #333333;
+    `;
+    const noWrapStyle = css`
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    `;
+
+    const spacingStyle = css({
+      padding:
+        spacingPadding &&
+        spacingPaddingMarginFunc({ arg: spacingPadding, theme }),
+      margin:
+        spacingMargin &&
+        spacingPaddingMarginFunc({ arg: spacingMargin, theme }),
+    });
+
+    const customStyle = css({
+      ...(sx as {}),
+    });
+
+    return css`
+      ${variantStyle}
+      ${fontStyle}
+      ${colorStyle}
+      ${spacingStyle}
+      ${isShadow && textShadowStyle}
+      ${noWrap && noWrapStyle}
+      ${customStyle}
+    `;
+  }
+);
 
 export default Typography;

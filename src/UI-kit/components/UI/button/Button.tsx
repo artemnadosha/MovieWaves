@@ -53,12 +53,12 @@ const Button = styled(
   const customStyle = css({ ...(sx as {}) });
 
   return css`
-    ${defaultStyle}
-    ${gapWithIcon}
-    ${sizeStyle}
-    ${variantStyle}
+    ${defaultStyle};
+    ${gapWithIcon};
+    ${sizeStyle};
+    ${variantStyle};
     border-radius: ${radius?.toString() ||
-    (theme.unitSize.borderRadius as string)}
+    (theme.unitSize.borderRadius as string)};
     ${customStyle}
   `;
 });
