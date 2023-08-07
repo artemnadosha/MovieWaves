@@ -1,10 +1,15 @@
-import { FC } from "react";
-import { Badge, Box, Button, Input, Link } from "@/UI-kit/components";
+import { FC, useState } from "react";
+import { Badge, Box, Button, Input, YouTubeModal } from "@/UI-kit/components";
 import { IconArrow, IconNotification, IconSearch } from "@/assets/icon";
 
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = () => {
+  const [isModal, setIsModal] = useState(false);
+
+  const handleToggleModal = () => {
+    setIsModal((prevState) => !prevState);
+  };
   return (
     <Box
       direction="row"
@@ -13,7 +18,7 @@ const Header: FC<HeaderProps> = () => {
       alignItems="center"
       sx={{ height: "fit-content" }}
     >
-      <Button size="small" variant="outlined">
+      <Button size="small" variant="outlined" onClick={handleToggleModal}>
         <IconArrow style={{ transform: "rotate(180deg)" }} />
       </Button>
       <Box
@@ -29,6 +34,11 @@ const Header: FC<HeaderProps> = () => {
           </Button>
         </Badge>
       </Box>
+      <YouTubeModal
+        isOpen={isModal}
+        onClose={handleToggleModal}
+        idVideo="flEq-HpAy7s"
+      />
     </Box>
   );
 };

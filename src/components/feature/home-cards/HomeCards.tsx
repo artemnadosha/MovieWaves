@@ -1,7 +1,10 @@
 import { FC } from "react";
 import { Box, Card, CardProps } from "@/UI-kit/components";
+import { HomeSliderType } from "@/types";
 
-interface HomeCardsProps {}
+interface HomeCardsProps {
+  dataCards: HomeSliderType;
+}
 
 const mokCard: CardProps[] = [
   {
@@ -38,16 +41,30 @@ const mokCard: CardProps[] = [
   },
 ];
 
-const HomeCards: FC<HomeCardsProps> = () => {
+const generateDataCards = (dataCards: HomeSliderType) => {
+  return dataCards.map((item) => {
+    return {
+      id: item.id,
+      image: {
+        src: item.poster,
+        alt: item.title,
+      },
+    };
+  });
+};
+
+const HomeCards: FC<HomeCardsProps> = ({ dataCards }) => {
+  const generateData = generateDataCards(dataCards);
   return (
     <Box
       spacingPadding={2}
       spacing={1}
       direction="row"
       justifyContent="space-between"
+      sx={{ height: "fit-content" }}
     >
-      {mokCard.map((item) => (
-        <Card key={item.image.alt} {...item} />
+      {generateData.map((item) => (
+        <Card key={item.id} {...item} />
       ))}
     </Box>
   );

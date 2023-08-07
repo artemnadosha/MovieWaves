@@ -21,3 +21,6 @@ export type { CheckboxOrRadioProps } from "./checkbox-or-radio";
 export { Input } from "./input";
 
 export { Badge } from "./badge";
+
+export { Portal } from "./portal";
+export { Modal } from "./modal";

@@ -1,7 +1,9 @@
-import { Home } from "../screens";
+import { Home } from "../app-pages";
+import { getServices } from "@/services";
 
-const HomePage = () => {
-  return <Home />;
+const HomePage = async () => {
+  const data = await getServices.upcomingMovies();
+  return <Home dataSlider={data.slice(0, 6)} dataCards={data.slice(6, 11)} />;
 };
 
 export default HomePage;

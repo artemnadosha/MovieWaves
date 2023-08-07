@@ -1,9 +1,12 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import { HomeSliderWrapper } from "./HomeSlider.styled";
 import { Box, Button, Slider, Typography } from "@/UI-kit/components";
 import { ImageProps } from "next/image";
+import { HomeSliderType } from "@/types";
 
-interface HomeSliderProps {}
+interface HomeSliderProps {
+  dataSlider: HomeSliderType;
+}
 const mokImage: ImageProps[] = [
   {
     src: "https://itc.ua/wp-content/uploads/2023/07/oppenheimer-2023-movie-poster-hd-wallpaper-uhdpaper.com-719-1-k.jpg",
@@ -30,19 +33,49 @@ const mokImage: ImageProps[] = [
     alt: "Insidious: The Red Door",
   },
 ];
-const HomeSlider: FC<HomeSliderProps> = () => {
+
+const generateSrcAlt = (arr: string[], title: string) => {
+  return arr.map((item) => ({ src: item, alt: title }));
+};
+
+const generateSliderItem = (dataSlider: HomeSliderType) => {
+  return dataSlider.map((item) => {
+    return {
+      mainSlider: {
+        src: item.backdrop,
+        alt: item.title,
+      },
+      subSlider: generateSrcAlt(item.moviesImages, item.title),
+    };
+  });
+};
+
+const HomeSlider: FC<HomeSliderProps> = ({ dataSlider }) => {
+  const [indexMainSlider, setIndexMainSlider] = useState(1);
+
+  const data = generateSliderItem(dataSlider);
+  const dataMainSlider = data.map((item) => item.mainSlider);
+
+  const handleChangeMainSlide = (index: number) => {
+    if (index <= dataSlider.length - 1) {
+      setIndexMainSlider(index);
+    } else {
+      setIndexMainSlider(0);
+    }
+  };
   return (
     <HomeSliderWrapper>
       <Slider
-        images={mokImage}
+        images={dataMainSlider}
         visibleElements={1}
         imageSetting={{
-          height: "500px",
+          height: "100%",
           disabledSpacing: true,
           borderRadius: "0",
         }}
         autoScrolling
         sliderNavigation
+        onChange={handleChangeMainSlide}
       />
 
       <Button
@@ -62,7 +95,7 @@ const HomeSlider: FC<HomeSliderProps> = () => {
         }}
       >
         <Slider
-          images={mokImage}
+          images={data[indexMainSlider].subSlider}
           visibleElements={3}
           imageSetting={{ height: "100px", borderRadius: "20px" }}
         />

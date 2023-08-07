@@ -14,6 +14,10 @@ const nextConfig = {
         protocol: "https",
         hostname: "itc.ua",
       },
+      {
+        protocol: "https",
+        hostname: "image.tmdb.org",
+      },
     ],
   },
 };

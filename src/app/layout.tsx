@@ -1,7 +1,7 @@
 import { FC, PropsWithChildren } from "react";
 import "./globals.css";
 import { fontConfig } from "@/UI-kit/theme";
-import { LayoutMain } from "../screens";
+import { LayoutMain } from "../app-pages";
 import { StyledComponentsRegistry, StyledThemeProvider } from "@/providers";
 
 export const metadata = {
@@ -16,6 +16,7 @@ const RootLayout: FC<PropsWithChildren> = ({ children }) => {
         <StyledThemeProvider>
           <body className={fontConfig.className}>
             <LayoutMain>{children}</LayoutMain>
+            <div id="modal"></div>
           </body>
         </StyledThemeProvider>
       </StyledComponentsRegistry>

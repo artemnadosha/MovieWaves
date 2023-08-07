@@ -38,6 +38,7 @@ interface SliderProps {
   sliderNavigation?: boolean;
   sliderNavigationSetting?: SliderNavigationSettingProps;
   buttonSetting?: ButtonProps;
+  onChange?: (index: number) => void;
 }
 
 const Slider: FC<SliderProps> = ({
@@ -49,6 +50,7 @@ const Slider: FC<SliderProps> = ({
   buttonSetting,
   sliderNavigation,
   sliderNavigationSetting,
+  onChange,
 }) => {
   const [isTransition, setIsTransition] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(1);
@@ -79,6 +81,10 @@ const Slider: FC<SliderProps> = ({
     },
     [itemsCount]
   );
+
+  useEffect(() => {
+    if (onChange) onChange(currentIndex);
+  }, [currentIndex]);
 
   const handleTransitionEnd = () => {
     setIsTransition(false);

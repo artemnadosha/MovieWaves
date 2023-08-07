@@ -4,6 +4,7 @@ export {
   LabelField,
   Slider,
   Card,
+  YouTubeModal,
 } from "./feature";
 export type { LinkSingleType, LinkGroupProps, CardProps } from "./feature";
 
@@ -18,6 +19,8 @@ export {
   Switch,
   Input,
   Badge,
+  Portal,
+  Modal,
 } from "./UI";
 export type {
   MyLinkProps,
