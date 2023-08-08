@@ -6,26 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/card/Card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/slider/Slider.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/slider/Slider.styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/slider/Slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/slider/Slider.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/unit-size/unitSize.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/unit-size/unitSize.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/unit-size/unitSizeConfigType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/unit-size/unitSizeConfigType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/types/VariantProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/VariantProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app-pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/movies/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/movies/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icon/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icon/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/home-cards/HomeCards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/home-cards/HomeCards.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/home-slider/HomeSlider.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/home-slider/HomeSlider.styled.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/feature/home-slider/HomeSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/home-slider/HomeSlider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/home/Home.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/home/Home.styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/home/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/home/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/layout-main/LayoutMain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/layout-main/LayoutMain.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screens/layout-main/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/layout-main/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feature/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +36,13 @@
         <option value="TSX and SCSS" />
         <option value="TypeScript JSX File" />
         <option value="Route NextJS.ts.child.0" />
-        <option value="Styled Components.ts.child.0" />
         <option value="Route NextJS" />
         <option value="ReactComponent.ts.child.0" />
-        <option value="Styled Components" />
         <option value="TSX and Styled Component.tsx.child.0" />
         <option value="TSX and Styled Component.tsx.child.1" />
         <option value="TSX and Styled Component" />
+        <option value="Styled Components.ts.child.0" />
+        <option value="Styled Components" />
         <option value="ReactComponent.tsx.child.0" />
         <option value="ReactComponent" />
       </list>
@@ -94,11 +89,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/UI-kit/components/UI" />
+      <recent name="$PROJECT_DIR$/src/components/feature/detail-info-film" />
       <recent name="$PROJECT_DIR$/src/UI-kit/components/utils" />
       <recent name="$PROJECT_DIR$/src/UI-kit/providersTheme" />
       <recent name="$PROJECT_DIR$/src/UI-kit/components/UI/link" />
-      <recent name="$PROJECT_DIR$/src/UI-kit/components/feature" />
-      <recent name="$PROJECT_DIR$/src/UI-kit/components/UI" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -142,7 +137,8 @@
       <workItem from="1691055470671" duration="19472000" />
       <workItem from="1691163223874" duration="17151000" />
       <workItem from="1691317063244" duration="6851000" />
-      <workItem from="1691402680957" duration="21593000" />
+      <workItem from="1691402680957" duration="22069000" />
+      <workItem from="1691489942943" duration="13301000" />
     </task>
     <servers />
   </component>

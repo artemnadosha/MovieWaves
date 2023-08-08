@@ -1,5 +1,7 @@
-const MoviesPage = () => {
-    return <div>MoviesPage</div>
-}
+import { DetailMovieInfo } from "@/app-pages";
 
-export default MoviesPage
+const MoviesPage = () => {
+  return <DetailMovieInfo />;
+};
+
+export default MoviesPage;

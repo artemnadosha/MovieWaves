@@ -72,6 +72,7 @@ const HomeSlider: FC<HomeSliderProps> = ({ dataSlider }) => {
           height: "100%",
           disabledSpacing: true,
           borderRadius: "0",
+          sx: { objectPosition: "top" },
         }}
         autoScrolling
         sliderNavigation

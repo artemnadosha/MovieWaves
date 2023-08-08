@@ -24,3 +24,8 @@ export { Badge } from "./badge";
 
 export { Portal } from "./portal";
 export { Modal } from "./modal";
+
+export { Tag } from "./tag";
+
+export { Poster } from "./poster";
+export { Avatar } from "./avatar";

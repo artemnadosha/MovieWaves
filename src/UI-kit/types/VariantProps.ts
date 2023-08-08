@@ -10,6 +10,10 @@ export interface VariantLink {
   variant?: VariantButtonType | "tab";
 }
 
+export interface VariantTag {
+  variant?: VariantButtonType;
+}
+
 export interface VariantCheckbox {
   variant?: "contained" | "outlined";
 }

@@ -17,6 +17,7 @@ export type {
   VariantCheckbox,
   VariantTypography,
   VariantInput,
+  VariantTag,
 } from "./VariantProps";
 
 export type {

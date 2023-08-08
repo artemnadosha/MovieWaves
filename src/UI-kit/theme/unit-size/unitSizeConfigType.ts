@@ -5,4 +5,5 @@ export type UnitSizeConfigType = {
   borderRadius: CSSProperties["borderRadius"];
   borderRadiusCheckbox: CSSProperties["borderRadius"];
   borderRadiusRadio: CSSProperties["borderRadius"];
+  borderRadiusTag: CSSProperties["borderRadius"];
 };

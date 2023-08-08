@@ -5,4 +5,5 @@ export const unitSizeConfig: UnitSizeConfigType = {
   borderRadius: "8px",
   borderRadiusCheckbox: "2px",
   borderRadiusRadio: "50%",
+  borderRadiusTag: "24px",
 };

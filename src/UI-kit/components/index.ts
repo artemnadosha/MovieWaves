@@ -5,8 +5,14 @@ export {
   Slider,
   Card,
   YouTubeModal,
+  AvatarWithText,
 } from "./feature";
-export type { LinkSingleType, LinkGroupProps, CardProps } from "./feature";
+export type {
+  LinkSingleType,
+  LinkGroupProps,
+  CardProps,
+  AvatarWithTextProps,
+} from "./feature";
 
 export {
   Box,
@@ -21,6 +27,9 @@ export {
   Badge,
   Portal,
   Modal,
+  Tag,
+  Avatar,
+  Poster,
 } from "./UI";
 export type {
   MyLinkProps,

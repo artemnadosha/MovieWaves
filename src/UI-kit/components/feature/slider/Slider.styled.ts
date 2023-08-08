@@ -57,7 +57,7 @@ export const SliderList = styled.div.withConfig({
         : (theme.unitSize.borderRadius as string),
       objectFit: "cover",
       objectPosition: "center",
-      ...(imageSetting as {}),
+      ...(imageSetting?.sx as {}),
     },
   })
 );
