@@ -1,4 +1,4 @@
-type HomeSliderItem = {
+export type HomeSliderItem = {
   id: number;
   backdrop: string;
   moviesImages: string[];

@@ -5,7 +5,7 @@ import { IconPlay } from "@/assets/icon";
 interface MoviePosterWithTrailerButtonProps {
   src: string;
   alt: string;
-  idYouTube: string;
+  idYouTube?: string;
 }
 
 const MoviePosterWithTrailerButton: FC<MoviePosterWithTrailerButtonProps> = ({
@@ -23,17 +23,19 @@ const MoviePosterWithTrailerButton: FC<MoviePosterWithTrailerButtonProps> = ({
         <Button
           variant="outlined"
           iconStart={<IconPlay />}
-          onClick={handleToggleModal}
+          onClick={idYouTube ? handleToggleModal : () => {}}
           size="small"
         >
-          Trailer
+          {idYouTube ? "Trailer" : "There's no trailer"}
         </Button>
       </Box>
-      <YouTubeModal
-        isOpen={isModal}
-        idVideo={idYouTube}
-        onClose={handleToggleModal}
-      />
+      {idYouTube && (
+        <YouTubeModal
+          isOpen={isModal}
+          idVideo={idYouTube}
+          onClose={handleToggleModal}
+        />
+      )}
     </>
   );
 };

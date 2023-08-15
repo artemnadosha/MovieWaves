@@ -1,1 +1,2 @@
-export type { HomeSliderType } from "./Home";
+export type { HomeSliderType, HomeSliderItem } from "./home";
+export type { MovieDetailType } from "./movie-detail";
