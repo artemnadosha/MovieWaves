@@ -18,6 +18,7 @@ const MovieCast: FC<CastProps> = ({ castData }) => {
         zIndex: 2,
         width: "fit-content",
         minWidth: "400px",
+        overflow: "auto",
       }}
     >
       <Typography variant="h4" component="h4">

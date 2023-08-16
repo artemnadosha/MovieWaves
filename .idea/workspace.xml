@@ -5,12 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/types/movies/MovieDataType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/movies/MovieDetailType.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/movies/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/detail-info-movie/movie-poster-with-trailer-button/MoviePosterWithTrailerButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/detail-info-movie/movie-poster-with-trailer-button/MoviePosterWithTrailerButton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/card/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app-pages/detail-movie-info/DetailMovieInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/detail-movie-info/DetailMovieInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app-pages/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/home/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app-pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/movies/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/movies/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/series/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/series/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feature/detail-info-movie/movie-cast/MovieCast.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/detail-info-movie/movie-cast/MovieCast.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feature/home-cards/HomeCards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/home-cards/HomeCards.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feature/home-slider/HomeSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/home-slider/HomeSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feature/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/getServicesMovie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/getServicesMovie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/Home/HomeSliderType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/home/HomeSliderType.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/Home/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/home/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/types/API_response.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/types/API_response.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/utils/API_CONST.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/API_MOVIE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/home/HomeSliderType.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/home/index.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/movie-detail/MovieDetailType.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/movie-detail/index.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +47,6 @@
         <option value="TSX and SCSS" />
         <option value="TypeScript JSX File" />
         <option value="Route NextJS.ts.child.0" />
-        <option value="Route NextJS" />
         <option value="ReactComponent.ts.child.0" />
         <option value="TSX and Styled Component.tsx.child.0" />
         <option value="TSX and Styled Component.tsx.child.1" />
@@ -35,6 +55,7 @@
         <option value="Styled Components" />
         <option value="ReactComponent.tsx.child.0" />
         <option value="ReactComponent" />
+        <option value="Route NextJS" />
       </list>
     </option>
   </component>
@@ -62,7 +83,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/skyfull/Рабочий стол/next-js-project-app/public&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/skyfull/Рабочий стол/untitled&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -79,11 +100,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/types/movies" />
       <recent name="$PROJECT_DIR$/src/types" />
       <recent name="$PROJECT_DIR$/src/UI-kit/components/UI" />
       <recent name="$PROJECT_DIR$/src/components/feature/detail-info-film" />
       <recent name="$PROJECT_DIR$/src/UI-kit/components/utils" />
-      <recent name="$PROJECT_DIR$/src/UI-kit/providersTheme" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -131,6 +152,14 @@
       <workItem from="1691489942943" duration="13788000" />
       <workItem from="1691657019778" duration="4792000" />
       <workItem from="1691747298811" duration="218000" />
+      <workItem from="1692093720948" duration="1431000" />
+      <workItem from="1692095343184" duration="387000" />
+      <workItem from="1692123767763" duration="29000" />
+      <workItem from="1692127724974" duration="692000" />
+      <workItem from="1692128804622" duration="208000" />
+      <workItem from="1692182216310" duration="6000" />
+      <workItem from="1692182230638" duration="5000" />
+      <workItem from="1692182244356" duration="12318000" />
     </task>
     <servers />
   </component>

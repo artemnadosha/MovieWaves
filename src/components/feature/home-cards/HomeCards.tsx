@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { Box, Card, CardProps } from "@/UI-kit/components";
-import { HomeSliderType } from "@/types";
+import { MovieDataType } from "@/types";
 
 interface HomeCardsProps {
-  dataCards: HomeSliderType;
+  dataCards: MovieDataType;
 }
 
 const mokCard: CardProps[] = [
@@ -41,7 +41,7 @@ const mokCard: CardProps[] = [
   },
 ];
 
-const generateDataCards = (dataCards: HomeSliderType) => {
+const generateDataCards = (dataCards: MovieDataType) => {
   return dataCards.map((item) => {
     return {
       id: item.id,

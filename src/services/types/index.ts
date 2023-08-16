@@ -1,6 +1,9 @@
 export type {
-  ResponseUpcomingMovies,
+  ResponseMovies,
   MoviesType,
   ResponseImagesBackdrop,
   ImagesBackdrop,
+  DetailMovieType,
+  ResponseGenres,
+  TrailerType,
 } from "./API_response";

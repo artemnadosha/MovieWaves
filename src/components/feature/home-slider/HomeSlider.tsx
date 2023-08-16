@@ -2,50 +2,20 @@ import { FC, useState } from "react";
 import { HomeSliderWrapper } from "./HomeSlider.styled";
 import { Box, Button, Slider, Typography } from "@/UI-kit/components";
 import { ImageProps } from "next/image";
-import { HomeSliderType } from "@/types";
+import { MovieDataType } from "@/types";
 
 interface HomeSliderProps {
-  dataSlider: HomeSliderType;
+  dataSlider: MovieDataType;
 }
-const mokImage: ImageProps[] = [
-  {
-    src: "https://itc.ua/wp-content/uploads/2023/07/oppenheimer-2023-movie-poster-hd-wallpaper-uhdpaper.com-719-1-k.jpg",
-    alt: "Oppenheimer",
-  },
-  {
-    src: "https://itc.ua/wp-content/uploads/2023/07/HauntedMansion.jpg",
-    alt: "Haunted Mansion",
-  },
-  {
-    src: "https://itc.ua/wp-content/uploads/2023/07/Barbie-Landscape-promo.jpeg",
-    alt: "Barbie",
-  },
-  {
-    src: "https://itc.ua/wp-content/uploads/2023/07/4xBX8xoVyd0b1jh9F1fXTwxmY8H.jpg",
-    alt: "They Cloned Tyrone",
-  },
-  {
-    src: "https://itc.ua/wp-content/uploads/2023/07/tmDdFWtXwq7alX2dPG3LPPNNVs2.jpg",
-    alt: "Bird Box Barcelona",
-  },
-  {
-    src: "https://itc.ua/wp-content/uploads/2023/07/Do-I-Need-To-Watch-the-Other-Insidious-Movies.webp",
-    alt: "Insidious: The Red Door",
-  },
-];
 
-const generateSrcAlt = (arr: string[], title: string) => {
-  return arr.map((item) => ({ src: item, alt: title }));
-};
-
-const generateSliderItem = (dataSlider: HomeSliderType) => {
+const generateSliderItem = (dataSlider: MovieDataType) => {
   return dataSlider.map((item) => {
     return {
       mainSlider: {
         src: item.backdrop,
         alt: item.title,
       },
-      subSlider: generateSrcAlt(item.moviesImages, item.title),
+      subSlider: item.moviesImages,
     };
   });
 };

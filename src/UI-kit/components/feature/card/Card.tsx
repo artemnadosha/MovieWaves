@@ -13,8 +13,8 @@ const Card: FC<CardProps> = ({ image, subTitle, title }) => {
   return (
     <Box
       sx={{
-        width: "250px",
-        height: "350px",
+        width: "280px",
+        height: "340px",
         borderRadius: "10px",
         overflow: "hidden",
       }}

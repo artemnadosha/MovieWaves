@@ -8,5 +8,6 @@ export {
   DetailInfoMovieWrapper,
   MovieAction,
   MoviePosterWithTrailerButton,
+  MoviesList,
 } from "./feature";
 export { Logo } from "./UI";

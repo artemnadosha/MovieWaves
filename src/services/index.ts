@@ -1,1 +1,1 @@
-export { getServices } from "./getServicesMovie";
+export { getMovieServices } from "./getServicesMovie";

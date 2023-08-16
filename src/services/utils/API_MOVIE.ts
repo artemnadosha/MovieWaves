@@ -1,6 +1,6 @@
 type generateMovieURLType = {
-  id: number;
-  path: "detail" | "credits" | "videos" | "images";
+  id: string | number;
+  path: "credits" | "videos" | "images";
 };
 
 const generateMovieURL = ({ path, id }: generateMovieURLType) => {
@@ -9,24 +9,23 @@ const generateMovieURL = ({ path, id }: generateMovieURLType) => {
   }`;
 };
 
-export const API_CONST = {
-  UPCOMING_MOVIES_URL: `${process.env.NEXT_PUBLIC_BASE_URL}/movie/upcoming?language=en-US&page=1`,
-  DETAIL_MOVIE_URL: (id: number) =>
-    `${generateMovieURL({
-      id,
-      path: "videos",
-    })}`,
-  CAST_MOVIE_URL: (id: number) =>
+export const API_MOVIE = {
+  UPCOMING_URL: `${process.env.NEXT_PUBLIC_BASE_URL}/movie/upcoming?language=en-US&page=1`,
+  POPULAR_URL: `${process.env.NEXT_PUBLIC_BASE_URL}/movie/popular?language=en-US&page=1`,
+  DETAIL_URL: (id: string) =>
+    `${process.env.NEXT_PUBLIC_BASE_URL}/movie/${id}?language=en-US"
+      `,
+  CAST_URL: (id: string) =>
     `${generateMovieURL({
       id,
       path: "credits",
     })}`,
-  TRAILER_MOVIE_URL: (id: number) =>
+  TRAILER_URL: (id: string) =>
     `${generateMovieURL({
       id,
       path: "videos",
     })}`,
-  IMAGES_MOVIES_URL: (id: number) => {
+  IMAGES_URL: (id: number | string) => {
     return `${generateMovieURL({
       id,
       path: "images",

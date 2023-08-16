@@ -1,2 +1,4 @@
-export { API_CONST } from "./API_CONST";
+export { API_MOVIE } from "./API_MOVIE";
 export { options } from "./API_options";
+export { generateSrcAltImages } from "./generateSrcAltImages";
+export { generateGenresString } from "./generateGenresString";

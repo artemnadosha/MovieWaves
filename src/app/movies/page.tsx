@@ -1,7 +1,9 @@
-import { DetailMovieInfo } from "@/app-pages";
+import { Movies } from "@/app-pages";
+import { getMovieServices } from "@/services";
 
-const MoviesPage = () => {
-  return <DetailMovieInfo />;
+const MoviesPage = async () => {
+  const data = await getMovieServices.popular();
+  return <Movies data={data} />;
 };
 
 export default MoviesPage;
