@@ -9,5 +9,5 @@ export interface ComponentTypographyProps {
 }
 
 export interface ComponentBoxProps {
-  component?: JSXBoxTagName | "label";
+  component?: JSXBoxTagName;
 }
