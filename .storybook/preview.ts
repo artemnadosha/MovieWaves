@@ -11,20 +11,18 @@ const preview: Preview = {
         date: /Date$/,
       },
     },
-  },
-};
-
-export const globalTypes = {
-  theme: {
-    name: "Theme",
-    description: "Global theme for components",
-    toolbar: {
-      icon: "paintbrush",
-      items: [
-        { value: "light", title: "Light", left: "🌞" },
-        { value: "dark", title: "Dark", left: "🌛" },
+    backgrounds: {
+      default: "light",
+      values: [
+        {
+          name: "dark",
+          value: "#202020",
+        },
+        {
+          name: "light",
+          value: "#d8d8d8",
+        },
       ],
-      dynamicTitle: true,
     },
   },
 };

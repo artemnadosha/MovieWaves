@@ -1,7 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { CheckboxOrRadio, CheckboxOrRadioProps } from "@/UI-kit/components";
-import { darkTheme } from "@/UI-kit";
-import { ColorKeysProps, SizeProps } from "@/UI-kit/types";
 import { argTypes } from "@/UI-kit/components/utils-stories";
 
 const meta: Meta<CheckboxOrRadioProps> = {

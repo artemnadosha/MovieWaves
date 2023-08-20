@@ -5,11 +5,6 @@ const THEMES = {
   light: lightTheme,
   dark: darkTheme,
 };
-const GlobalCSS = {
-  margin: 0,
-  padding: 0,
-  boxSizing: "border-box",
-};
 
 export const withTheme = (Story, context) => {
   const { theme } = context.globals;
@@ -17,6 +12,7 @@ export const withTheme = (Story, context) => {
   return (
     <ThemeProvider theme={THEMES[theme] || THEMES["dark"]}>
       <Story />
+      <div id="modal"></div>
     </ThemeProvider>
   );
 };

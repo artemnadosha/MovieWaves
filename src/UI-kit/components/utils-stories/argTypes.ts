@@ -1,7 +1,12 @@
 import { CSSValues, TAGValues } from "./index";
 import { InputType } from "@storybook/types";
 import { darkTheme } from "@/UI-kit";
-import { ColorKeysProps, SizeProps, VariantButton } from "@/UI-kit/types";
+import {
+  ColorKeysProps,
+  SizeProps,
+  VariantButton,
+  VariantLink,
+} from "@/UI-kit/types";
 import { PaletteConfigType, PaletteName, PaletteType } from "@/UI-kit/theme";
 
 const direction: InputType = {
@@ -134,6 +139,17 @@ const variantButton = ({ variant }: VariantButton): InputType => ({
   },
 });
 
+const variantLink = ({ variant: defaultValue }: VariantLink): InputType => ({
+  type: "string",
+  options: ["tab", "contained", "outlined", "text", "defaultText"],
+  control: "select",
+  description: "Use of variant that are set in the theme",
+  table: {
+    type: { summary: "tab, contained, outlined, text, defaultText" },
+    defaultValue: { summary: defaultValue || "text" },
+  },
+});
+
 const variantCheckRadio: InputType = {
   type: "string",
   options: ["contained", "outlined"],
@@ -145,16 +161,18 @@ const variantCheckRadio: InputType = {
   },
 };
 
-const iconStart: InputType = {
-  options: ["😄"],
-  control: "check",
+const variantInput: InputType = {
+  type: "string",
+  options: ["contained in progress", "outlined"],
+  control: "radio",
+  description: "Use of variant that are set in the theme",
   table: {
-    type: { summary: "React SVG Component" },
-    defaultValue: { summary: "none" },
+    type: { summary: "contained, outlined" },
+    defaultValue: { summary: "contained" },
   },
 };
 
-const iconEnd: InputType = {
+const icon: InputType = {
   options: ["😄"],
   control: "check",
   table: {
@@ -288,6 +306,21 @@ const indents: InputType = {
   },
 };
 
+const disabledInTable: InputType = {
+  table: { disable: true },
+};
+
+const href: InputType = {
+  type: {
+    name: "string",
+    required: true,
+  },
+  description: "Props accepting the reference ",
+  table: {
+    defaultValue: { summary: "none" },
+  },
+};
+
 export const argTypes = {
   direction,
   alignItems,
@@ -300,8 +333,9 @@ export const argTypes = {
   sizeAnother,
   variantButton,
   variantCheckRadio,
-  iconStart,
-  iconEnd,
+  variantInput,
+  variantLink,
+  icon,
   radius,
   hidden,
   label,
@@ -312,4 +346,6 @@ export const argTypes = {
   componentBox,
   spacing,
   indents,
+  disabledInTable,
+  href,
 };

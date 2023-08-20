@@ -1,7 +1,6 @@
 import { usePathname } from "next/navigation";
 import styled, { css } from "styled-components";
 import NextLink from "next/link";
-import { defaultLinkConfig } from "./Link.utils";
 import { IconBox, MyLinkProps } from "@/UI-kit/components";
 import { buttonColorConfig, linkColorConfig } from "@/UI-kit/components/utils";
 

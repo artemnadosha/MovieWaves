@@ -8,12 +8,14 @@ interface ModalProps extends PropsWithChildren {
   isOpen: boolean;
   onClose?: () => void;
   closeOverlay?: boolean;
+  isCloseIcon?: boolean;
 }
 
 const Modal: FC<ModalProps> = ({
   isOpen,
   onClose,
   closeOverlay = true,
+  isCloseIcon = true,
   children,
 }) => {
   return isOpen ? (
@@ -31,7 +33,7 @@ const Modal: FC<ModalProps> = ({
             transform: "scale(2)",
           }}
         >
-          <IconExit />
+          {isCloseIcon && <IconExit />}
         </Button>
       </ModalWrapper>
     </Portal>
