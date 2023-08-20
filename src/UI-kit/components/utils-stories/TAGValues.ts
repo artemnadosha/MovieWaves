@@ -1,4 +1,4 @@
-const Box = [
+const box = [
   "div",
   "article",
   "section",
@@ -10,7 +10,12 @@ const Box = [
   "span",
   "label",
 ];
+const typographyVariant = ["h1", "h2", "h3", "h4", "h5", "h6", "p"];
+
+const typography = [...typographyVariant, "span"];
 
 export const TAGValues = {
-  Box,
+  box,
+  typographyVariant,
+  typography,
 };
