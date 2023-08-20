@@ -1,12 +1,17 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { Avatar } from "@/UI-kit/components";
+import { argTypes } from "@/UI-kit/components/utils-stories";
 
 const meta: Meta<typeof Avatar> = {
   title: "Avatar",
   component: Avatar,
   tags: ["autodocs"],
+  argTypes: {
+    src: argTypes.src,
+    alt: argTypes.alt,
+  },
   args: {
-    src: "https://n1s1.hsmedia.ru/6f/58/f5/6f58f5de8ef7a8669cef896d4b704f99/480x497_0xac120003_20009305281589455348.jpg",
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Leonardo_Dicaprio_Cannes_2019.jpg/220px-Leonardo_Dicaprio_Cannes_2019.jpg",
     alt: "default Alt",
     width: 80,
     height: 80,

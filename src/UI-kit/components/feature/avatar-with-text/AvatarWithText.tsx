@@ -1,7 +1,8 @@
 import { FC } from "react";
 import { Avatar, Box, Typography } from "@/UI-kit/components";
+import { ColorKeysProps } from "@/UI-kit/types";
 
-export interface AvatarWithTextProps {
+export interface AvatarWithTextProps extends ColorKeysProps {
   src: string;
   alt: string;
   title: string;
@@ -13,6 +14,7 @@ const AvatarWithText: FC<AvatarWithTextProps> = ({
   alt,
   title,
   subTitle,
+  color,
 }) => {
   return (
     <Box
@@ -23,7 +25,7 @@ const AvatarWithText: FC<AvatarWithTextProps> = ({
     >
       <Avatar src={src} alt={alt} width="100" height="100" />
       <Box spacing={1} justifyContent="center">
-        <Typography color="primary">{title}</Typography>
+        <Typography color={color || "primary"}>{title}</Typography>
         <Typography>{subTitle}</Typography>
       </Box>
     </Box>

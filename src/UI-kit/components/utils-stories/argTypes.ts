@@ -364,6 +364,46 @@ const booleanProps = ({
   },
 });
 
+const src: InputType = {
+  type: "string",
+  description: "Picture link",
+  table: {
+    defaultValue: { summary: "none" },
+  },
+};
+
+const alt: InputType = {
+  type: "string",
+  description: "Alt picture",
+  table: {
+    defaultValue: { summary: "none" },
+  },
+};
+
+const title: InputType = {
+  type: "string",
+  description: "Component title",
+  table: {
+    defaultValue: { summary: "none" },
+  },
+};
+
+const subTitle: InputType = {
+  type: "string",
+  description: "Component sub title",
+  table: {
+    defaultValue: { summary: "none" },
+  },
+};
+
+const checked: InputType = {
+  type: "boolean",
+  description: "Component checked or not",
+  table: {
+    defaultValue: { summary: false },
+  },
+};
+
 export const argTypes = {
   direction,
   alignItems,
@@ -394,4 +434,9 @@ export const argTypes = {
   disabledInTable,
   href,
   booleanProps,
+  src,
+  alt,
+  title,
+  subTitle,
+  checked,
 };
