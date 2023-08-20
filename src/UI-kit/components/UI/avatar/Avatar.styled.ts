@@ -9,6 +9,7 @@ const Avatar = styled(Image)`
   object-fit: cover;
   object-position: top;
   border-radius: 50%;
+  background: antiquewhite;
 `;
 
 export default Avatar;

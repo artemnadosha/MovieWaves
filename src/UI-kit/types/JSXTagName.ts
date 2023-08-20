@@ -7,7 +7,8 @@ export type JSXBoxTagName =
   | "main"
   | "footer"
   | "body"
-  | "span";
+  | "span"
+  | "label";
 
 export type JSXHeadingTagName = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 

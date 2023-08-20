@@ -5,33 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/types/movies/MovieDataType.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/movies/MovieDetailType.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/movies/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/card/Card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app-pages/detail-movie-info/DetailMovieInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/detail-movie-info/DetailMovieInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app-pages/home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/home/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app-pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/movies/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/movies/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/series/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/series/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/detail-info-movie/movie-cast/MovieCast.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/detail-info-movie/movie-cast/MovieCast.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/home-cards/HomeCards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/home-cards/HomeCards.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/home-slider/HomeSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/home-slider/HomeSlider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/getServicesMovie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/getServicesMovie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/types/API_response.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/types/API_response.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/utils/API_CONST.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/API_MOVIE.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/home/HomeSliderType.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/home/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/movie-detail/MovieDetailType.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/movie-detail/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/preview.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/preview.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/withTheme.decorator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/withTheme.decorator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/link/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/link/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/modal/Modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils-stories/argTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils-stories/argTypes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +43,37 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="dev" />
+                    <option name="lastUsedInstant" value="1692353680" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1692353599" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,14 +95,14 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/skyfull/Рабочий стол/untitled&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/usr/lib/node_modules/prettier&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/skyfull/Рабочий стол/next-js-project-app/node_modules/prettier&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/skyfull/Рабочий стол/next-js-project-app/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -100,11 +113,11 @@
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/images" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/types/movies" />
       <recent name="$PROJECT_DIR$/src/types" />
       <recent name="$PROJECT_DIR$/src/UI-kit/components/UI" />
-      <recent name="$PROJECT_DIR$/src/components/feature/detail-info-film" />
-      <recent name="$PROJECT_DIR$/src/UI-kit/components/utils" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -159,7 +172,11 @@
       <workItem from="1692128804622" duration="208000" />
       <workItem from="1692182216310" duration="6000" />
       <workItem from="1692182230638" duration="5000" />
-      <workItem from="1692182244356" duration="12318000" />
+      <workItem from="1692182244356" duration="12909000" />
+      <workItem from="1692352739846" duration="15541000" />
+      <workItem from="1692369224353" duration="18543000" />
+      <workItem from="1692462336596" duration="11133000" />
+      <workItem from="1692529515189" duration="3999000" />
     </task>
     <servers />
   </component>

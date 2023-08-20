@@ -13,6 +13,4 @@ export interface CheckboxOrRadioProps
     Omit<InputHTMLAttributes<HTMLInputElement>, "size" | "type" | "color">,
     VariantCheckbox,
     SizeProps,
-    Required<TypeCheckboxOrRadioProps> {
-  onControlled?: (value: string | number) => void;
-}
+    Required<TypeCheckboxOrRadioProps> {}
