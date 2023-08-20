@@ -10,11 +10,15 @@ const meta: Meta<typeof Modal> = {
   argTypes: {
     children: argTypes.children,
     onClose: argTypes.disabledInTable,
+    isCloseIcon: argTypes.booleanProps({ defaultValue: true }),
+    isOpen: argTypes.booleanProps({ defaultValue: "none", required: true }),
+    closeOverlay: argTypes.booleanProps({ defaultValue: true }),
   },
   args: {
-    children: "test modal component",
+    children: "Test modal component",
     isCloseIcon: true,
     isOpen: false,
+    closeOverlay: true,
   },
 };
 
@@ -23,7 +27,6 @@ type Story = StoryObj<typeof Modal>;
 
 const ModalStoryComponent: typeof Modal = ({
   isOpen,
-  onClose,
   closeOverlay,
   isCloseIcon,
   children,
@@ -42,7 +45,12 @@ const ModalStoryComponent: typeof Modal = ({
         closeOverlay={closeOverlay}
         isCloseIcon={isCloseIcon}
       >
-        <Box sx={{ width: 200, height: 200 }} color="secondary">
+        <Box
+          sx={{ width: 200, height: 200 }}
+          justifyContent="center"
+          alignItems="center"
+          color="secondary"
+        >
           {children}
         </Box>
       </Modal>

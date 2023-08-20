@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/preview.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/preview.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.storybook/withTheme.decorator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/withTheme.decorator.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.utils.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/link/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/link/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/modal/Modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/modal/Modal.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/modal/Modal.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils-stories/TAGValues.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils-stories/TAGValues.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils-stories/argTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils-stories/argTypes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +170,7 @@
       <workItem from="1692352739846" duration="15541000" />
       <workItem from="1692369224353" duration="18543000" />
       <workItem from="1692462336596" duration="11133000" />
-      <workItem from="1692529515189" duration="3999000" />
+      <workItem from="1692529515189" duration="7790000" />
     </task>
     <servers />
   </component>

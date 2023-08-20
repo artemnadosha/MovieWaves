@@ -172,6 +172,20 @@ const variantInput: InputType = {
   },
 };
 
+const variantTypography: InputType = {
+  type: "string",
+  options: TAGValues.typographyVariant,
+  control: "select",
+  description: "Use of variant that are set in the theme",
+  table: {
+    type: {
+      summary: "All variant",
+      detail: TAGValues.typographyVariant.join(",\n"),
+    },
+    defaultValue: { summary: "p" },
+  },
+};
+
 const icon: InputType = {
   options: ["😄"],
   control: "check",
@@ -279,12 +293,23 @@ const border: InputType = {
 
 const componentBox: InputType = {
   type: "string",
-  options: TAGValues.Box,
+  options: TAGValues.box,
   control: "select",
   description: "Ability to pass a component tag to retrieve semantics",
   table: {
-    type: { summary: "All tag", detail: TAGValues.Box.join(",\n") },
+    type: { summary: "All tag", detail: TAGValues.box.join(",\n") },
     defaultValue: { summary: "div" },
+  },
+};
+
+const componentTypography: InputType = {
+  type: "string",
+  options: TAGValues.typography,
+  control: "select",
+  description: "Ability to pass a component tag to retrieve semantics",
+  table: {
+    type: { summary: "All tag", detail: TAGValues.typography.join(",\n") },
+    defaultValue: { summary: "p" },
   },
 };
 
@@ -321,6 +346,24 @@ const href: InputType = {
   },
 };
 
+type BooleanPropsType = {
+  defaultValue?: boolean | string;
+  required?: boolean;
+};
+const booleanProps = ({
+  defaultValue,
+  required,
+}: BooleanPropsType): InputType => ({
+  type: {
+    name: "boolean",
+    required: required || false,
+  },
+  description: "Rendering by state",
+  table: {
+    defaultValue: { summary: defaultValue || false },
+  },
+});
+
 export const argTypes = {
   direction,
   alignItems,
@@ -334,6 +377,7 @@ export const argTypes = {
   variantButton,
   variantCheckRadio,
   variantInput,
+  variantTypography,
   variantLink,
   icon,
   radius,
@@ -344,8 +388,10 @@ export const argTypes = {
   typeCheckRadio,
   border,
   componentBox,
+  componentTypography,
   spacing,
   indents,
   disabledInTable,
   href,
+  booleanProps,
 };
