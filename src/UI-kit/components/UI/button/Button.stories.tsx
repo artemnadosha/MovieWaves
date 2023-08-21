@@ -1,7 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { Button } from "@/UI-kit/components";
-import { darkTheme } from "@/UI-kit";
-import { ColorKeysProps, SizeProps } from "@/UI-kit/types";
 import { ButtonProps } from "./Button.type";
 import { argTypes } from "@/UI-kit/components/utils-stories";
 

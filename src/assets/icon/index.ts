@@ -1,4 +1,5 @@
-export { default as IconArrow } from "./IconArrow.svg";
+export { default as IconArrowRight } from "./IconArrowRight.svg";
+export { default as IconArrowLeft } from "./IconArrowLeft.svg";
 export { default as IconCheckbox } from "./IconCheckbox.svg";
 export { default as IconHome } from "./IconHome.svg";
 export { default as IconPlay } from "./IconPlay.svg";
@@ -11,3 +12,5 @@ export { default as IconMoon } from "./IconMoon.svg";
 export { default as IconSearch } from "./IconSearch.svg";
 export { default as IconNotification } from "./IconNotification.svg";
 export { default as IconExit } from "./IconExit.svg";
+export { default as IconFirstPage } from "./IconFirstPage.svg";
+export { default as IconLastPage } from "./IconLastPage.svg";

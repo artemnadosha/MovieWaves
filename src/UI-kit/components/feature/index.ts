@@ -14,3 +14,5 @@ export { YouTubeModal } from "./youtube-modal";
 
 export { AvatarWithText } from "./avatar-with-text";
 export type { AvatarWithTextProps } from "./avatar-with-text";
+
+export { Pagination } from "./pagination";

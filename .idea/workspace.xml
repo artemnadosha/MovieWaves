@@ -5,12 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/assets/icon/IconArrowRight.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/avatar/Avatar.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/avatar/Avatar.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/poster/Poster.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/poster/Poster.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/avatar-with-text/AvatarWithText.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/avatar-with-text/AvatarWithText.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils-stories/argTypes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils-stories/argTypes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/types/DirectionProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/DirectionProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/button/Button.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/slider/Slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/slider/Slider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/buttonColorConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/buttonColorConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/utils/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteConfigType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteConfigType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteDark.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteDark.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteLight.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteLight.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/types/SizeProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/SizeProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/types/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icon/IconArrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/icon/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icon/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/feature/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/header/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +44,9 @@
         <option value="TSX and Styled Component" />
         <option value="Styled Components.ts.child.0" />
         <option value="Styled Components" />
+        <option value="Route NextJS" />
         <option value="ReactComponent.tsx.child.0" />
         <option value="ReactComponent" />
-        <option value="Route NextJS" />
       </list>
     </option>
   </component>
@@ -95,7 +107,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/skyfull/Рабочий стол/untitled",
+    "last_opened_file_path": "/home/skyfull/Рабочий стол/next-js-project-app/src/assets/icon",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,6 +121,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/icon" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -176,6 +189,7 @@
       <workItem from="1692369224353" duration="18543000" />
       <workItem from="1692462336596" duration="11133000" />
       <workItem from="1692529515189" duration="7790000" />
+      <workItem from="1692616350860" duration="16302000" />
     </task>
     <servers />
   </component>
@@ -198,7 +212,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/UI-kit/components/UI/checkbox-or-radio/CheckboxOrRadio.tsx</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

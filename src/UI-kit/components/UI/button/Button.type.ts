@@ -1,7 +1,9 @@
 import { ButtonHTMLAttributes, PropsWithChildren } from "react";
 import {
+  ActiveProps,
   ColorKeysProps,
   DefaultProps,
+  EqualSidesProps,
   IconProps,
   RadiusProps,
   SizeProps,
@@ -16,4 +18,6 @@ export interface ButtonProps
     ColorKeysProps,
     IconProps,
     RadiusProps,
+    EqualSidesProps,
+    ActiveProps,
     Omit<ButtonHTMLAttributes<HTMLButtonElement>, "color"> {}

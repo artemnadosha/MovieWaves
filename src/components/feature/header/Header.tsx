@@ -7,7 +7,7 @@ import {
   Input,
   YouTubeModal,
 } from "@/UI-kit/components";
-import { IconArrow, IconNotification, IconSearch } from "@/assets/icon";
+import { IconArrowRight, IconNotification, IconSearch } from "@/assets/icon";
 
 interface HeaderProps {}
 
@@ -26,7 +26,7 @@ const Header: FC<HeaderProps> = () => {
       sx={{ height: "fit-content" }}
     >
       <Button size="medium" variant="outlined" onClick={handleToggleModal}>
-        <IconArrow style={{ transform: "rotate(180deg)" }} />
+        <IconArrowRight style={{ transform: "rotate(180deg)" }} />
       </Button>
       <Box
         direction="row"

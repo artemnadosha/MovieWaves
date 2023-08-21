@@ -5,6 +5,7 @@ export type PaletteType = {
   additional: string;
   contrastText: string;
   additionalText: string;
+  disabled: string;
 };
 
 export type PaletteConfigType = {

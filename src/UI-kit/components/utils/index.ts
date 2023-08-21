@@ -4,3 +4,4 @@ export { checkboxColorConfig } from "./checkboxColorConfig";
 export { inputColorConfig } from "./inputColorConfig";
 export { badgeSizePositionConfig } from "./badgeSizePositionConfig";
 export { tagColorConfig } from "./tagColorConfig";
+export { equalSidesStyles } from "./equalSidesStyles";

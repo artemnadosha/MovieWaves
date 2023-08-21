@@ -6,6 +6,7 @@ export {
   Card,
   YouTubeModal,
   AvatarWithText,
+  Pagination,
 } from "./feature";
 export type {
   LinkSingleType,

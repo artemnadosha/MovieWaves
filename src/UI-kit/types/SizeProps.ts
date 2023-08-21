@@ -5,3 +5,7 @@ export interface SizeProps {
 export interface SizeBadgeProps {
   size?: "small" | "large";
 }
+
+export interface EqualSidesProps {
+  equalSides?: boolean;
+}

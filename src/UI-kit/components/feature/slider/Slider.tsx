@@ -1,4 +1,4 @@
-import { IconArrow } from "@/assets/icon";
+import { IconArrowRight } from "@/assets/icon";
 import { useState, FC, useEffect, useCallback } from "react";
 import Image, { ImageProps } from "next/image";
 import {
@@ -144,14 +144,14 @@ const Slider: FC<SliderProps> = ({
             radius="50%"
             {...buttonSetting}
           >
-            <IconArrow style={{ transform: "rotateY(180deg)" }} />
+            <IconArrowRight style={{ transform: "rotateY(180deg)" }} />
           </PrevButton>
           <NextButton
             onClick={() => !isTransition && slideToNext({ direction: "right" })}
             radius="50%"
             {...buttonSetting}
           >
-            <IconArrow />
+            <IconArrowRight />
           </NextButton>
         </>
       )}

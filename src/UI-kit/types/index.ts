@@ -26,7 +26,7 @@ export type {
   ColorBorderProps,
 } from "./ColorProps";
 
-export type { SizeProps, SizeBadgeProps } from "./SizeProps";
+export type { SizeProps, SizeBadgeProps, EqualSidesProps } from "./SizeProps";
 
 export type { SpacingPaddingOrMargin, SpacingProps } from "./SpacingProps";
 
@@ -40,3 +40,5 @@ export type {
 export type { TypeCheckboxOrRadioProps } from "./TypeProps";
 
 export type { DirectionHorizontalVerticalProps } from "./DirectionProps";
+
+export type { ActiveProps } from "./ActiveProps";
