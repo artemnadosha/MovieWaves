@@ -12,5 +12,6 @@ export const ThreePointsWrapper = styled.div<SizeProps>(
   ({ size }) => `
     ${equalSidesStyles[size || "medium"]}
     ${displayCSS}
+    color: #fff
 `
 );

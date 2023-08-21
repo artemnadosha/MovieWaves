@@ -82,19 +82,22 @@ const upcoming = async (page?: string): Promise<Awaited<MovieDataType>> => {
   );
 };
 
-const popular = async () => {
-  const res = await fetch(API_MOVIE.POPULAR_URL, options);
+const popular = async (page: string) => {
+  const res = await fetch(API_MOVIE.POPULAR_URL(page), options);
   const json: ResponseMovies = await res.json();
-
-  return await Promise.all(
+  const data = await Promise.all(
     json.results.map(async (item) => await MovieDTO(item))
   );
+  return {
+    data,
+    totalPages: json.total_pages,
+  };
 };
 
 const detail = async (id: string) => {
   const res = await fetch(API_MOVIE.DETAIL_URL(id), options);
   const json: DetailMovieType = await res.json();
-  console.log(json);
+
   return await MovieDetailInfoDTO(json);
 };
 const cast = async (id: string, title: string) => {

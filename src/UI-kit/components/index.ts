@@ -37,4 +37,5 @@ export type {
   CheckboxOrRadioProps,
   TypographyProps,
   SwitchProps,
+  BoxProps,
 } from "./UI";

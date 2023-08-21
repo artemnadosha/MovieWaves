@@ -8,6 +8,7 @@ export { Typography } from "./typography";
 export type { TypographyProps } from "./typography";
 
 export { Box } from "./box";
+export type { BoxProps } from "./box";
 
 export { Switch } from "./switch";
 export type { SwitchProps } from "./switch";

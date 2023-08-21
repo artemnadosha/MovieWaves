@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import { Box, Button } from "@/UI-kit/components";
+import { Box, BoxProps, Button, Typography } from "@/UI-kit/components";
 import {
   IconArrowLeft,
   IconArrowRight,
@@ -13,6 +13,7 @@ interface PaginationProps extends SizeProps, ColorKeysProps, VariantButton {
   count: number;
   defaultPage?: number;
   onChange?: (page: number) => void;
+  containerSx?: BoxProps;
 }
 
 const Pagination: FC<PaginationProps> = ({
@@ -21,6 +22,7 @@ const Pagination: FC<PaginationProps> = ({
   size,
   color,
   variant,
+  containerSx,
   onChange,
 }) => {
   const [pageState, setPageState] = useState(defaultPage || 1);
@@ -112,10 +114,12 @@ const Pagination: FC<PaginationProps> = ({
 
   return (
     <Box
-      justifyContent="center"
-      alignItems="center"
-      direction="row"
-      spacing={1}
+      justifyContent={containerSx?.justifyContent || "center"}
+      alignItems={containerSx?.alignItems || "center"}
+      direction={containerSx?.direction || "row"}
+      sx={{ height: "fit-content", flexWrap: "wrap", ...containerSx?.sx }}
+      spacing={containerSx?.spacing || 1}
+      {...containerSx}
     >
       <Button
         variant="defaultText"
@@ -147,7 +151,9 @@ const Pagination: FC<PaginationProps> = ({
         {1}
       </Button>
       {pageState >= 5 && (
-        <ThreePointsWrapper size={size}>...</ThreePointsWrapper>
+        <ThreePointsWrapper size={size}>
+          <Typography color={color}>...</Typography>
+        </ThreePointsWrapper>
       )}
       {generateCountPagination.slice(hideFlagStart, hideFlagEnd).map((item) => (
         <Button
@@ -163,7 +169,9 @@ const Pagination: FC<PaginationProps> = ({
         </Button>
       ))}
       {hideFlagStart <= count - 6 && (
-        <ThreePointsWrapper size={size}>...</ThreePointsWrapper>
+        <ThreePointsWrapper size={size}>
+          <Typography color={color}>...</Typography>
+        </ThreePointsWrapper>
       )}
       <Button
         color={color}

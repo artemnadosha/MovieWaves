@@ -11,7 +11,8 @@ const generateMovieURL = ({ path, id }: generateMovieURLType) => {
 
 export const API_MOVIE = {
   UPCOMING_URL: `${process.env.NEXT_PUBLIC_BASE_URL}/movie/upcoming?language=en-US&page=1`,
-  POPULAR_URL: `${process.env.NEXT_PUBLIC_BASE_URL}/movie/popular?language=en-US&page=1`,
+  POPULAR_URL: (page: string) =>
+    `${process.env.NEXT_PUBLIC_BASE_URL}/movie/popular?language=en-US&page=${page}`,
   DETAIL_URL: (id: string) =>
     `${process.env.NEXT_PUBLIC_BASE_URL}/movie/${id}?language=en-US"
       `,
