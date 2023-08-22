@@ -14,6 +14,7 @@ interface PaginationProps extends SizeProps, ColorKeysProps, VariantButton {
   defaultPage?: number;
   onChange?: (page: number) => void;
   containerSx?: BoxProps;
+  siblingCount?: number;
 }
 
 const Pagination: FC<PaginationProps> = ({
@@ -23,61 +24,19 @@ const Pagination: FC<PaginationProps> = ({
   color,
   variant,
   containerSx,
+  siblingCount,
   onChange,
 }) => {
+  const defaultSiblingCount = siblingCount || 1;
+  const defaultHideFlagEnd = 2 * defaultSiblingCount + 3;
+
+  const defaultChangeStart = defaultSiblingCount + 4;
+
   const [pageState, setPageState] = useState(defaultPage || 1);
   const [hideFlagStart, setHideFlagStart] = useState(1);
-  const [hideFlagEnd, setHideFlagEnd] = useState(5);
+  const [hideFlagEnd, setHideFlagEnd] = useState(defaultHideFlagEnd);
 
-  useEffect(() => {
-    if (count)
-      if (
-        pageState === hideFlagEnd &&
-        hideFlagStart > 1 &&
-        hideFlagEnd > 5 &&
-        pageState + 1 !== count
-      ) {
-        setHideFlagStart((prevState) => prevState + 1);
-        setHideFlagEnd((prevState) => prevState + 1);
-      }
-
-    if (pageState - 1 === hideFlagStart && pageState >= 5) {
-      setHideFlagStart((prevState) => prevState - 1);
-      setHideFlagEnd((prevState) => prevState - 1);
-    }
-
-    if (hideFlagStart <= 1 && hideFlagEnd <= 5 && pageState === 5) {
-      setHideFlagStart(3);
-      setHideFlagEnd(6);
-    }
-
-    if (hideFlagStart <= 3 && hideFlagEnd <= 7 && pageState <= 4) {
-      setHideFlagStart(1);
-      setHideFlagEnd(5);
-    }
-
-    if (
-      hideFlagStart === count - 6 &&
-      hideFlagEnd === count - 3 &&
-      pageState > count - 5
-    ) {
-      setHideFlagStart(count - 5);
-      setHideFlagEnd(count - 1);
-    }
-
-    if (pageState === count - 4 && hideFlagStart >= count - 5) {
-      setHideFlagStart(count - 6);
-      setHideFlagEnd(count - 3);
-    }
-    if (pageState === count) {
-      setHideFlagStart(count - 5);
-      setHideFlagEnd(count - 1);
-    }
-    if (pageState === 1) {
-      setHideFlagStart(1);
-      setHideFlagEnd(5);
-    }
-  }, [pageState]);
+  useEffect(() => {}, [pageState]);
 
   const generateCountPagination = Array.from(
     { length: count },
@@ -86,17 +45,35 @@ const Pagination: FC<PaginationProps> = ({
 
   const handleClick = (key: number) => {
     setPageState(key);
+    if (
+      key >= defaultChangeStart &&
+      key < count - (defaultChangeStart - defaultSiblingCount)
+    ) {
+      if (key <= pageState) {
+        setHideFlagEnd(key + defaultSiblingCount);
+        setHideFlagStart(key - defaultSiblingCount - 1);
+      } else {
+        setHideFlagEnd(key + defaultSiblingCount);
+        setHideFlagStart(key - defaultSiblingCount - 1);
+      }
+    } else if (key <= defaultChangeStart && hideFlagStart !== 1) {
+      setHideFlagStart(1);
+      setHideFlagEnd(defaultHideFlagEnd);
+    } else if (key > defaultChangeStart) {
+      setHideFlagStart(count - (defaultChangeStart + defaultSiblingCount - 1));
+      setHideFlagEnd(count - 1);
+    }
   };
 
   const handleFirstPage = () => {
     setPageState(1);
     setHideFlagStart(1);
-    setHideFlagEnd(5);
+    setHideFlagEnd(defaultChangeStart);
   };
 
   const handleLastPage = () => {
     setPageState(count);
-    setHideFlagStart(count - 5);
+    setHideFlagStart(count - (defaultChangeStart - 1));
     setHideFlagEnd(count - 1);
   };
 
@@ -150,7 +127,7 @@ const Pagination: FC<PaginationProps> = ({
       >
         {1}
       </Button>
-      {pageState >= 5 && (
+      {hideFlagStart !== 1 && (
         <ThreePointsWrapper size={size}>
           <Typography color={color}>...</Typography>
         </ThreePointsWrapper>
@@ -168,7 +145,7 @@ const Pagination: FC<PaginationProps> = ({
           {item}
         </Button>
       ))}
-      {hideFlagStart <= count - 6 && (
+      {hideFlagEnd !== count - 1 && (
         <ThreePointsWrapper size={size}>
           <Typography color={color}>...</Typography>
         </ThreePointsWrapper>

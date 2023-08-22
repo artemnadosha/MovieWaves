@@ -6,18 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/box/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/box/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/pagination/Pagination.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/pagination/Pagination.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/pagination/Pagination.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/pagination/Pagination.stories.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/pagination/Pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/pagination/Pagination.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteDark.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteDark.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app-pages/movies/Movies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app-pages/movies/Movies.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/movies/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/movies/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/feature/movie-list/MoviesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/feature/movie-list/MoviesList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/providers/StyledThemeProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/providers/StyledThemeProvider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/getServicesMovie.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/getServicesMovie.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/utils/API_MOVIE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/API_MOVIE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/utils/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/utils/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,24 +87,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/skyfull/Рабочий стол/next-js-project-app/src/assets/icon",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/home/skyfull/Рабочий стол/next-js-project-app/node_modules/prettier",
-    "settings.editor.selected.configurable": "editor.preferences.gutterIcons",
-    "ts.external.directory.path": "/home/skyfull/Рабочий стол/next-js-project-app/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/skyfull/Рабочий стол/next-js-project-app/src/assets/icon&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/skyfull/Рабочий стол/next-js-project-app/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.gutterIcons&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/skyfull/Рабочий стол/next-js-project-app/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/icon" />
@@ -185,6 +176,8 @@
       <workItem from="1692462336596" duration="11133000" />
       <workItem from="1692529515189" duration="7790000" />
       <workItem from="1692616350860" duration="22771000" />
+      <workItem from="1692645377173" duration="23000" />
+      <workItem from="1692696811394" duration="23808000" />
     </task>
     <servers />
   </component>

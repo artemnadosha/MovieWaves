@@ -9,6 +9,7 @@ const meta: Meta<typeof Pagination> = {
   argTypes: {},
   args: {
     count: 12,
+    siblingCount: 1,
   },
 };
 
