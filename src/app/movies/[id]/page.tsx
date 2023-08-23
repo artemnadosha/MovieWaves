@@ -8,7 +8,7 @@ interface MovieProps {
 }
 
 const MoviePage = async ({ params: { id } }: MovieProps) => {
-  const movieData = await getMovieServices.detailInfo(id);
+  const movieData = await getMovieServices.detailInfo({ id, type: "movie" });
   return <DetailMovieInfo {...movieData} />;
 };
 

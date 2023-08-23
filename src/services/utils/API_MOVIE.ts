@@ -20,7 +20,7 @@ const DEFAULT_URL =
   process.env.NEXT_PUBLIC_BASE_URL || "https://api.themoviedb.org/3";
 
 const generateMovieURL = ({ path, id, type }: generateMovieURLType) => {
-  return `${DEFAULT_URL}/${type || "movies"}/${id}/${path}${
+  return `${DEFAULT_URL}/${type || "movie"}/${id}/${path}${
     path === "images" ? "" : "?language=en-US"
   }`;
 };
