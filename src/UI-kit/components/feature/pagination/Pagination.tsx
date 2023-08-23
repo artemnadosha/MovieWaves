@@ -8,6 +8,7 @@ import {
 } from "@/assets/icon";
 import { ColorKeysProps, SizeProps, VariantButton } from "@/UI-kit/types";
 import { ThreePointsWrapper } from "./Pagination.styled";
+import { generateArray } from "@/UI-kit/utils";
 
 interface PaginationProps extends SizeProps, ColorKeysProps, VariantButton {
   count: number;
@@ -24,65 +25,64 @@ const Pagination: FC<PaginationProps> = ({
   color,
   variant,
   containerSx,
-  siblingCount,
+  siblingCount = 1,
   onChange,
 }) => {
-  const defaultSiblingCount = siblingCount || 1;
-  const defaultHideFlagEnd = 2 * defaultSiblingCount + 3;
-
-  const defaultChangeStart = defaultSiblingCount + 4;
+  const defaultMaxVisiblePage = 2 * siblingCount + 2;
+  const additionalPage = 1;
+  const adjustedVisiblePageThreshold =
+    defaultMaxVisiblePage - siblingCount + additionalPage;
 
   const [pageState, setPageState] = useState(defaultPage || 1);
-  const [hideFlagStart, setHideFlagStart] = useState(1);
-  const [hideFlagEnd, setHideFlagEnd] = useState(defaultHideFlagEnd);
-
-  useEffect(() => {}, [pageState]);
-
-  const generateCountPagination = Array.from(
-    { length: count },
-    (_, index) => index + 1
+  const [minVisiblePage, setMinVisiblePage] = useState(additionalPage);
+  const [maxVisiblePage, setMaxVisiblePage] = useState(
+    additionalPage + defaultMaxVisiblePage
   );
+
+  const generateCountPagination = generateArray(count);
 
   const handleClick = (key: number) => {
     setPageState(key);
     if (
-      key >= defaultChangeStart &&
-      key < count - (defaultChangeStart - defaultSiblingCount)
+      key > adjustedVisiblePageThreshold &&
+      key <= count - adjustedVisiblePageThreshold
     ) {
-      if (key <= pageState) {
-        setHideFlagEnd(key + defaultSiblingCount);
-        setHideFlagStart(key - defaultSiblingCount - 1);
-      } else {
-        setHideFlagEnd(key + defaultSiblingCount);
-        setHideFlagStart(key - defaultSiblingCount - 1);
-      }
-    } else if (key <= defaultChangeStart && hideFlagStart !== 1) {
-      setHideFlagStart(1);
-      setHideFlagEnd(defaultHideFlagEnd);
-    } else if (key > defaultChangeStart) {
-      setHideFlagStart(count - (defaultChangeStart + defaultSiblingCount - 1));
-      setHideFlagEnd(count - 1);
+      setMinVisiblePage(key - siblingCount - additionalPage);
+      setMaxVisiblePage(key + siblingCount);
+    } else if (
+      key <= defaultMaxVisiblePage &&
+      minVisiblePage !== additionalPage
+    ) {
+      setMinVisiblePage(additionalPage);
+      setMaxVisiblePage(defaultMaxVisiblePage + additionalPage);
+    } else if (key >= count - adjustedVisiblePageThreshold) {
+      setMinVisiblePage(count - defaultMaxVisiblePage - additionalPage);
+      setMaxVisiblePage(count - additionalPage);
     }
   };
+  //TODO change this
+  useEffect(() => {
+    if (defaultPage) handleClick(defaultPage);
+  }, []);
 
   const handleFirstPage = () => {
     setPageState(1);
-    setHideFlagStart(1);
-    setHideFlagEnd(defaultChangeStart);
+    setMinVisiblePage(additionalPage);
+    setMaxVisiblePage(defaultMaxVisiblePage + additionalPage);
   };
 
   const handleLastPage = () => {
     setPageState(count);
-    setHideFlagStart(count - (defaultChangeStart - 1));
-    setHideFlagEnd(count - 1);
+    setMinVisiblePage(count - defaultMaxVisiblePage - additionalPage);
+    setMaxVisiblePage(count - additionalPage);
   };
 
   const handleNextPage = () => {
-    setPageState((prevState) => prevState + 1);
+    setPageState((prevState) => prevState + additionalPage);
   };
 
   const handlePrevState = () => {
-    setPageState((prevState) => prevState - 1);
+    setPageState((prevState) => prevState - additionalPage);
   };
 
   useEffect(() => {
@@ -127,25 +127,27 @@ const Pagination: FC<PaginationProps> = ({
       >
         {1}
       </Button>
-      {hideFlagStart !== 1 && (
+      {minVisiblePage !== 1 && (
         <ThreePointsWrapper size={size}>
           <Typography color={color}>...</Typography>
         </ThreePointsWrapper>
       )}
-      {generateCountPagination.slice(hideFlagStart, hideFlagEnd).map((item) => (
-        <Button
-          key={item}
-          size={size}
-          equalSides
-          color={color}
-          variant={variant}
-          active={pageState === item}
-          onClick={() => handleClick(item)}
-        >
-          {item}
-        </Button>
-      ))}
-      {hideFlagEnd !== count - 1 && (
+      {generateCountPagination
+        .slice(minVisiblePage, maxVisiblePage)
+        .map((item) => (
+          <Button
+            key={item}
+            size={size}
+            equalSides
+            color={color}
+            variant={variant}
+            active={pageState === item}
+            onClick={() => handleClick(item)}
+          >
+            {item}
+          </Button>
+        ))}
+      {maxVisiblePage !== count - 1 && (
         <ThreePointsWrapper size={size}>
           <Typography color={color}>...</Typography>
         </ThreePointsWrapper>

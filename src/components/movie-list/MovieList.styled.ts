@@ -7,4 +7,5 @@ export const MovieListWrapper = styled.div`
   justify-content: space-between;
   gap: 20px;
   overflow: auto;
+  scroll-behavior: smooth;
 `;

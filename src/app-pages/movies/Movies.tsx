@@ -6,10 +6,11 @@ import { MovieDataType } from "@/types";
 interface MoviesProps {
   data: MovieDataType;
   count: number;
+  pathname: string;
 }
 
-const Movies: FC<MoviesProps> = ({ data, count }) => {
-  return <MoviesList data={data} count={count} />;
+const Movies: FC<MoviesProps> = ({ data, pathname, count }) => {
+  return <MoviesList data={data} count={count} pathname={pathname} />;
 };
 
 export default Movies;

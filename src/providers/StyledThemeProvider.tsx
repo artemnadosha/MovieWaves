@@ -12,8 +12,7 @@ const ThemeContext = createContext<ThemeContextType | null>(null);
 export const useTheme = () => useContext<ThemeContextType | null>(ThemeContext);
 
 const StyledThemeProvider = ({ children }: PropsWithChildren) => {
-  const themeLocal = window.localStorage.getItem("theme") as "dark" | "light";
-  const [isDarkTheme, setIsDarkTheme] = useState(themeLocal || "darkg");
+  const [isDarkTheme, setIsDarkTheme] = useState<"dark" | "light">("dark");
   const toggleTheme = () => {
     setIsDarkTheme((prevTheme) => {
       if (prevTheme === "dark") {
@@ -24,9 +23,8 @@ const StyledThemeProvider = ({ children }: PropsWithChildren) => {
   };
   const theme: ThemeType = isDarkTheme === "dark" ? darkTheme : lightTheme;
 
-  window.localStorage.setItem("theme", isDarkTheme);
   return (
-    <ThemeContext.Provider value={{ toggleTheme, isDarkTheme }}>
+    <ThemeContext.Provider value={{ isDarkTheme, toggleTheme }}>
       <ThemeProvider theme={theme}>{children}</ThemeProvider>
     </ThemeContext.Provider>
   );

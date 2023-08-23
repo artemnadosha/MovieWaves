@@ -10,6 +10,7 @@ const meta: Meta<typeof Pagination> = {
   args: {
     count: 12,
     siblingCount: 1,
+    defaultPage: 5,
   },
 };
 

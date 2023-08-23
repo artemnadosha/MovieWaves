@@ -3,8 +3,14 @@ import { SwitchContainer, SwitchIcon, SwitchWrapper } from "./Switch.styled";
 import { SwitchProps } from "./Switch.type";
 import { HiddenInput } from "@/UI-kit/components";
 
-const Switch: FC<SwitchProps> = ({ iconOn, iconOff, color, onChange }) => {
-  const [isChecked, setIsChecked] = useState(false);
+const Switch: FC<SwitchProps> = ({
+  iconOn,
+  iconOff,
+  color,
+  defaultValue,
+  onChange,
+}) => {
+  const [isChecked, setIsChecked] = useState(defaultValue || false);
 
   const handleChange = () => {
     setIsChecked((prevState) => !prevState);

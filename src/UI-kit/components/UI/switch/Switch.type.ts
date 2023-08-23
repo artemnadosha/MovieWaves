@@ -5,4 +5,5 @@ export interface SwitchProps extends ColorKeysProps {
   iconOn?: ReactNode | ReactElement;
   iconOff?: ReactNode | ReactElement;
   onChange?: (value: boolean) => void;
+  defaultValue?: boolean;
 }

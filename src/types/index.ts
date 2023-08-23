@@ -3,4 +3,7 @@ export type {
   MovieItem,
   MovieDetailType,
   GenresType,
+  MovieItemWithImages,
+  MovieDataTypeWithImages,
+  MoviesImages,
 } from "./movies";

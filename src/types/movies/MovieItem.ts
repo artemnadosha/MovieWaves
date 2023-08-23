@@ -1,11 +1,12 @@
-import { ImageProps } from "next/image";
+import { MoviesImages } from "@/types/movies/MovieAddtionalType";
 
-export type MovieItem = {
+export interface MovieItem {
   id: number;
   backdrop: string;
-  moviesImages: ImageProps[];
   title: string;
   overview: string;
   poster: string;
   video?: boolean;
-};
+}
+
+export interface MovieItemWithImages extends MovieItem, MoviesImages {}

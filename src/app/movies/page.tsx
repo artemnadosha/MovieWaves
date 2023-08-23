@@ -1,16 +1,20 @@
-"use client";
 import { Movies } from "@/app-pages";
 import { getMovieServices } from "@/services";
 import { useSearchParams } from "next/navigation";
 
-const MoviesPage = async () => {
-  const searchParams = useSearchParams();
+interface MoviesPageProps {
+  searchParams: {
+    page: string;
+  };
+}
 
-  const page = searchParams.get("page");
+const MoviesPage = async ({ searchParams: { page } }: MoviesPageProps) => {
+  const data = await getMovieServices.popular({
+    page: page || "1",
+    type: "movie",
+  });
 
-  const data = await getMovieServices.popular(page || "1");
-
-  return <Movies data={data.data} count={data.totalPages} />;
+  return <Movies data={data.data} count={data.totalPages} pathname="movies" />;
 };
 
 export default MoviesPage;

@@ -1,12 +1,8 @@
 import { AvatarWithTextProps } from "@/UI-kit/components";
-import { MovieItem } from "@/types";
+import { GenresType, MovieItem } from "@/types";
+import { MoviesImages } from "./MovieAddtionalType";
 
-export type GenresType = {
-  genres: string;
-};
-
-export type MovieDetailType = MovieItem &
-  GenresType & {
-    castData: AvatarWithTextProps[];
-    idYouTube?: string;
-  };
+export interface MovieDetailType extends MovieItem, MoviesImages, GenresType {
+  castData: AvatarWithTextProps[];
+  idYouTube?: string;
+}
