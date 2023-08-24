@@ -15,6 +15,7 @@ import {
 export interface BoxProps
   extends PropsWithChildren,
     DefaultProps,
+    Omit<HTMLAttributes<HTMLElement>, "color">,
     ColorNamesProps,
     ColorBorderProps,
     BorderProps,
@@ -23,5 +24,3 @@ export interface BoxProps
     SpacingPaddingOrMargin,
     DirectionProps,
     OrientingProps {}
-
-// Omit<HTMLAttributes<HTMLElement>, "color">;

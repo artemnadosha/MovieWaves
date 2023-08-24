@@ -7,9 +7,6 @@ export { LabelField } from "./label-field";
 
 export { Slider } from "./slider";
 
-export { Card } from "./card";
-export type { CardProps } from "./card";
-
 export { YouTubeModal } from "./youtube-modal";
 
 export { AvatarWithText } from "./avatar-with-text";

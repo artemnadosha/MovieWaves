@@ -21,7 +21,9 @@ export const CardWrapper = styled.div(({ theme }) => ({
   transition: "0.5s",
 }));
 
-export const CardInfoWrapper = styled.div(({ theme }) => ({
+export const CardInfoWrapper = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== "active",
+})<{ active: boolean }>(({ theme, active }) => ({
   width: "100%",
   height: "100%",
   position: "absolute",
@@ -29,6 +31,8 @@ export const CardInfoWrapper = styled.div(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   gap: theme.unitSize.spacing * 0.5,
-  padding: theme.unitSize.spacing * 1,
+  padding: theme.unitSize.spacing,
   background: hexToRGBA(theme.palette.background.dark, 0.4),
+  transition: ".5s",
+  opacity: active ? 1 : 0,
 }));

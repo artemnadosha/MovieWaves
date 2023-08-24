@@ -1,14 +1,14 @@
 import { FC, useState } from "react";
 import { HomeSliderWrapper } from "./HomeSlider.styled";
 import { Box, Button, Slider, Typography } from "@/UI-kit/components";
-import { ImageProps } from "next/image";
-import { MovieDataType } from "@/types";
+import { MovieDataTypeWithImages } from "@/types";
+import { useRouter } from "next/navigation";
 
 interface HomeSliderProps {
-  dataSlider: MovieDataType;
+  dataSlider: MovieDataTypeWithImages;
 }
 
-const generateSliderItem = (dataSlider: MovieDataType) => {
+const generateSliderItem = (dataSlider: MovieDataTypeWithImages) => {
   return dataSlider.map((item) => {
     return {
       mainSlider: {
@@ -21,6 +21,7 @@ const generateSliderItem = (dataSlider: MovieDataType) => {
 };
 
 const HomeSlider: FC<HomeSliderProps> = ({ dataSlider }) => {
+  const router = useRouter();
   const [indexMainSlider, setIndexMainSlider] = useState(1);
 
   const data = generateSliderItem(dataSlider);
@@ -32,6 +33,10 @@ const HomeSlider: FC<HomeSliderProps> = ({ dataSlider }) => {
     } else {
       setIndexMainSlider(0);
     }
+  };
+
+  const handleDetailInfo = () => {
+    router.push(`/movies/${dataSlider[indexMainSlider].id}`);
   };
   return (
     <HomeSliderWrapper>
@@ -52,6 +57,7 @@ const HomeSlider: FC<HomeSliderProps> = ({ dataSlider }) => {
       <Button
         sx={{ position: "absolute", bottom: 36, left: 36, zIndex: 3 }}
         size="large"
+        onClick={handleDetailInfo}
       >
         Watch
       </Button>

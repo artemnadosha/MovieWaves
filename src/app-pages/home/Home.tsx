@@ -1,11 +1,11 @@
 "use client";
 import { FC } from "react";
 import { HomeCards, HomeSlider } from "@/components";
-import { MovieDataType } from "@/types";
+import { MovieDataType, MovieDataTypeWithImages } from "@/types";
 
 interface HomeProps {
-  dataSlider: MovieDataType;
-  dataCards: MovieDataType;
+  dataSlider: MovieDataTypeWithImages;
+  dataCards: MovieDataTypeWithImages;
 }
 
 const Home: FC<HomeProps> = ({ dataSlider, dataCards }) => {

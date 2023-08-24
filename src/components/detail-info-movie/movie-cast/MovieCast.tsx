@@ -17,6 +17,7 @@ const MovieCast: FC<CastProps> = ({ castData }) => {
       sx={{
         zIndex: 2,
         width: "fit-content",
+        maxHeight: "calc(100% - 95px)",
         minWidth: "400px",
         overflow: "auto",
       }}

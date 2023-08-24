@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from "react";
-import { ModalWrapper } from "./Modal.styled";
+import { ModalWrapper, Overlay } from "./Modal.styled";
 import { Portal } from "../portal";
 import { IconExit } from "@/assets/icon";
 import { Button } from "../button";
@@ -19,7 +19,8 @@ const Modal: FC<ModalProps> = ({
   children,
 }) => {
   return isOpen ? (
-    <Portal onClick={closeOverlay ? onClose : () => {}}>
+    <Portal>
+      <Overlay onClick={closeOverlay ? onClose : () => {}} />
       <ModalWrapper>
         {children}
         <Button

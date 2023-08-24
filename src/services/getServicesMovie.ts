@@ -1,4 +1,8 @@
-import { MovieDataType, MovieDetailType } from "@/types";
+import {
+  MovieDataType,
+  MovieDataTypeWithImages,
+  MovieDetailType,
+} from "@/types";
 import { API_MOVIE, DTO, options } from "@/services/utils";
 import { GetType, ResponseMovies } from "@/services/types";
 import { images } from "@/services/images";
@@ -6,7 +10,9 @@ import { detail } from "./detail";
 import { cast } from "./cast";
 import { trailer } from "./trailer";
 
-const upcoming = async (page?: string): Promise<Awaited<MovieDataType>> => {
+const upcoming = async (
+  page?: string
+): Promise<Awaited<MovieDataTypeWithImages>> => {
   const res = await fetch(API_MOVIE.UPCOMING_URL, options);
   const json: ResponseMovies = await res.json();
 

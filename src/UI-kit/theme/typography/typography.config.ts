@@ -1,7 +1,7 @@
-import { Montserrat } from "next/font/google";
+import { Kanit } from "next/font/google";
 import { TypographyConfigType } from "./typography.config.type";
 
-export const fontConfig = Montserrat({
+export const fontConfig = Kanit({
   subsets: ["latin"],
   display: "swap",
   style: "normal",

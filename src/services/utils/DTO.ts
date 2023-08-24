@@ -71,7 +71,7 @@ const movieWithImages = async ({
 
   const remakeImageProps = generateSrcAltImages({
     arr: getImageData,
-    title: value.title,
+    title: value.title || value.original_name,
   });
 
   return {

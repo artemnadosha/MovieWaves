@@ -30,6 +30,7 @@ const Link = styled(
   }
 )(({ variant, size, iconEnd, iconStart, sx, radius, color, href, theme }) => {
   const pathname = usePathname();
+  const rootPath = `/${pathname.split("/")[1]}`;
 
   const defaultStyle = css`
     font-family: inherit;
@@ -53,10 +54,16 @@ const Link = styled(
 
   const variantStyle =
     variant === "tab"
-      ? linkColorConfig({ theme, color, active: pathname === href })[variant]
-      : buttonColorConfig({ theme, color, active: pathname === href })[
-          variant || "text"
-        ];
+      ? linkColorConfig({
+          theme,
+          color,
+          active: rootPath === href,
+        })[variant]
+      : buttonColorConfig({
+          theme,
+          color,
+          active: rootPath === href,
+        })[variant || "text"];
 
   const customStyle = css({ ...(sx as {}) });
 

@@ -3,7 +3,6 @@ export {
   LinkGroup,
   LabelField,
   Slider,
-  Card,
   YouTubeModal,
   AvatarWithText,
   Pagination,
@@ -11,7 +10,6 @@ export {
 export type {
   LinkSingleType,
   LinkGroupProps,
-  CardProps,
   AvatarWithTextProps,
 } from "./feature";
 
@@ -31,6 +29,9 @@ export {
   Tag,
   Avatar,
   Poster,
+  MenuDropDown,
+  Card,
+  CardWithDetailInfo,
 } from "./UI";
 export type {
   MyLinkProps,
@@ -38,4 +39,5 @@ export type {
   TypographyProps,
   SwitchProps,
   BoxProps,
+  CardProps,
 } from "./UI";

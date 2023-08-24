@@ -1,13 +1,12 @@
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import { Overlay, PortalWrapper } from "./Portal.styled";
+import { PortalWrapper } from "./Portal.styled";
 
 interface PortalProps {
   children: ReactNode;
-  onClick?: () => void;
 }
 
-const Portal = ({ onClick, children }: PortalProps) => {
+const Portal = ({ children }: PortalProps) => {
   const ref = useRef<Element | null>(null);
   const [mounted, setMounted] = useState(false);
 
@@ -17,13 +16,7 @@ const Portal = ({ onClick, children }: PortalProps) => {
   }, []);
 
   return mounted && ref.current
-    ? createPortal(
-        <PortalWrapper>
-          <Overlay onClick={onClick} />
-          {children}
-        </PortalWrapper>,
-        ref.current
-      )
+    ? createPortal(<PortalWrapper>{children}</PortalWrapper>, ref.current)
     : null;
 };
 

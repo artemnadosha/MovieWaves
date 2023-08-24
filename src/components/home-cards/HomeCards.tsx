@@ -1,9 +1,9 @@
 import { FC } from "react";
 import { Box, Card, CardProps, Link } from "@/UI-kit/components";
-import { MovieDataType } from "@/types";
+import { MovieDataType, MovieDataTypeWithImages } from "@/types";
 
 interface HomeCardsProps {
-  dataCards: MovieDataType;
+  dataCards: MovieDataTypeWithImages;
 }
 
 const generateDataCards = (dataCards: MovieDataType) => {
