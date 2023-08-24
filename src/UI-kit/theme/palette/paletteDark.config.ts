@@ -30,7 +30,7 @@ export const paletteDarkConfig: PaletteConfigType = {
   },
   background: {
     main: "#100F12",
-    dark: "#000",
+    dark: "#000000",
     light: "#141313",
     contrastText: "#fff",
     additional: "#606165",

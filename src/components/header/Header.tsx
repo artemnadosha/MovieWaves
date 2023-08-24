@@ -1,21 +1,15 @@
 import { FC, useState } from "react";
-import {
-  Badge,
-  Box,
-  Button,
-  CheckboxOrRadio,
-  Input,
-  YouTubeModal,
-} from "@/UI-kit/components";
+import { Badge, Box, Button, Input } from "@/UI-kit/components";
 import { IconArrowRight, IconNotification, IconSearch } from "@/assets/icon";
+import { useRouter } from "next/navigation";
 
 interface HeaderProps {}
 
 const Header: FC<HeaderProps> = () => {
-  const [isModal, setIsModal] = useState(false);
+  const router = useRouter();
 
-  const handleToggleModal = () => {
-    setIsModal((prevState) => !prevState);
+  const handleBack = () => {
+    router.back();
   };
   return (
     <Box
@@ -25,7 +19,7 @@ const Header: FC<HeaderProps> = () => {
       alignItems="center"
       sx={{ height: "fit-content" }}
     >
-      <Button size="medium" variant="outlined" onClick={handleToggleModal}>
+      <Button size="small" variant="outlined" onClick={handleBack}>
         <IconArrowRight style={{ transform: "rotate(180deg)" }} />
       </Button>
       <Box
@@ -41,11 +35,6 @@ const Header: FC<HeaderProps> = () => {
           </Button>
         </Badge>
       </Box>
-      <YouTubeModal
-        isOpen={isModal}
-        onClose={handleToggleModal}
-        idVideo="flEq-HpAy7s"
-      />
     </Box>
   );
 };

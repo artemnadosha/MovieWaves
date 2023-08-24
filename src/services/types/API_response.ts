@@ -13,6 +13,7 @@ export type MoviesType = {
   video: boolean;
   vote_average: number;
   vote_count: number;
+  original_name: string;
 };
 
 export type ImagesBackdrop = {
@@ -84,6 +85,7 @@ export interface DetailMovieType {
   video: boolean;
   vote_average: number;
   vote_count: number;
+  original_name: string;
 }
 
 type CastItem = {

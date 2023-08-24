@@ -58,6 +58,9 @@ export const API_MOVIE = {
   },
 
   GENERATE_IMAGE_URL: (pathImage: string, sizeImage?: SizeImageType) => {
+    if (!pathImage) {
+      return "/no-image.png";
+    }
     return (
       process.env.NEXT_PUBLIC_BASE_URL_IMAGE +
       `/${sizeImage ? sizeImage : "original"}` +

@@ -1,45 +1,10 @@
 import { FC } from "react";
-import { Box, Card, CardProps } from "@/UI-kit/components";
+import { Box, Card, CardProps, Link } from "@/UI-kit/components";
 import { MovieDataType } from "@/types";
 
 interface HomeCardsProps {
   dataCards: MovieDataType;
 }
-
-const mokCard: CardProps[] = [
-  {
-    image: {
-      src: "https://itc.ua/wp-content/uploads/2023/07/oppenheimer-2023-movie-poster-hd-wallpaper-uhdpaper.com-719-1-k.jpg",
-      alt: "Oppenheimer",
-    },
-    title: "Oppenheimer",
-    subTitle: "Lorem ipsum dolor",
-  },
-  {
-    image: {
-      src: "https://itc.ua/wp-content/uploads/2023/07/HauntedMansion.jpg",
-      alt: "Haunted Mansion",
-    },
-    title: "Haunted Mansion",
-    subTitle: "Lorem ipsum dolor",
-  },
-  {
-    image: {
-      src: "https://itc.ua/wp-content/uploads/2023/07/Barbie-Landscape-promo.jpeg",
-      alt: "Barbie",
-    },
-    title: "Barbie",
-    subTitle: "Lorem ipsum dolor",
-  },
-  {
-    image: {
-      src: "https://itc.ua/wp-content/uploads/2023/07/4xBX8xoVyd0b1jh9F1fXTwxmY8H.jpg",
-      alt: "They Cloned Tyrone",
-    },
-    title: "They Cloned Tyrone",
-    subTitle: "Lorem ipsum dolor",
-  },
-];
 
 const generateDataCards = (dataCards: MovieDataType) => {
   return dataCards.map((item) => {
@@ -49,6 +14,8 @@ const generateDataCards = (dataCards: MovieDataType) => {
         src: item.poster,
         alt: item.title,
       },
+      title: item.title,
+      subTitle: item.overview,
     };
   });
 };
@@ -64,7 +31,9 @@ const HomeCards: FC<HomeCardsProps> = ({ dataCards }) => {
       sx={{ height: "fit-content" }}
     >
       {generateData.map((item) => (
-        <Card key={item.id} {...item} />
+        <Link key={item.id} href={`/movies/${item.id}`} variant="defaultText">
+          <Card {...item} />
+        </Link>
       ))}
     </Box>
   );

@@ -1,4 +1,4 @@
-import { HTMLAttributes, PropsWithChildren } from "react";
+import { HTMLAttributes, PropsWithChildren, RefObject } from "react";
 
 import {
   BorderProps,
@@ -13,8 +13,7 @@ import {
 } from "@/UI-kit/types";
 
 export interface BoxProps
-  extends Omit<HTMLAttributes<HTMLElement>, "color">,
-    PropsWithChildren,
+  extends PropsWithChildren,
     DefaultProps,
     ColorNamesProps,
     ColorBorderProps,
@@ -24,3 +23,5 @@ export interface BoxProps
     SpacingPaddingOrMargin,
     DirectionProps,
     OrientingProps {}
+
+// Omit<HTMLAttributes<HTMLElement>, "color">;

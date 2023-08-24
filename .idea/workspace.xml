@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/box/Box.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/box/Box.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/typography/Typography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/typography/Typography.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/card/Card.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/card/Card.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/card/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteDark.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/theme/palette/paletteDark.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/types/ComponetProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/types/ComponetProps.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home-cards/HomeCards.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home-cards/HomeCards.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movie-list/MoviesList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movie-list/MoviesList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/detail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/detail.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/types/API_response.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/types/API_response.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/utils/API_MOVIE.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/API_MOVIE.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/utils/DTO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/utils/DTO.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,24 +97,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/skyfull/Рабочий стол/next-js-project-app/src/assets/icon&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/home/skyfull/Рабочий стол/next-js-project-app/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.gutterIcons&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/skyfull/Рабочий стол/next-js-project-app/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/skyfull/Рабочий стол/project/folks-frontend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/home/skyfull/Рабочий стол/next-js-project-app/node_modules/prettier",
+    "settings.editor.selected.configurable": "editor.preferences.gutterIcons",
+    "ts.external.directory.path": "/home/skyfull/Рабочий стол/next-js-project-app/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/assets/icon" />
@@ -175,7 +188,9 @@
       <workItem from="1692616350860" duration="22771000" />
       <workItem from="1692645377173" duration="23000" />
       <workItem from="1692696811394" duration="33287000" />
-      <workItem from="1692784252728" duration="15604000" />
+      <workItem from="1692784252728" duration="16736000" />
+      <workItem from="1692817320992" duration="357000" />
+      <workItem from="1692878295034" duration="12979000" />
     </task>
     <servers />
   </component>

@@ -45,6 +45,7 @@ const Typography = styled(
     const textShadowStyle = css`
       text-shadow: 3px 2px 5px #333333;
     `;
+
     const noWrapStyle = css`
       white-space: nowrap;
       overflow: hidden;

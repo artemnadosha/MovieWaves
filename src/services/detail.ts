@@ -10,7 +10,6 @@ export const detail = async ({ id, type }: DetailProps) => {
   const res = await fetch(API_MOVIE.DETAIL_URL({ id, type }), options);
   const value: DetailMovieType = await res.json();
 
-  console.log(value);
   return await DTO.movieDetailInfo({
     value,
     imagesSize: "w780",

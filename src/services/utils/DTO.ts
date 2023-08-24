@@ -50,7 +50,7 @@ const movie = ({
   return {
     id: value.id,
     backdrop: API_MOVIE.GENERATE_IMAGE_URL(value.backdrop_path, backdropSize),
-    title: value.title,
+    title: value.original_name || value.title,
     overview: value.overview,
     poster: API_MOVIE.GENERATE_IMAGE_URL(value.poster_path, posterSize),
   };
