@@ -6,6 +6,7 @@ export {
   YouTubeModal,
   AvatarWithText,
   Pagination,
+  SearchDropdown,
 } from "./feature";
 export type {
   LinkSingleType,
@@ -32,6 +33,7 @@ export {
   MenuDropDown,
   Card,
   CardWithDetailInfo,
+  CardWithDetailInfoList,
 } from "./UI";
 export type {
   MyLinkProps,
@@ -40,4 +42,5 @@ export type {
   SwitchProps,
   BoxProps,
   CardProps,
+  CardWithDetailInfoProps,
 } from "./UI";

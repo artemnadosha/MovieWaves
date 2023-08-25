@@ -36,4 +36,8 @@ export { MenuDropDown } from "./menu-drop-down";
 export { Card } from "./card";
 export type { CardProps } from "./card";
 
-export { CardWithDetailInfo } from "./card-with-detail-info";
+export {
+  CardWithDetailInfo,
+  CardWithDetailInfoList,
+} from "./card-with-detail-info";
+export type { CardWithDetailInfoProps } from "./card-with-detail-info";

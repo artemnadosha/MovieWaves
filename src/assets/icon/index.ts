@@ -14,3 +14,4 @@ export { default as IconNotification } from "./IconNotification.svg";
 export { default as IconExit } from "./IconExit.svg";
 export { default as IconFirstPage } from "./IconFirstPage.svg";
 export { default as IconLastPage } from "./IconLastPage.svg";
+export { default as IconNotFoundData } from "./IconNotFoundData.svg";
