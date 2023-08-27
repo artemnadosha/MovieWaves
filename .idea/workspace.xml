@@ -6,14 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="21ca7744-082c-409c-94ca-95b2c6737780" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/card-with-detail-info/CardWithDetailInfo.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/card-with-detail-info/CardWithDetailInfo.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/card-with-detail-info/CardWithDetailInfo.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/card-with-detail-info/CardWithDetailInfo.styled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/card-with-detail-info/CardWithDetailInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/card-with-detail-info/CardWithDetailInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/card-with-detail-info/CardWithDetailInfoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/card-with-detail-info/CardWithDetailInfoList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/card-with-detail-info/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/card-with-detail-info/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/input/Input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/input/Input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/link/Link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/menu-drop-down/MenuDropDown.styled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/menu-drop-down/MenuDropDown.styled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/UI/menu-drop-down/MenuDropDown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/UI/menu-drop-down/MenuDropDown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/search-dropdown/SearchDropdown.stories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/search-dropdown/SearchDropdown.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/search-dropdown/SearchDropdown.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI-kit/components/feature/search-dropdown/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/feature/search-dropdown/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/UI-kit/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI-kit/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/icon/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/icon/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +191,9 @@
       <workItem from="1692878295034" duration="15581000" />
       <workItem from="1692895599261" duration="12432000" />
       <workItem from="1692956284049" duration="210000" />
-      <workItem from="1692964654425" duration="4940000" />
+      <workItem from="1692964654425" duration="5612000" />
+      <workItem from="1693067147941" duration="594000" />
+      <workItem from="1693134033580" duration="5813000" />
     </task>
     <servers />
   </component>

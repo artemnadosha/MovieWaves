@@ -30,7 +30,7 @@ const Link = styled(
   }
 )(({ variant, size, iconEnd, iconStart, sx, radius, color, href, theme }) => {
   const pathname = usePathname();
-  const rootPath = `/${pathname.split("/")[1]}`;
+  const rootPath = `/${pathname?.split("/")[1]}`;
 
   const defaultStyle = css`
     font-family: inherit;
@@ -68,13 +68,13 @@ const Link = styled(
   const customStyle = css({ ...(sx as {}) });
 
   return css`
-    ${defaultStyle}
-    ${gapWithIcon}
-    ${sizeStyle}
-    ${variantStyle}
+    ${defaultStyle};
+    ${gapWithIcon};
+    ${sizeStyle};
+    ${variantStyle};
     border-radius: ${radius?.toString() ||
-    (theme.unitSize.borderRadius as string)}
-    ${customStyle}
+    (theme.unitSize.borderRadius as string)};
+    ${customStyle};
   `;
 });
 

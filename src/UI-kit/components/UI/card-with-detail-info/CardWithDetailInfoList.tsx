@@ -1,23 +1,27 @@
-import { FC, useEffect, useState } from "react";
+import { FC, PropsWithChildren } from "react";
 import {
   Box,
   CardWithDetailInfo,
   CardWithDetailInfoProps,
-  Typography,
+  Loader,
 } from "@/UI-kit/components";
 import { IconNotFoundData } from "@/assets/icon";
 
-interface CardWithDetailInfoListProps {
+export interface CardWithDetailInfoListProps {
   dataList?: CardWithDetailInfoProps[];
+  loading?: boolean;
 }
 
 const CardWithDetailInfoList: FC<CardWithDetailInfoListProps> = ({
   dataList,
+  loading,
 }) => {
   return (
     <>
-      {dataList ? (
+      {dataList?.length ? (
         dataList.map((item) => <CardWithDetailInfo key={item.id} {...item} />)
+      ) : loading ? (
+        <Loader />
       ) : (
         <Box justifyContent="center" alignItems="center" spacingPadding={1}>
           <IconNotFoundData />

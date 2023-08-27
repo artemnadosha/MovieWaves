@@ -12,7 +12,7 @@ const MenuDropDown: FC<MenuDropDownProps> = ({
   control,
   content,
   positionContent = "bottomRight",
-  isOpen,
+  isOpen = false,
 }) => {
   const [position, setPosition] = useState<{
     top: number;
@@ -22,6 +22,13 @@ const MenuDropDown: FC<MenuDropDownProps> = ({
   } | null>(null);
   const controlRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
+  const [prevIsOpen, setPrevIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (isOpen) {
+      setPrevIsOpen(isOpen);
+    }
+  }, [isOpen]);
 
   useEffect(() => {
     if (controlRef.current) {
@@ -46,6 +53,7 @@ const MenuDropDown: FC<MenuDropDownProps> = ({
           position={position}
           isOpen={isOpen}
           positionContent={positionContent}
+          prevIsOpen={prevIsOpen}
         >
           {content}
         </ContentWrapper>

@@ -34,6 +34,7 @@ export {
   Card,
   CardWithDetailInfo,
   CardWithDetailInfoList,
+  Loader,
 } from "./UI";
 export type {
   MyLinkProps,
@@ -43,4 +44,5 @@ export type {
   BoxProps,
   CardProps,
   CardWithDetailInfoProps,
+  CardWithDetailInfoListProps,
 } from "./UI";

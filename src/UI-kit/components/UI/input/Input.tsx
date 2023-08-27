@@ -1,4 +1,10 @@
-import { ChangeEvent, FC, HTMLAttributes, useState } from "react";
+import {
+  ChangeEvent,
+  FC,
+  FocusEventHandler,
+  HTMLAttributes,
+  useState,
+} from "react";
 import {
   BaseInput,
   Fieldset,
@@ -21,9 +27,10 @@ export interface InputProps
     ColorKeysProps,
     VariantInput,
     RadiusProps,
-    Omit<HTMLAttributes<HTMLInputElement>, "color"> {
+    Omit<HTMLAttributes<HTMLInputElement>, "color" | "onFocus" | "onBlur"> {
   focus?: boolean;
   label?: string | number;
+  onFocus?: (value: boolean) => void;
 }
 
 const Input: FC<InputProps> = ({
@@ -35,6 +42,7 @@ const Input: FC<InputProps> = ({
   variant,
   radius,
   onChange,
+  onFocus,
   label,
   ...rest
 }) => {
@@ -42,10 +50,12 @@ const Input: FC<InputProps> = ({
   const [value, setValue] = useState("");
   const handleFocus = () => {
     setIsFocus(true);
+    if (onFocus) onFocus(true);
   };
 
   const handleBlur = () => {
     setIsFocus(false);
+    if (onFocus) onFocus(false);
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {

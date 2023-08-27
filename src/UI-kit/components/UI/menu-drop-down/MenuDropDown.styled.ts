@@ -15,16 +15,24 @@ interface ContentProps {
   position: PositionProps;
   isOpen?: boolean;
   positionContent: "topLeft" | "topRight" | "bottomLeft" | "bottomRight";
+  prevIsOpen: boolean;
 }
 
 export const ContentWrapper = styled.div.withConfig({
   shouldForwardProp: (prop) =>
-    !["position", "isActive", "positionContent"].includes(prop),
-})<ContentProps>(({ position, isOpen, positionContent }) => {
+    ![
+      "position",
+      "isActive",
+      "positionContent",
+      "isOpen",
+      "prevIsOpen",
+    ].includes(prop),
+})<ContentProps>(({ position, isOpen, prevIsOpen, positionContent }) => {
   const defaultStyle = css`
     width: fit-content;
     height: fit-content;
     position: absolute;
+    opacity: 0;
     transition: 0.5s;
   `;
 
@@ -85,7 +93,7 @@ export const ContentWrapper = styled.div.withConfig({
     ${positionContent === "bottomLeft" && bottomLeftStyle}
     ${positionContent === "topRight" && topRightStyle}
     ${positionContent === "bottomRight" && bottomRightStyle}
-    ${isOpen && animateIsActiveStyle}
-    ${!isOpen && animateInActiveStyle}
+    ${isOpen && animateIsActiveStyle};
+    ${!isOpen && prevIsOpen && animateInActiveStyle}
   `;
 });

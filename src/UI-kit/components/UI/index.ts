@@ -40,4 +40,9 @@ export {
   CardWithDetailInfo,
   CardWithDetailInfoList,
 } from "./card-with-detail-info";
-export type { CardWithDetailInfoProps } from "./card-with-detail-info";
+export type {
+  CardWithDetailInfoProps,
+  CardWithDetailInfoListProps,
+} from "./card-with-detail-info";
+
+export { Loader } from "./loader";
